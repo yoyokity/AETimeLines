@@ -1,0 +1,1104 @@
+{
+  "GUID": "cc07ecaf-2cb4-45d5-b1e9-9da0f454007b",
+  "ConfigVersion": 6,
+  "TargetJob": 38,
+  "Author": "yoyokity",
+  "Name": "M3S-yoyo舞者-股批版",
+  "TreeRoot": {
+    "DisplayName": "Start",
+    "Childs": [
+      {
+        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+        "DisplayName": "并行",
+        "AnyReturn": false,
+        "StopWhenDead": false,
+        "Childs": [
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[48.50]秒",
+                "Delay": 48.5,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 4,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 1.0,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 5,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 3,
+            "Enable": true,
+            "Remark": "0:48.5"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[140.00]秒",
+                "Delay": 140.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 7,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 2.9999993,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 8,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 6,
+            "Enable": true,
+            "Remark": "2:20"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[231.00]秒",
+                "Delay": 231.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 10,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 2.9999993,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 11,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 9,
+            "Enable": true,
+            "Remark": "3:51"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[323.00]秒",
+                "Delay": 323.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 13,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 1.0,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 14,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 12,
+            "Enable": true,
+            "Remark": "5:23"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[460.00]秒",
+                "Delay": 460.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 16,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 1.0,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 17,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 15,
+            "Enable": true,
+            "Remark": "7:40"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[552.00]秒",
+                "Delay": 552.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 19,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 3.0,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 20,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "4c78ad14-5d08-4236-8574-bd7fb9a4da2d",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 18,
+            "Enable": true,
+            "Remark": "9:12"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[655.00]秒",
+                "Delay": 655.0,
+                "GUID": "66d73aab-09b6-48f7-a5e4-669da2306a25",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 22,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                    "SpellConfig": {
+                      "Remark": "",
+                      "Category": 0,
+                      "SpellId": 16012,
+                      "CoolDowncheck": true,
+                      "CoolDowncheck_time": 1.0,
+                      "TargetType": 0,
+                      "IsPartyMember": true,
+                      "LimitJobType": 0,
+                      "LimitBuffIds": [],
+                      "LimitMaxHpType": 0,
+                      "LimitHpType": 0,
+                      "Location": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "TargetSelector": {
+                        "Enable": false,
+                        "Target": 0,
+                        "FilterDatas": [],
+                        "NeedTargetable": false,
+                        "SndFilter": 0,
+                        "PMIndex": 0
+                      },
+                      "AutoCheckActionChange": true
+                    },
+                    "Clear": false,
+                    "DisplayName": "技能使用/插入高优先级技能",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 23,
+                "Enable": true,
+                "Remark": "桑巴"
+              }
+            ],
+            "GUID": "fb5d2257-2d4c-4489-9c54-0c7e3a3342f4",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 21,
+            "Enable": true,
+            "Remark": "10:55"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+            "DisplayName": "并行",
+            "AnyReturn": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondWaitTarget, AEAssist",
+                        "TargetSelector": {
+                          "Enable": true,
+                          "Target": 1,
+                          "FilterDatas": [
+                            {
+                              "Filter": 3,
+                              "Remark": "",
+                              "StrParam1": "",
+                              "UintParam1": 0,
+                              "FloatParam1": 3.0,
+                              "LeftTime": 0,
+                              "JobsCategory": 0,
+                              "CompareType": 5,
+                              "BuffCompareType": 3,
+                              "Marker": 0,
+                              "Nearest": false
+                            }
+                          ],
+                          "NeedTargetable": false,
+                          "SndFilter": 0,
+                          "PMIndex": 0
+                        },
+                        "Remark": null,
+                        "DisplayName": "General/目标符合条件"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "0e95e1b1-8fec-4a63-9697-e3266fe5a3ff",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 26,
+                    "Enable": true,
+                    "Remark": "3%血量 "
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
+                        "Key": "倾泻资源",
+                        "Value": true,
+                        "DisplayName": "Dancer/QT",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "8a33ea3e-926d-4083-a2fe-6cd34a4d5d6b",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 27,
+                    "Enable": true,
+                    "Remark": "倾泻资源"
+                  }
+                ],
+                "GUID": "d12ad94d-3bcb-4f09-b2db-78fe65af11a9",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 25,
+                "Enable": true,
+                "Remark": ""
+              }
+            ],
+            "GUID": "267880e2-96d9-4cc3-a643-54150c4ade55",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 24,
+            "Enable": true,
+            "Remark": "TTK"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+            "DisplayName": "并行",
+            "AnyReturn": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                        "Remark": "",
+                        "Delay": 150.0,
+                        "DisplayName": "General/战斗开始后多少秒"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "38c43377-062b-4945-8e4e-9a2ab7bbe4d3",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 30,
+                    "Enable": true,
+                    "Remark": "2分30"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[1.60]秒",
+                    "Delay": 1.6,
+                    "GUID": "172182a8-fb90-46ad-b13f-2e1627245911",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 31,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
+                        "Remark": null,
+                        "SpellConfig": {
+                          "Remark": "",
+                          "Category": 0,
+                          "SpellId": 7548,
+                          "CoolDowncheck": true,
+                          "CoolDowncheck_time": 11.0,
+                          "TargetType": 0,
+                          "IsPartyMember": true,
+                          "LimitJobType": 0,
+                          "LimitBuffIds": [],
+                          "LimitMaxHpType": 0,
+                          "LimitHpType": 0,
+                          "Location": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                          },
+                          "TargetSelector": {
+                            "Enable": true,
+                            "Target": 0,
+                            "FilterDatas": [],
+                            "NeedTargetable": false,
+                            "SndFilter": 0,
+                            "PMIndex": 0
+                          },
+                          "AutoCheckActionChange": true
+                        },
+                        "DisplayName": "技能使用/强制使用技能"
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "981f37cb-b0a2-4dd4-93d9-d233936d4bce",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 32,
+                    "Enable": true,
+                    "Remark": "防击退"
+                  }
+                ],
+                "GUID": "5761de2a-4539-4a33-a91d-a0ac2a708cb4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 29,
+                "Enable": true,
+                "Remark": "第一次230"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                        "Remark": "",
+                        "Delay": 275.0,
+                        "DisplayName": "General/战斗开始后多少秒"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "6b7051ba-88f2-45ca-860a-634624a910a0",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 34,
+                    "Enable": true,
+                    "Remark": "4分35"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[1.50]秒",
+                    "Delay": 1.5,
+                    "GUID": "dc7c091f-8eda-4fe2-a8a2-9beee8008293",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 35,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
+                        "Remark": null,
+                        "SpellConfig": {
+                          "Remark": "",
+                          "Category": 0,
+                          "SpellId": 7548,
+                          "CoolDowncheck": false,
+                          "CoolDowncheck_time": 0.0,
+                          "TargetType": 0,
+                          "IsPartyMember": true,
+                          "LimitJobType": 0,
+                          "LimitBuffIds": [],
+                          "LimitMaxHpType": 0,
+                          "LimitHpType": 0,
+                          "Location": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                          },
+                          "TargetSelector": {
+                            "Enable": true,
+                            "Target": 0,
+                            "FilterDatas": [],
+                            "NeedTargetable": false,
+                            "SndFilter": 0,
+                            "PMIndex": 0
+                          },
+                          "AutoCheckActionChange": true
+                        },
+                        "DisplayName": "技能使用/强制使用技能"
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "af35537b-642f-4c41-b60d-4de737628086",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 36,
+                    "Enable": true,
+                    "Remark": "防击退"
+                  }
+                ],
+                "GUID": "cb4337b7-db25-4037-b6f9-69d91eb6c089",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 33,
+                "Enable": true,
+                "Remark": "第二次430"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                        "Remark": "",
+                        "Delay": 465.0,
+                        "DisplayName": "General/战斗开始后多少秒"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "fa1048d2-3060-4e69-b3a0-be6172e65a9b",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 38,
+                    "Enable": true,
+                    "Remark": "7分45"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[2.00]秒",
+                    "Delay": 2.0,
+                    "GUID": "98717b8b-2ec2-47f7-9aa5-ec47e92f007e",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 39,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
+                        "Remark": null,
+                        "SpellConfig": {
+                          "Remark": "",
+                          "Category": 0,
+                          "SpellId": 7548,
+                          "CoolDowncheck": false,
+                          "CoolDowncheck_time": 0.0,
+                          "TargetType": 0,
+                          "IsPartyMember": true,
+                          "LimitJobType": 0,
+                          "LimitBuffIds": [],
+                          "LimitMaxHpType": 0,
+                          "LimitHpType": 0,
+                          "Location": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": 0.0
+                          },
+                          "TargetSelector": {
+                            "Enable": true,
+                            "Target": 0,
+                            "FilterDatas": [],
+                            "NeedTargetable": false,
+                            "SndFilter": 0,
+                            "PMIndex": 0
+                          },
+                          "AutoCheckActionChange": true
+                        },
+                        "DisplayName": "技能使用/强制使用技能"
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "6174caf8-dba5-4b06-b32f-19c85080a622",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 40,
+                    "Enable": true,
+                    "Remark": "防击退"
+                  }
+                ],
+                "GUID": "13343728-f691-4ff9-92c1-95cebc46cb1b",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 37,
+                "Enable": true,
+                "Remark": "第三次730"
+              }
+            ],
+            "GUID": "ced49967-bc68-4904-b1a4-a8f51651f82c",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 28,
+            "Enable": true,
+            "Remark": "防击退处理"
+          }
+        ],
+        "GUID": "afedc58d-f128-44c5-97ad-7318b02ab115",
+        "Important": false,
+        "Color": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.4,
+          "W": 1.0
+        },
+        "Id": 2,
+        "Enable": true,
+        "Remark": ""
+      }
+    ],
+    "GUID": "81e7e8c9-1270-4ebe-a468-fec205b156e8",
+    "Important": false,
+    "Color": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 0.4,
+      "W": 1.0
+    },
+    "Id": 1,
+    "Enable": true,
+    "Remark": ""
+  },
+  "ExposedVars": [],
+  "ExposedVarDesc": "",
+  "OpenerScript": "using AEAssist;\nusing AEAssist.CombatRoutine.Module;\nusing AEAssist.CombatRoutine.Module.Opener;\nusing AEAssist.Extension;\nusing AEAssist.Helper;\nusing AEAssist.JobApi;\nusing yoyokity.Common;\nusing yoyokity.DNC.QtUI;\nusing Data = yoyokity.DNC.SlotResolver.Data;\n\nnamespace ScriptTest;\n\npublic class OpenerTest : IOpener\n{\n    // 留空代表使用ACR提供的起手\n   public List<Action<Slot>> Sequence { get; } = new();\n\n    // 处理倒计时期间的行为\n    public void InitCountDown(CountDownHandler countDownHandler)\n    {\n        //qt除了爆发药以外都复原\n        Qt.Reset();\n        Qt.Instance.SetQt(\"爆发药2分\", true);\n        //爆发药检测\n        if (Core.Me.HasAura(49) && Qt.Instance.GetQt(\"爆发药\"))\n            LogHelper.PrintError(\"检测到有药水buff！请手动右键点掉，不然会影响爆发药buff的判断！\");\n        \n        const int startTime = 12*1000;\n        countDownHandler.AddAction(startTime, Data.Spells.标准舞步);\n        countDownHandler.AddAction(startTime - 1500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        countDownHandler.AddAction(startTime - 2500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        if (Qt.Instance.GetQt(\"爆发药\") && !Qt.Instance.GetQt(\"爆发药2分\"))\n        {\n            countDownHandler.AddPotionAction(1000);\n        }\n    }\n}",
+  "Note": "v0.0.4 爆发药2-8 自动防击退",
+  "TerritoryTypeId": 1230,
+  "TerritoryWeatherId": 0,
+  "TargetAcrAuthor": "yoyokity",
+  "ClearCustomed": false,
+  "LogsAddress": ""
+}
