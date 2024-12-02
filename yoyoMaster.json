@@ -19,8 +19,8 @@
   },
   {
     "Name": "M4S-yoyo舞者",
-    "Version": "0.0.5",
+    "Version": "0.0.6",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/yoyokity/M4S-yoyo舞者.json",
-    "UpdateInfo": ""
+    "UpdateInfo": "改为12秒小舞起手"
   }
 ]
