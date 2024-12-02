@@ -1,0 +1,26 @@
+[
+    {
+      "Name": "M1S-MCH",
+      "Version": "04",
+      "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M1S-MCH.json",
+      "UpdateInfo": "自动更新初版。"
+    },
+    {
+      "Name": "M2S-MCH",
+      "Version": "04",
+      "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M2S-MCH.json",
+      "UpdateInfo": "自动更新初版。"
+    },
+    {
+      "Name": "M3S-MCH",
+      "Version": "09",
+      "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-MCH.json",
+      "UpdateInfo": "自动更新初版。"
+    },
+    {
+      "Name": "M4S-MCH",
+      "Version": "11",
+      "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-MCH.json",
+      "UpdateInfo": "自动更新初版。"
+    }
+  ]
