@@ -3181,37 +3181,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -3225,7 +3197,7 @@
                             },
                             "Id": 142,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -3375,37 +3347,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -3419,7 +3363,7 @@
                             },
                             "Id": 149,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -3569,37 +3513,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -3613,7 +3529,7 @@
                             },
                             "Id": 156,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -3669,7 +3585,7 @@
                   "W": 1.0
                 },
                 "Id": 151,
-                "Enable": false,
+                "Enable": true,
                 "Remark": "259.5秒 黄蓝炮"
               },
               {
@@ -3763,37 +3679,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -3807,7 +3695,7 @@
                             },
                             "Id": 163,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -3863,7 +3751,7 @@
                   "W": 1.0
                 },
                 "Id": 158,
-                "Enable": false,
+                "Enable": true,
                 "Remark": "365.0秒上天前 全屏AOE"
               },
               {
@@ -3957,37 +3845,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4001,7 +3861,7 @@
                             },
                             "Id": 170,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -4151,37 +4011,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4195,7 +4027,7 @@
                             },
                             "Id": 177,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -4251,7 +4083,7 @@
                   "W": 1.0
                 },
                 "Id": 172,
-                "Enable": false,
+                "Enable": true,
                 "Remark": "484.0全屏AOE"
               },
               {
@@ -4345,37 +4177,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4389,7 +4193,7 @@
                             },
                             "Id": 184,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -4539,37 +4343,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4583,7 +4359,7 @@
                             },
                             "Id": 191,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -4639,7 +4415,7 @@
                   "W": 1.0
                 },
                 "Id": 186,
-                "Enable": false,
+                "Enable": true,
                 "Remark": "642.2秒芥末爆弹"
               },
               {
@@ -4733,37 +4509,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4777,7 +4525,7 @@
                             },
                             "Id": 198,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -4927,37 +4675,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -4971,7 +4691,7 @@
                             },
                             "Id": 205,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
@@ -5121,37 +4841,9 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                "SpellConfig": {
-                                  "Remark": "",
-                                  "Category": 0,
-                                  "SpellId": 7549,
-                                  "CoolDowncheck": false,
-                                  "CoolDowncheck_time": 0.0,
-                                  "TargetType": 0,
-                                  "IsPartyMember": true,
-                                  "LimitJobType": 0,
-                                  "LimitBuffIds": [],
-                                  "LimitMaxHpType": 0,
-                                  "LimitHpType": 0,
-                                  "Location": {
-                                    "X": 0.0,
-                                    "Y": 0.0,
-                                    "Z": 0.0
-                                  },
-                                  "TargetSelector": {
-                                    "Enable": false,
-                                    "Target": 0,
-                                    "FilterDatas": [],
-                                    "NeedTargetable": false,
-                                    "SndFilter": 0,
-                                    "PMIndex": 0
-                                  },
-                                  "AutoCheckActionChange": true
-                                },
-                                "Clear": false,
-                                "DisplayName": "技能使用/插入高优先级技能",
-                                "Remark": null
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                                "DisplayName": "Aki-VPR/VPR安全牵制",
+                                "Remark": ""
                               }
                             ],
                             "DisplayName": "行为",
@@ -5165,7 +4857,7 @@
                             },
                             "Id": 212,
                             "Enable": true,
-                            "Remark": "高优先 牵制"
+                            "Remark": "安全牵制"
                           }
                         ],
                         "GUID": "951f172c-5407-4dbb-b306-c758dfc95d7c",
