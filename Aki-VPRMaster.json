@@ -1,8 +1,8 @@
 [
     {
       "Name": "M4S-VPR",
-      "Version": "02",
+      "Version": "03",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-VPR.json",
-      "UpdateInfo": "自动更新初版。"
+      "UpdateInfo": "修复自动突进脚本编译失败问题。"
     }
   ]
