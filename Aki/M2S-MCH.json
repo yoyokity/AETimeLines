@@ -82,6 +82,30 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                             "TriggerActions": [
                               {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionAddVariable, AEAssist",
+                                "Remark": "",
+                                "VariableName": "mch",
+                                "SetVariableVaule": 0,
+                                "DisplayName": "General/设置变量"
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "cfcdab1d-4879-4608-be73-5140f8a58b82",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 9,
+                            "Enable": true,
+                            "Remark": "变量 == 0"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
                                 "$type": "Aki.Machinist.Triggers.MCH_Triggers_Battery, Aki",
                                 "DisplayName": "Aki-MCH/电量设置",
                                 "电量": 50,
@@ -181,7 +205,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 9,
+                            "Id": 10,
                             "Enable": true,
                             "Remark": "初始化"
                           }
@@ -232,7 +256,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 12,
+                                "Id": 13,
                                 "Enable": true,
                                 "Remark": "开场60秒"
                               },
@@ -255,7 +279,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 13,
+                                "Id": 14,
                                 "Enable": true,
                                 "Remark": "电量设置70"
                               },
@@ -281,7 +305,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 14,
+                                "Id": 15,
                                 "Enable": true,
                                 "Remark": "等待机器人使用"
                               },
@@ -304,7 +328,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 15,
+                                "Id": 16,
                                 "Enable": true,
                                 "Remark": "电量设置100"
                               }
@@ -317,7 +341,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 11,
+                            "Id": 12,
                             "Enable": true,
                             "Remark": "前期电轴"
                           },
@@ -349,7 +373,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 17,
+                                "Id": 18,
                                 "Enable": true,
                                 "Remark": "开场270秒"
                               },
@@ -372,7 +396,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 18,
+                                "Id": 19,
                                 "Enable": true,
                                 "Remark": "电量设置80"
                               },
@@ -398,7 +422,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 19,
+                                "Id": 20,
                                 "Enable": true,
                                 "Remark": "等待机器人使用"
                               },
@@ -421,7 +445,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 20,
+                                "Id": 21,
                                 "Enable": true,
                                 "Remark": "电量设置100"
                               }
@@ -434,7 +458,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 16,
+                            "Id": 17,
                             "Enable": true,
                             "Remark": "4分30调整电量"
                           },
@@ -466,7 +490,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 22,
+                                "Id": 23,
                                 "Enable": true,
                                 "Remark": "开场300秒"
                               },
@@ -492,7 +516,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 23,
+                                "Id": 24,
                                 "Enable": true,
                                 "Remark": "等待掘地飞轮使用"
                               },
@@ -516,7 +540,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 24,
+                                "Id": 25,
                                 "Enable": true,
                                 "Remark": "关双能力技QT"
                               }
@@ -529,7 +553,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 21,
+                            "Id": 22,
                             "Enable": true,
                             "Remark": "5分15攒双能力技"
                           },
@@ -561,7 +585,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 26,
+                                "Id": 27,
                                 "Enable": true,
                                 "Remark": "开场330秒"
                               },
@@ -585,7 +609,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 27,
+                                "Id": 28,
                                 "Enable": true,
                                 "Remark": "关钻头QT"
                               },
@@ -609,7 +633,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 28,
+                                "Id": 29,
                                 "Enable": true,
                                 "Remark": "关整备QT"
                               },
@@ -633,7 +657,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 29,
+                                "Id": 30,
                                 "Enable": true,
                                 "Remark": "关超荷QT"
                               }
@@ -646,7 +670,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 25,
+                            "Id": 26,
                             "Enable": true,
                             "Remark": "5分30攒资源"
                           },
@@ -678,49 +702,425 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 31,
+                                "Id": 32,
                                 "Enable": true,
                                 "Remark": "开场335秒"
                               },
                               {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                "TriggerActions": [
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSelect, AEAssist",
+                                "DisplayName": "选择",
+                                "Childs": [
                                   {
-                                    "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                    "Key": "123",
-                                    "Value": true,
-                                    "DisplayName": "Aki-MCH/QT设置",
-                                    "Remark": null
+                                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                                    "DisplayName": "序列",
+                                    "IgnoreNodeResult": false,
+                                    "StopWhenDead": false,
+                                    "Childs": [
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                                        "CondLogicType": 0,
+                                        "CheckOnce": true,
+                                        "ReverseResult": false,
+                                        "TriggerConds": [
+                                          {
+                                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
+                                            "VariableName": "mch",
+                                            "CompareType": 1,
+                                            "VariableVaule": 1,
+                                            "Remark": null,
+                                            "DisplayName": "General/变量值"
+                                          }
+                                        ],
+                                        "DisplayName": "立即检测",
+                                        "GUID": "6c7da266-281c-445b-bc01-829641b82dab",
+                                        "Important": false,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 35,
+                                        "Enable": true,
+                                        "Remark": "mch != 1"
+                                      },
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                        "TriggerActions": [
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "123",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          }
+                                        ],
+                                        "DisplayName": "行为",
+                                        "GUID": "81dc52a2-5e39-499e-86b7-52f26ada9af9",
+                                        "Important": true,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 36,
+                                        "Enable": true,
+                                        "Remark": "开启123QT"
+                                      },
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                                        "CondLogicType": 0,
+                                        "CheckOnce": false,
+                                        "ReverseResult": false,
+                                        "TriggerConds": [
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Condition_Battery, Aki",
+                                            "DisplayName": "Aki-MCH/检测电量",
+                                            "电量": 100,
+                                            "Remark": ""
+                                          }
+                                        ],
+                                        "DisplayName": "等待条件",
+                                        "GUID": "ad580416-f89f-4b14-b462-95ec3516491b",
+                                        "Important": false,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 37,
+                                        "Enable": true,
+                                        "Remark": "等待100电"
+                                      },
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                                        "DisplayName": "序列",
+                                        "IgnoreNodeResult": false,
+                                        "StopWhenDead": false,
+                                        "Childs": [
+                                          {
+                                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                            "TriggerActions": [
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_BurstSeq, Aki",
+                                                "DisplayName": "Aki-MCH/爆发序列",
+                                                "burst": 2,
+                                                "Remark": ""
+                                              }
+                                            ],
+                                            "DisplayName": "行为",
+                                            "GUID": "60bad88d-f653-4d07-b118-36d0ea110781",
+                                            "Important": true,
+                                            "Color": {
+                                              "X": 1.0,
+                                              "Y": 1.0,
+                                              "Z": 0.4,
+                                              "W": 1.0
+                                            },
+                                            "Id": 39,
+                                            "Enable": true,
+                                            "Remark": "Burst开！！！"
+                                          },
+                                          {
+                                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                            "TriggerActions": [
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_Battery, Aki",
+                                                "DisplayName": "Aki-MCH/电量设置",
+                                                "电量": 50,
+                                                "Remark": ""
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "AOE",
+                                                "Value": false,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "双能力技",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "野火",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "机器人",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "整备",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "超荷",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "回转飞锯",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "空气锚",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "钻头",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "掘地飞轮",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "全金属爆发",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "枪管加热",
+                                                "Value": true,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              },
+                                              {
+                                                "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                                "Key": "123",
+                                                "Value": false,
+                                                "DisplayName": "Aki-MCH/QT设置",
+                                                "Remark": null
+                                              }
+                                            ],
+                                            "DisplayName": "行为",
+                                            "GUID": "e7a81c88-c69e-47c7-bc69-d13ca411d1d8",
+                                            "Important": false,
+                                            "Color": {
+                                              "X": 1.0,
+                                              "Y": 1.0,
+                                              "Z": 0.4,
+                                              "W": 1.0
+                                            },
+                                            "Id": 40,
+                                            "Enable": true,
+                                            "Remark": "初始化"
+                                          }
+                                        ],
+                                        "GUID": "d9ddb228-335b-440d-a43e-f920880a6d88",
+                                        "Important": false,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 38,
+                                        "Enable": true,
+                                        "Remark": "爆发"
+                                      }
+                                    ],
+                                    "GUID": "0056a537-a56e-430c-ba6b-02a7cf577d7f",
+                                    "Important": false,
+                                    "Color": {
+                                      "X": 1.0,
+                                      "Y": 1.0,
+                                      "Z": 0.4,
+                                      "W": 1.0
+                                    },
+                                    "Id": 34,
+                                    "Enable": true,
+                                    "Remark": "没被控过"
+                                  },
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                                    "DisplayName": "序列",
+                                    "IgnoreNodeResult": false,
+                                    "StopWhenDead": false,
+                                    "Childs": [
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                        "TriggerActions": [
+                                          {
+                                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerAction_SendCommand, AEAssist",
+                                            "DisplayName": "指令/发送指令",
+                                            "Remark": "",
+                                            "Command": "/e  被控过了，初始化设置不进行6分钟爆发药"
+                                          }
+                                        ],
+                                        "DisplayName": "行为",
+                                        "GUID": "4d30aa07-7aae-4191-8a63-8a8614d649d2",
+                                        "Important": false,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 42,
+                                        "Enable": true,
+                                        "Remark": "/e  被控过了，初始化设置不进行6分钟爆发药"
+                                      },
+                                      {
+                                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                        "TriggerActions": [
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_Battery, Aki",
+                                            "DisplayName": "Aki-MCH/电量设置",
+                                            "电量": 50,
+                                            "Remark": ""
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "AOE",
+                                            "Value": false,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "双能力技",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "野火",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "机器人",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "整备",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "超荷",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "回转飞锯",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "空气锚",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "钻头",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "掘地飞轮",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "全金属爆发",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "枪管加热",
+                                            "Value": true,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          },
+                                          {
+                                            "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
+                                            "Key": "123",
+                                            "Value": false,
+                                            "DisplayName": "Aki-MCH/QT设置",
+                                            "Remark": null
+                                          }
+                                        ],
+                                        "DisplayName": "行为",
+                                        "GUID": "e7a81c88-c69e-47c7-bc69-d13ca411d1d8",
+                                        "Important": false,
+                                        "Color": {
+                                          "X": 1.0,
+                                          "Y": 1.0,
+                                          "Z": 0.4,
+                                          "W": 1.0
+                                        },
+                                        "Id": 43,
+                                        "Enable": true,
+                                        "Remark": "初始化"
+                                      }
+                                    ],
+                                    "GUID": "9040a379-41a4-489a-bc6f-40f6f0026787",
+                                    "Important": false,
+                                    "Color": {
+                                      "X": 1.0,
+                                      "Y": 1.0,
+                                      "Z": 0.4,
+                                      "W": 1.0
+                                    },
+                                    "Id": 41,
+                                    "Enable": true,
+                                    "Remark": "被控过了"
                                   }
                                 ],
-                                "DisplayName": "行为",
-                                "GUID": "81dc52a2-5e39-499e-86b7-52f26ada9af9",
-                                "Important": true,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 32,
-                                "Enable": true,
-                                "Remark": "开启123QT"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
-                                "CondLogicType": 0,
-                                "CheckOnce": false,
-                                "ReverseResult": false,
-                                "TriggerConds": [
-                                  {
-                                    "$type": "Aki.Machinist.Triggers.MCH_Condition_Battery, Aki",
-                                    "DisplayName": "Aki-MCH/检测电量",
-                                    "电量": 100,
-                                    "Remark": ""
-                                  }
-                                ],
-                                "DisplayName": "等待条件",
-                                "GUID": "ad580416-f89f-4b14-b462-95ec3516491b",
+                                "GUID": "cefc8e3e-704d-450d-9362-054344fddf7e",
                                 "Important": false,
                                 "Color": {
                                   "X": 1.0,
@@ -730,163 +1130,7 @@
                                 },
                                 "Id": 33,
                                 "Enable": true,
-                                "Remark": "等待100电"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
-                                "DisplayName": "序列",
-                                "IgnoreNodeResult": false,
-                                "StopWhenDead": false,
-                                "Childs": [
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                    "TriggerActions": [
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_BurstSeq, Aki",
-                                        "DisplayName": "Aki-MCH/爆发序列",
-                                        "burst": 2,
-                                        "Remark": ""
-                                      }
-                                    ],
-                                    "DisplayName": "行为",
-                                    "GUID": "60bad88d-f653-4d07-b118-36d0ea110781",
-                                    "Important": true,
-                                    "Color": {
-                                      "X": 1.0,
-                                      "Y": 1.0,
-                                      "Z": 0.4,
-                                      "W": 1.0
-                                    },
-                                    "Id": 35,
-                                    "Enable": true,
-                                    "Remark": "Burst开！！！"
-                                  },
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                    "TriggerActions": [
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_Battery, Aki",
-                                        "DisplayName": "Aki-MCH/电量设置",
-                                        "电量": 50,
-                                        "Remark": ""
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "AOE",
-                                        "Value": false,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "双能力技",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "野火",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "机器人",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "整备",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "超荷",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "回转飞锯",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "空气锚",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "钻头",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "掘地飞轮",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "全金属爆发",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "枪管加热",
-                                        "Value": true,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      },
-                                      {
-                                        "$type": "Aki.Machinist.Triggers.MCH_Triggers_QT, Aki",
-                                        "Key": "123",
-                                        "Value": false,
-                                        "DisplayName": "Aki-MCH/QT设置",
-                                        "Remark": null
-                                      }
-                                    ],
-                                    "DisplayName": "行为",
-                                    "GUID": "e7a81c88-c69e-47c7-bc69-d13ca411d1d8",
-                                    "Important": false,
-                                    "Color": {
-                                      "X": 1.0,
-                                      "Y": 1.0,
-                                      "Z": 0.4,
-                                      "W": 1.0
-                                    },
-                                    "Id": 36,
-                                    "Enable": true,
-                                    "Remark": "初始化"
-                                  }
-                                ],
-                                "GUID": "d9ddb228-335b-440d-a43e-f920880a6d88",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 34,
-                                "Enable": true,
-                                "Remark": "爆发"
+                                "Remark": "检测是否被控过"
                               }
                             ],
                             "GUID": "d9ddb228-335b-440d-a43e-f920880a6d88",
@@ -897,7 +1141,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 30,
+                            "Id": 31,
                             "Enable": true,
                             "Remark": "进爆发"
                           }
@@ -910,9 +1154,156 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 10,
+                        "Id": 11,
                         "Enable": true,
                         "Remark": "爆发药"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeLoop, AEAssist",
+                            "DisplayName": "循环 [10]次",
+                            "Times": 10,
+                            "Childs": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                                "CondLogicType": 0,
+                                "CheckOnce": false,
+                                "ReverseResult": false,
+                                "TriggerConds": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondWaitTarget, AEAssist",
+                                    "TargetSelector": {
+                                      "Enable": true,
+                                      "Target": 0,
+                                      "FilterDatas": [
+                                        {
+                                          "Filter": 4,
+                                          "Remark": "",
+                                          "StrParam1": "",
+                                          "UintParam1": 3921,
+                                          "FloatParam1": 0.0,
+                                          "LeftTime": 0,
+                                          "JobsCategory": 0,
+                                          "CompareType": 5,
+                                          "BuffCompareType": 3,
+                                          "Marker": 0,
+                                          "Nearest": false
+                                        }
+                                      ],
+                                      "NeedTargetable": false,
+                                      "SndFilter": 0,
+                                      "PMIndex": 0
+                                    },
+                                    "Remark": null,
+                                    "DisplayName": "General/目标符合条件"
+                                  }
+                                ],
+                                "DisplayName": "等待条件",
+                                "GUID": "c3bc7a61-1994-49cc-8442-244c170999fc",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 46,
+                                "Enable": true,
+                                "Remark": "等待自身获得魅惑buff"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionAddVariable, AEAssist",
+                                    "Remark": "",
+                                    "VariableName": "mch",
+                                    "SetVariableVaule": 1,
+                                    "DisplayName": "General/设置变量"
+                                  }
+                                ],
+                                "DisplayName": "行为",
+                                "GUID": "cfcdab1d-4879-4608-be73-5140f8a58b82",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 47,
+                                "Enable": true,
+                                "Remark": "变量 == 1"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerAction_SendCommand, AEAssist",
+                                    "DisplayName": "指令/发送指令",
+                                    "Remark": "",
+                                    "Command": "/e 你是最有魅力的小工蜂！"
+                                  }
+                                ],
+                                "DisplayName": "行为",
+                                "GUID": "3b63106f-e7d9-40bc-b7a2-7befcf5d1027",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 48,
+                                "Enable": true,
+                                "Remark": "/e 你是最有魅力的小工蜂！"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[15.00]秒",
+                                "Delay": 15.0,
+                                "GUID": "71bf0b73-8a70-42aa-b3f8-9fc507be7fdc",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 49,
+                                "Enable": true,
+                                "Remark": ""
+                              }
+                            ],
+                            "GUID": "5601f5ca-61d3-4f22-87b5-a5c75f1b7592",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 45,
+                            "Enable": true,
+                            "Remark": ""
+                          }
+                        ],
+                        "GUID": "5b1c8702-bd24-4103-ad87-d7a9cea02dcb",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 44,
+                        "Enable": true,
+                        "Remark": "检测被控"
                       }
                     ],
                     "GUID": "a340aec4-d68c-4918-a475-2e69d315ffc9",
@@ -964,7 +1355,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 38,
+                    "Id": 51,
                     "Enable": true,
                     "Remark": "自检不通过警示"
                   }
@@ -977,7 +1368,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 37,
+                "Id": 50,
                 "Enable": true,
                 "Remark": "自检不通过"
               }
@@ -1022,7 +1413,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 40,
+                "Id": 53,
                 "Enable": true,
                 "Remark": ""
               },
@@ -1061,7 +1452,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 45,
+                                "Id": 58,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1089,7 +1480,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 46,
+                                "Id": 59,
                                 "Enable": true,
                                 "Remark": "等待策动cd<=1s"
                               },
@@ -1105,7 +1496,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 47,
+                                "Id": 60,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1155,7 +1546,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 48,
+                                "Id": 61,
                                 "Enable": true,
                                 "Remark": "高优先 策动"
                               }
@@ -1168,7 +1559,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 44,
+                            "Id": 57,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1194,7 +1585,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 49,
+                            "Id": 62,
                             "Enable": true,
                             "Remark": "开场295.5s"
                           },
@@ -1244,7 +1635,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 50,
+                            "Id": 63,
                             "Enable": true,
                             "Remark": "高优先 策动 - 295.5s分散/分摊"
                           },
@@ -1260,7 +1651,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 51,
+                            "Id": 64,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1310,7 +1701,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 52,
+                            "Id": 65,
                             "Enable": true,
                             "Remark": "高优先 策动"
                           },
@@ -1331,7 +1722,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 54,
+                                "Id": 67,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1359,7 +1750,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 55,
+                                "Id": 68,
                                 "Enable": true,
                                 "Remark": "等待策动cd<=1s"
                               },
@@ -1375,7 +1766,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 56,
+                                "Id": 69,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1425,7 +1816,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 57,
+                                "Id": 70,
                                 "Enable": true,
                                 "Remark": "高优先 策动"
                               }
@@ -1438,7 +1829,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 53,
+                            "Id": 66,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -1451,7 +1842,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 43,
+                        "Id": 56,
                         "Enable": true,
                         "Remark": "1"
                       }
@@ -1464,7 +1855,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 42,
+                    "Id": 55,
                     "Enable": true,
                     "Remark": "策动"
                   },
@@ -1502,7 +1893,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 60,
+                            "Id": 73,
                             "Enable": true,
                             "Remark": "开场177s"
                           },
@@ -1552,7 +1943,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 61,
+                            "Id": 74,
                             "Enable": true,
                             "Remark": "高优先级 扳手"
                           },
@@ -1568,7 +1959,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 62,
+                            "Id": 75,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1596,7 +1987,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 63,
+                            "Id": 76,
                             "Enable": true,
                             "Remark": "等待扳手cd<=1s"
                           },
@@ -1612,7 +2003,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 64,
+                            "Id": 77,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1662,7 +2053,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 65,
+                            "Id": 78,
                             "Enable": true,
                             "Remark": "高优先级 扳手"
                           },
@@ -1688,7 +2079,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 66,
+                            "Id": 79,
                             "Enable": true,
                             "Remark": "开场475s"
                           },
@@ -1738,7 +2129,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 67,
+                            "Id": 80,
                             "Enable": true,
                             "Remark": "高优先级 扳手"
                           }
@@ -1751,7 +2142,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 59,
+                        "Id": 72,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -1764,7 +2155,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 58,
+                    "Id": 71,
                     "Enable": true,
                     "Remark": "扳手"
                   },
@@ -1787,7 +2178,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 68,
+                    "Id": 81,
                     "Enable": true,
                     "Remark": "/e 使用零式减伤"
                   }
@@ -1800,7 +2191,7 @@
                   "Z": 1.0,
                   "W": 1.0
                 },
-                "Id": 41,
+                "Id": 54,
                 "Enable": true,
                 "Remark": "减伤轴"
               }
@@ -1813,7 +2204,7 @@
               "Z": 1.0,
               "W": 1.0
             },
-            "Id": 39,
+            "Id": 52,
             "Enable": true,
             "Remark": "减伤轴"
           },
@@ -1831,7 +2222,7 @@
               "Z": 1.0,
               "W": 1.0
             },
-            "Id": 69,
+            "Id": 82,
             "Enable": true,
             "Remark": "加载M2S时间轴(3/4)"
           }

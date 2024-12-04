@@ -75,6 +75,13 @@
                             "Value": true,
                             "DisplayName": "Aki-VPR/QT设置",
                             "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "倾斜资源",
+                            "Value": false,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
                           }
                         ],
                         "DisplayName": "行为",
@@ -290,6 +297,224 @@
                         "Id": 12,
                         "Enable": true,
                         "Remark": "60秒开蛇剑 附体"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                                "Remark": "",
+                                "Delay": 224.0,
+                                "DisplayName": "General/战斗开始后多少秒"
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "8100571e-e70a-4f07-a9ee-2102357f4d1c",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 18,
+                            "Enable": true,
+                            "Remark": "开场224秒"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "飞蛇",
+                                "Value": false,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "4e739397-6dcc-4d7b-b61c-ab2567ad1a5b",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 19,
+                            "Enable": true,
+                            "Remark": "关飞蛇QT"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                            "DisplayName": "延迟[2.00]秒",
+                            "Delay": 2.0,
+                            "GUID": "a7a5d342-c0ca-4398-9168-3ababe9db2e2",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 20,
+                            "Enable": true,
+                            "Remark": ""
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "飞蛇",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "4e739397-6dcc-4d7b-b61c-ab2567ad1a5b",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 21,
+                            "Enable": true,
+                            "Remark": "开飞蛇QT"
+                          }
+                        ],
+                        "GUID": "7c1f3f75-c13c-4a1a-ac36-e0bece2cff2b",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 17,
+                        "Enable": true,
+                        "Remark": "拆地板前小锁飞蛇"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                                "Remark": "",
+                                "Delay": 250.0,
+                                "DisplayName": "General/战斗开始后多少秒"
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "69419317-c368-4f82-abd6-1dc44883b463",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 23,
+                            "Enable": true,
+                            "Remark": "开场250秒"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "倾斜资源",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "8ccbaaac-acf6-44d4-88a0-a9a4969873d8",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 24,
+                            "Enable": true,
+                            "Remark": "开倾斜资源QT"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                            "DisplayName": "延迟[35.00]秒",
+                            "Delay": 35.0,
+                            "GUID": "846fc0d2-6a3c-4f60-8559-fd5c3635825a",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 25,
+                            "Enable": true,
+                            "Remark": ""
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "倾斜资源",
+                                "Value": false,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "8ccbaaac-acf6-44d4-88a0-a9a4969873d8",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 26,
+                            "Enable": true,
+                            "Remark": "关倾斜资源QT"
+                          }
+                        ],
+                        "GUID": "d836b068-157d-4bdf-9a54-eaadcd4c8085",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 22,
+                        "Enable": true,
+                        "Remark": "黄蓝跑清豆子节省身位"
                       }
                     ],
                     "GUID": "32e07692-c09c-4a66-b982-1878f5d0a94b",
@@ -322,7 +547,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 18,
+                        "Id": 28,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -345,7 +570,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 19,
+                        "Id": 29,
                         "Enable": true,
                         "Remark": "/pdr tts 打完身位往北走"
                       }
@@ -358,7 +583,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 17,
+                    "Id": 27,
                     "Enable": true,
                     "Remark": "222提醒往北走"
                   },
@@ -391,7 +616,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 23,
+                                "Id": 33,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -417,7 +642,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 24,
+                                "Id": 34,
                                 "Enable": true,
                                 "Remark": "自身使用 附体"
                               }
@@ -430,7 +655,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 22,
+                            "Id": 32,
                             "Enable": true,
                             "Remark": "附体"
                           },
@@ -446,7 +671,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 25,
+                            "Id": 35,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -470,7 +695,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 26,
+                            "Id": 36,
                             "Enable": true,
                             "Remark": "关QT附体"
                           }
@@ -483,7 +708,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 21,
+                        "Id": 31,
                         "Enable": true,
                         "Remark": "锁附体"
                       },
@@ -510,7 +735,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 29,
+                                "Id": 39,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -536,7 +761,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 30,
+                                "Id": 40,
                                 "Enable": true,
                                 "Remark": "自身使用 蛇剑"
                               }
@@ -549,7 +774,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 28,
+                            "Id": 38,
                             "Enable": true,
                             "Remark": "蛇剑"
                           },
@@ -565,7 +790,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 31,
+                            "Id": 41,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -589,7 +814,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 32,
+                            "Id": 42,
                             "Enable": true,
                             "Remark": "关QT蛇剑"
                           }
@@ -602,7 +827,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 27,
+                        "Id": 37,
                         "Enable": true,
                         "Remark": "锁蛇剑"
                       },
@@ -634,7 +859,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 34,
+                            "Id": 44,
                             "Enable": true,
                             "Remark": "开场330秒"
                           },
@@ -660,7 +885,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 35,
+                            "Id": 45,
                             "Enable": true,
                             "Remark": "等待90蓝"
                           },
@@ -683,7 +908,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 36,
+                            "Id": 46,
                             "Enable": true,
                             "Remark": "/e 进入三附体爆发"
                           },
@@ -699,7 +924,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 37,
+                            "Id": 47,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -740,7 +965,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 41,
+                                        "Id": 51,
                                         "Enable": true,
                                         "Remark": "豆子>=2"
                                       },
@@ -763,7 +988,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 42,
+                                        "Id": 52,
                                         "Enable": true,
                                         "Remark": "/e 有>=2豆子"
                                       },
@@ -813,7 +1038,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 43,
+                                        "Id": 53,
                                         "Enable": true,
                                         "Remark": "高优先 飞蛇"
                                       },
@@ -839,7 +1064,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 44,
+                                        "Id": 54,
                                         "Enable": true,
                                         "Remark": "等待自身使用飞蛇"
                                       },
@@ -855,7 +1080,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 45,
+                                        "Id": 55,
                                         "Enable": true,
                                         "Remark": ""
                                       }
@@ -868,7 +1093,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 40,
+                                    "Id": 50,
                                     "Enable": true,
                                     "Remark": "保留1豆子"
                                   },
@@ -897,7 +1122,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 47,
+                                        "Id": 57,
                                         "Enable": true,
                                         "Remark": "/e 少于2颗豆子"
                                       }
@@ -910,7 +1135,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 46,
+                                    "Id": 56,
                                     "Enable": true,
                                     "Remark": "少于2颗豆子"
                                   }
@@ -923,7 +1148,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 39,
+                                "Id": 49,
                                 "Enable": true,
                                 "Remark": "检测豆子"
                               }
@@ -936,7 +1161,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 38,
+                            "Id": 48,
                             "Enable": true,
                             "Remark": "保留1豆子"
                           },
@@ -960,7 +1185,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 48,
+                            "Id": 58,
                             "Enable": true,
                             "Remark": "开QT蛇剑"
                           },
@@ -986,7 +1211,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 49,
+                            "Id": 59,
                             "Enable": true,
                             "Remark": "等待自身使用 蛇剑"
                           },
@@ -1002,7 +1227,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 50,
+                            "Id": 60,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1052,7 +1277,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 51,
+                            "Id": 61,
                             "Enable": true,
                             "Remark": "高优先级 加攻"
                           },
@@ -1068,7 +1293,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 52,
+                            "Id": 62,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1092,7 +1317,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 53,
+                            "Id": 63,
                             "Enable": true,
                             "Remark": "开QT附体"
                           },
@@ -1139,7 +1364,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 54,
+                            "Id": 64,
                             "Enable": true,
                             "Remark": "等待进入附体"
                           },
@@ -1161,7 +1386,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 55,
+                            "Id": 65,
                             "Enable": true,
                             "Remark": "爆发药"
                           },
@@ -1185,7 +1410,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 56,
+                            "Id": 66,
                             "Enable": true,
                             "Remark": "关QT蛇剑"
                           }
@@ -1198,7 +1423,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 33,
+                        "Id": 43,
                         "Enable": true,
                         "Remark": "90蓝进三附体爆发"
                       }
@@ -1211,7 +1436,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 20,
+                    "Id": 30,
                     "Enable": true,
                     "Remark": "5分爆发药"
                   },
@@ -1233,7 +1458,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 58,
+                        "Id": 68,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -1257,7 +1482,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 59,
+                        "Id": 69,
                         "Enable": true,
                         "Remark": "关飞蛇QT"
                       },
@@ -1304,7 +1529,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 60,
+                        "Id": 70,
                         "Enable": true,
                         "Remark": "等待自身有加速buff"
                       },
@@ -1328,7 +1553,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 61,
+                        "Id": 71,
                         "Enable": true,
                         "Remark": "开飞蛇QT"
                       },
@@ -1352,7 +1577,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 62,
+                        "Id": 72,
                         "Enable": true,
                         "Remark": "开蛇剑QT"
                       }
@@ -1365,7 +1590,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 57,
+                    "Id": 67,
                     "Enable": true,
                     "Remark": "转场"
                   },
@@ -1397,7 +1622,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 64,
+                        "Id": 74,
                         "Enable": true,
                         "Remark": "开场395秒 转场"
                       },
@@ -1430,7 +1655,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 68,
+                                    "Id": 78,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -1456,7 +1681,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 69,
+                                    "Id": 79,
                                     "Enable": true,
                                     "Remark": "自身使用 附体"
                                   }
@@ -1469,7 +1694,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 67,
+                                "Id": 77,
                                 "Enable": true,
                                 "Remark": "附体"
                               },
@@ -1485,7 +1710,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 70,
+                                "Id": 80,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1509,7 +1734,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 71,
+                                "Id": 81,
                                 "Enable": true,
                                 "Remark": "关QT附体"
                               }
@@ -1522,7 +1747,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 66,
+                            "Id": 76,
                             "Enable": true,
                             "Remark": "锁附体"
                           },
@@ -1549,7 +1774,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 74,
+                                    "Id": 84,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -1575,7 +1800,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 75,
+                                    "Id": 85,
                                     "Enable": true,
                                     "Remark": "自身使用 蛇剑"
                                   }
@@ -1588,7 +1813,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 73,
+                                "Id": 83,
                                 "Enable": true,
                                 "Remark": "蛇剑"
                               },
@@ -1604,7 +1829,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 76,
+                                "Id": 86,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1628,7 +1853,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 77,
+                                "Id": 87,
                                 "Enable": true,
                                 "Remark": "关QT蛇剑"
                               }
@@ -1641,7 +1866,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 72,
+                            "Id": 82,
                             "Enable": true,
                             "Remark": "锁蛇剑"
                           },
@@ -1673,7 +1898,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 79,
+                                "Id": 89,
                                 "Enable": true,
                                 "Remark": "开场600秒"
                               },
@@ -1699,7 +1924,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 80,
+                                "Id": 90,
                                 "Enable": true,
                                 "Remark": "等待90蓝"
                               },
@@ -1722,7 +1947,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 81,
+                                "Id": 91,
                                 "Enable": true,
                                 "Remark": "/e 进入三附体爆发"
                               },
@@ -1738,7 +1963,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 82,
+                                "Id": 92,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -1779,7 +2004,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 86,
+                                            "Id": 96,
                                             "Enable": true,
                                             "Remark": "豆子>=2"
                                           },
@@ -1802,7 +2027,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 87,
+                                            "Id": 97,
                                             "Enable": true,
                                             "Remark": "/e 有>=1豆子"
                                           },
@@ -1852,7 +2077,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 88,
+                                            "Id": 98,
                                             "Enable": true,
                                             "Remark": "高优先 飞蛇"
                                           },
@@ -1878,7 +2103,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 89,
+                                            "Id": 99,
                                             "Enable": true,
                                             "Remark": "等待自身使用飞蛇"
                                           },
@@ -1894,7 +2119,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 90,
+                                            "Id": 100,
                                             "Enable": true,
                                             "Remark": ""
                                           }
@@ -1907,7 +2132,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 85,
+                                        "Id": 95,
                                         "Enable": true,
                                         "Remark": "保留1豆子"
                                       },
@@ -1936,7 +2161,7 @@
                                               "Z": 0.4,
                                               "W": 1.0
                                             },
-                                            "Id": 92,
+                                            "Id": 102,
                                             "Enable": true,
                                             "Remark": "/e 没豆子了"
                                           }
@@ -1949,7 +2174,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 91,
+                                        "Id": 101,
                                         "Enable": true,
                                         "Remark": "没豆子了"
                                       }
@@ -1962,7 +2187,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 84,
+                                    "Id": 94,
                                     "Enable": true,
                                     "Remark": "检测豆子"
                                   }
@@ -1975,7 +2200,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 83,
+                                "Id": 93,
                                 "Enable": true,
                                 "Remark": "保留0豆子"
                               },
@@ -1999,7 +2224,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 93,
+                                "Id": 103,
                                 "Enable": true,
                                 "Remark": "开QT蛇剑"
                               },
@@ -2025,7 +2250,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 94,
+                                "Id": 104,
                                 "Enable": true,
                                 "Remark": "等待自身使用 蛇剑"
                               },
@@ -2041,7 +2266,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 95,
+                                "Id": 105,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -2065,7 +2290,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 96,
+                                "Id": 106,
                                 "Enable": true,
                                 "Remark": "开QT附体"
                               },
@@ -2112,7 +2337,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 97,
+                                "Id": 107,
                                 "Enable": true,
                                 "Remark": "等待进入附体"
                               },
@@ -2134,7 +2359,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 98,
+                                "Id": 108,
                                 "Enable": true,
                                 "Remark": "爆发药"
                               },
@@ -2150,7 +2375,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 99,
+                                "Id": 109,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -2174,7 +2399,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 100,
+                                "Id": 110,
                                 "Enable": true,
                                 "Remark": "开倾斜资源QT"
                               }
@@ -2187,7 +2412,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 78,
+                            "Id": 88,
                             "Enable": true,
                             "Remark": "90蓝进三附体爆发"
                           }
@@ -2200,7 +2425,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 65,
+                        "Id": 75,
                         "Enable": true,
                         "Remark": "转场后运行"
                       }
@@ -2213,7 +2438,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 63,
+                    "Id": 73,
                     "Enable": true,
                     "Remark": "10分爆发药"
                   }
@@ -2250,7 +2475,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 102,
+                    "Id": 112,
                     "Enable": false,
                     "Remark": "自动突进借鉴Box兔兔武僧喵"
                   },
@@ -2284,7 +2509,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 104,
+                        "Id": 114,
                         "Enable": true,
                         "Remark": "等伤害判定"
                       },
@@ -2301,7 +2526,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 105,
+                        "Id": 115,
                         "Enable": true,
                         "Remark": "检测蛇行cd 检测距离是否远"
                       },
@@ -2351,7 +2576,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 106,
+                        "Id": 116,
                         "Enable": true,
                         "Remark": "高优先 蛇行"
                       }
@@ -2364,7 +2589,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 103,
+                    "Id": 113,
                     "Enable": true,
                     "Remark": "Electrifying Witch Hunt 自动突进"
                   },
@@ -2398,7 +2623,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 108,
+                        "Id": 118,
                         "Enable": true,
                         "Remark": "等伤害判定"
                       },
@@ -2417,7 +2642,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 109,
+                        "Id": 119,
                         "Enable": true,
                         "Remark": "清理第一次雷电魔女狩猎"
                       },
@@ -2434,7 +2659,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 110,
+                        "Id": 120,
                         "Enable": true,
                         "Remark": "检测蛇行cd 检测距离是否远"
                       },
@@ -2484,7 +2709,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 111,
+                        "Id": 121,
                         "Enable": true,
                         "Remark": "高优先 蛇行"
                       }
@@ -2497,7 +2722,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 107,
+                    "Id": 117,
                     "Enable": true,
                     "Remark": "Witch Hunt 自动突进"
                   },
@@ -2531,7 +2756,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 113,
+                        "Id": 123,
                         "Enable": true,
                         "Remark": "Witchgleam"
                       },
@@ -2547,7 +2772,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 114,
+                        "Id": 124,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -2564,7 +2789,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 115,
+                        "Id": 125,
                         "Enable": true,
                         "Remark": "判断长短雷点名并进行分组"
                       },
@@ -2593,7 +2818,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 118,
+                                "Id": 128,
                                 "Enable": true,
                                 "Remark": "检测自身是否为短buff组"
                               },
@@ -2610,245 +2835,9 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 119,
-                                "Enable": true,
-                                "Remark": "短buff判定"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                                "OnlyCheck": true,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1  &&\n                Core.Me.Distance(Core.Me.GetCurrTarget()!) > SettingMgr.GetSetting<GeneralSettings>().AttackRange)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
-                                "DisplayName": "脚本节点",
-                                "GUID": "de090166-3760-43dc-b405-a70a996bd48c",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 120,
-                                "Enable": true,
-                                "Remark": "检测蛇行cd 检测距离是否远"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                "TriggerActions": [
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                    "SpellConfig": {
-                                      "Remark": "",
-                                      "Category": 0,
-                                      "SpellId": 34646,
-                                      "CoolDowncheck": false,
-                                      "CoolDowncheck_time": 0.0,
-                                      "TargetType": 0,
-                                      "IsPartyMember": true,
-                                      "LimitJobType": 0,
-                                      "LimitBuffIds": [],
-                                      "LimitMaxHpType": 0,
-                                      "LimitHpType": 0,
-                                      "Location": {
-                                        "X": 0.0,
-                                        "Y": 0.0,
-                                        "Z": 0.0
-                                      },
-                                      "TargetSelector": {
-                                        "Enable": false,
-                                        "Target": 0,
-                                        "FilterDatas": [],
-                                        "NeedTargetable": false,
-                                        "SndFilter": 0,
-                                        "PMIndex": 0
-                                      },
-                                      "AutoCheckActionChange": true
-                                    },
-                                    "Clear": false,
-                                    "DisplayName": "技能使用/插入高优先级技能",
-                                    "Remark": null
-                                  }
-                                ],
-                                "DisplayName": "行为",
-                                "GUID": "f05e1c9f-5544-41e9-b367-aa41e7765827",
-                                "Important": true,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 121,
-                                "Enable": true,
-                                "Remark": "高优先 蛇行"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                                "OnlyCheck": false,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace BoxingBunny.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var longBuffGroup = scriptEnv.KV[\"长buff组\"] as List<IBattleChara>;\n        if (longBuffGroup == null || !longBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = longBuffGroup.Count;  \n        foreach (var target in longBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
-                                "DisplayName": "脚本节点",
-                                "GUID": "c9f8e34e-a8ee-4264-8763-d13f1af86f44",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 122,
-                                "Enable": true,
-                                "Remark": "长buff判定"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                                "DisplayName": "延迟[0.65]秒",
-                                "Delay": 0.65,
-                                "GUID": "b425c368-1744-4396-9b8e-16d1f5168b09",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 123,
-                                "Enable": true,
-                                "Remark": ""
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                                "OnlyCheck": true,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1  &&\n                Core.Me.Distance(Core.Me.GetCurrTarget()!) > SettingMgr.GetSetting<GeneralSettings>().AttackRange)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
-                                "DisplayName": "脚本节点",
-                                "GUID": "de090166-3760-43dc-b405-a70a996bd48c",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 124,
-                                "Enable": true,
-                                "Remark": "检测蛇行cd 检测距离是否远"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                "TriggerActions": [
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
-                                    "SpellConfig": {
-                                      "Remark": "",
-                                      "Category": 0,
-                                      "SpellId": 34646,
-                                      "CoolDowncheck": false,
-                                      "CoolDowncheck_time": 0.0,
-                                      "TargetType": 0,
-                                      "IsPartyMember": true,
-                                      "LimitJobType": 0,
-                                      "LimitBuffIds": [],
-                                      "LimitMaxHpType": 0,
-                                      "LimitHpType": 0,
-                                      "Location": {
-                                        "X": 0.0,
-                                        "Y": 0.0,
-                                        "Z": 0.0
-                                      },
-                                      "TargetSelector": {
-                                        "Enable": false,
-                                        "Target": 0,
-                                        "FilterDatas": [],
-                                        "NeedTargetable": false,
-                                        "SndFilter": 0,
-                                        "PMIndex": 0
-                                      },
-                                      "AutoCheckActionChange": true
-                                    },
-                                    "Clear": false,
-                                    "DisplayName": "技能使用/插入高优先级技能",
-                                    "Remark": null
-                                  }
-                                ],
-                                "DisplayName": "行为",
-                                "GUID": "f05e1c9f-5544-41e9-b367-aa41e7765827",
-                                "Important": true,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 125,
-                                "Enable": true,
-                                "Remark": "高优先 蛇行"
-                              }
-                            ],
-                            "GUID": "6086ad5c-a590-4779-b337-0a0b5ca71efb",
-                            "Important": true,
-                            "Color": {
-                              "X": 1.0,
-                              "Y": 1.0,
-                              "Z": 0.4,
-                              "W": 1.0
-                            },
-                            "Id": 117,
-                            "Enable": true,
-                            "Remark": "短雷"
-                          },
-                          {
-                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
-                            "DisplayName": "序列",
-                            "IgnoreNodeResult": false,
-                            "StopWhenDead": false,
-                            "Childs": [
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                                "OnlyCheck": true,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Helper;\nusing AEAssist.MemoryApi;\nusing Dalamud.Game.ClientState.Objects.Types;\n\nnamespace Aki.Triggers;\n\npublic class TriggerCondition_M4S_3999_LongBuffCheck : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var myGroup = scriptEnv.KV[\"自己所属组\"] as string;\n        \n        if (string.IsNullOrEmpty(myGroup)) return false;\n\n        if (myGroup == \"长buff组\")\n        {\n            return true;\n        }\n       \n        return false;\n    }\n}\n",
-                                "DisplayName": "脚本节点",
-                                "GUID": "cf263000-c9a7-4edb-a9ab-97494c4e454c",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 127,
-                                "Enable": true,
-                                "Remark": "检测自身是否为长buff组"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                                "OnlyCheck": false,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var shortBuffGroup = scriptEnv.KV[\"短buff组\"] as List<IBattleChara>;\n        if (shortBuffGroup == null || !shortBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = shortBuffGroup.Count;  \n        foreach (var target in shortBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
-                                "DisplayName": "脚本节点",
-                                "GUID": "c9f8e34e-a8ee-4264-8763-d13f1af86f44",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 128,
-                                "Enable": true,
-                                "Remark": "短buff判定"
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                                "DisplayName": "延迟[0.35]秒",
-                                "Delay": 0.35,
-                                "GUID": "b425c368-1744-4396-9b8e-16d1f5168b09",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
                                 "Id": 129,
                                 "Enable": true,
-                                "Remark": ""
+                                "Remark": "短buff判定"
                               },
                               {
                                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
@@ -2920,7 +2909,7 @@
                               {
                                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
                                 "OnlyCheck": false,
-                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var longBuffGroup = scriptEnv.KV[\"长buff组\"] as List<IBattleChara>;\n        if (longBuffGroup == null || !longBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = longBuffGroup.Count;  \n        foreach (var target in longBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace BoxingBunny.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var longBuffGroup = scriptEnv.KV[\"长buff组\"] as List<IBattleChara>;\n        if (longBuffGroup == null || !longBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = longBuffGroup.Count;  \n        foreach (var target in longBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
                                 "DisplayName": "脚本节点",
                                 "GUID": "c9f8e34e-a8ee-4264-8763-d13f1af86f44",
                                 "Important": false,
@@ -2935,6 +2924,22 @@
                                 "Remark": "长buff判定"
                               },
                               {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[0.65]秒",
+                                "Delay": 0.65,
+                                "GUID": "b425c368-1744-4396-9b8e-16d1f5168b09",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 133,
+                                "Enable": true,
+                                "Remark": ""
+                              },
+                              {
                                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
                                 "OnlyCheck": true,
                                 "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1  &&\n                Core.Me.Distance(Core.Me.GetCurrTarget()!) > SettingMgr.GetSetting<GeneralSettings>().AttackRange)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
@@ -2947,7 +2952,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 133,
+                                "Id": 134,
                                 "Enable": true,
                                 "Remark": "检测蛇行cd 检测距离是否远"
                               },
@@ -2997,7 +3002,227 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 134,
+                                "Id": 135,
+                                "Enable": true,
+                                "Remark": "高优先 蛇行"
+                              }
+                            ],
+                            "GUID": "6086ad5c-a590-4779-b337-0a0b5ca71efb",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 127,
+                            "Enable": true,
+                            "Remark": "短雷"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                            "DisplayName": "序列",
+                            "IgnoreNodeResult": false,
+                            "StopWhenDead": false,
+                            "Childs": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                                "OnlyCheck": true,
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Helper;\nusing AEAssist.MemoryApi;\nusing Dalamud.Game.ClientState.Objects.Types;\n\nnamespace Aki.Triggers;\n\npublic class TriggerCondition_M4S_3999_LongBuffCheck : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var myGroup = scriptEnv.KV[\"自己所属组\"] as string;\n        \n        if (string.IsNullOrEmpty(myGroup)) return false;\n\n        if (myGroup == \"长buff组\")\n        {\n            return true;\n        }\n       \n        return false;\n    }\n}\n",
+                                "DisplayName": "脚本节点",
+                                "GUID": "cf263000-c9a7-4edb-a9ab-97494c4e454c",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 137,
+                                "Enable": true,
+                                "Remark": "检测自身是否为长buff组"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                                "OnlyCheck": false,
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var shortBuffGroup = scriptEnv.KV[\"短buff组\"] as List<IBattleChara>;\n        if (shortBuffGroup == null || !shortBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = shortBuffGroup.Count;  \n        foreach (var target in shortBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
+                                "DisplayName": "脚本节点",
+                                "GUID": "c9f8e34e-a8ee-4264-8763-d13f1af86f44",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 138,
+                                "Enable": true,
+                                "Remark": "短buff判定"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[0.35]秒",
+                                "Delay": 0.35,
+                                "GUID": "b425c368-1744-4396-9b8e-16d1f5168b09",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 139,
+                                "Enable": true,
+                                "Remark": ""
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                                "OnlyCheck": true,
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1  &&\n                Core.Me.Distance(Core.Me.GetCurrTarget()!) > SettingMgr.GetSetting<GeneralSettings>().AttackRange)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
+                                "DisplayName": "脚本节点",
+                                "GUID": "de090166-3760-43dc-b405-a70a996bd48c",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 140,
+                                "Enable": true,
+                                "Remark": "检测蛇行cd 检测距离是否远"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                                    "SpellConfig": {
+                                      "Remark": "",
+                                      "Category": 0,
+                                      "SpellId": 34646,
+                                      "CoolDowncheck": false,
+                                      "CoolDowncheck_time": 0.0,
+                                      "TargetType": 0,
+                                      "IsPartyMember": true,
+                                      "LimitJobType": 0,
+                                      "LimitBuffIds": [],
+                                      "LimitMaxHpType": 0,
+                                      "LimitHpType": 0,
+                                      "Location": {
+                                        "X": 0.0,
+                                        "Y": 0.0,
+                                        "Z": 0.0
+                                      },
+                                      "TargetSelector": {
+                                        "Enable": false,
+                                        "Target": 0,
+                                        "FilterDatas": [],
+                                        "NeedTargetable": false,
+                                        "SndFilter": 0,
+                                        "PMIndex": 0
+                                      },
+                                      "AutoCheckActionChange": true
+                                    },
+                                    "Clear": false,
+                                    "DisplayName": "技能使用/插入高优先级技能",
+                                    "Remark": null
+                                  }
+                                ],
+                                "DisplayName": "行为",
+                                "GUID": "f05e1c9f-5544-41e9-b367-aa41e7765827",
+                                "Important": true,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 141,
+                                "Enable": true,
+                                "Remark": "高优先 蛇行"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                                "OnlyCheck": false,
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing Dalamud.Game.ClientState.Objects.Types;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.Triggers;\n\npublic class TriggerSript_M4S_3999remove : ITriggerScript\n{ \n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        var longBuffGroup = scriptEnv.KV[\"长buff组\"] as List<IBattleChara>;\n        if (longBuffGroup == null || !longBuffGroup.Any()) return false;\n        var removedBuffCount = 0;\n        var groupSize = longBuffGroup.Count;  \n        foreach (var target in longBuffGroup)\n        {\n            var bufftime = Core.Resolve<MemApiBuff>().GetAuraTimeleft(target, 3999, false);\n            if (bufftime <= 0)\n            {\n                removedBuffCount++; \n            }\n            \n            if (removedBuffCount >= groupSize)\n            {\n                return true;\n            }\n        }\n        return false; \n    }\n}",
+                                "DisplayName": "脚本节点",
+                                "GUID": "c9f8e34e-a8ee-4264-8763-d13f1af86f44",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 142,
+                                "Enable": true,
+                                "Remark": "长buff判定"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                                "OnlyCheck": true,
+                                "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1  &&\n                Core.Me.Distance(Core.Me.GetCurrTarget()!) > SettingMgr.GetSetting<GeneralSettings>().AttackRange)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
+                                "DisplayName": "脚本节点",
+                                "GUID": "de090166-3760-43dc-b405-a70a996bd48c",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 143,
+                                "Enable": true,
+                                "Remark": "检测蛇行cd 检测距离是否远"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                                "TriggerActions": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                                    "SpellConfig": {
+                                      "Remark": "",
+                                      "Category": 0,
+                                      "SpellId": 34646,
+                                      "CoolDowncheck": false,
+                                      "CoolDowncheck_time": 0.0,
+                                      "TargetType": 0,
+                                      "IsPartyMember": true,
+                                      "LimitJobType": 0,
+                                      "LimitBuffIds": [],
+                                      "LimitMaxHpType": 0,
+                                      "LimitHpType": 0,
+                                      "Location": {
+                                        "X": 0.0,
+                                        "Y": 0.0,
+                                        "Z": 0.0
+                                      },
+                                      "TargetSelector": {
+                                        "Enable": false,
+                                        "Target": 0,
+                                        "FilterDatas": [],
+                                        "NeedTargetable": false,
+                                        "SndFilter": 0,
+                                        "PMIndex": 0
+                                      },
+                                      "AutoCheckActionChange": true
+                                    },
+                                    "Clear": false,
+                                    "DisplayName": "技能使用/插入高优先级技能",
+                                    "Remark": null
+                                  }
+                                ],
+                                "DisplayName": "行为",
+                                "GUID": "f05e1c9f-5544-41e9-b367-aa41e7765827",
+                                "Important": true,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 144,
                                 "Enable": true,
                                 "Remark": "高优先 蛇行"
                               }
@@ -3010,7 +3235,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 126,
+                            "Id": 136,
                             "Enable": true,
                             "Remark": "长雷"
                           }
@@ -3023,7 +3248,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 116,
+                        "Id": 126,
                         "Enable": true,
                         "Remark": "长短buff分开处理"
                       }
@@ -3036,7 +3261,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 112,
+                    "Id": 122,
                     "Enable": true,
                     "Remark": "长短雷点名 自动突进"
                   }
@@ -3049,7 +3274,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 101,
+                "Id": 111,
                 "Enable": true,
                 "Remark": "自动突进"
               }
@@ -3086,7 +3311,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 136,
+                "Id": 146,
                 "Enable": true,
                 "Remark": "3秒平A + 全屏AOE"
               },
@@ -3108,7 +3333,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 138,
+                    "Id": 148,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -3173,7 +3398,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 141,
+                            "Id": 151,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -3195,7 +3420,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 142,
+                            "Id": 152,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -3208,7 +3433,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 140,
+                        "Id": 150,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3226,7 +3451,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 143,
+                        "Id": 153,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -3239,7 +3464,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 139,
+                    "Id": 149,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -3252,7 +3477,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 137,
+                "Id": 147,
                 "Enable": true,
                 "Remark": "99.1秒全屏AOE"
               },
@@ -3274,7 +3499,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 145,
+                    "Id": 155,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -3339,7 +3564,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 148,
+                            "Id": 158,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -3361,7 +3586,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 149,
+                            "Id": 159,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -3374,7 +3599,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 147,
+                        "Id": 157,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3392,7 +3617,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 150,
+                        "Id": 160,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -3405,7 +3630,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 146,
+                    "Id": 156,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -3418,7 +3643,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 144,
+                "Id": 154,
                 "Enable": true,
                 "Remark": "120.3平A+分散/分摊"
               },
@@ -3440,7 +3665,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 152,
+                    "Id": 162,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -3505,7 +3730,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 155,
+                            "Id": 165,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -3527,7 +3752,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 156,
+                            "Id": 166,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -3540,7 +3765,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 154,
+                        "Id": 164,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3558,7 +3783,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 157,
+                        "Id": 167,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -3571,7 +3796,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 153,
+                    "Id": 163,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -3584,7 +3809,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 151,
+                "Id": 161,
                 "Enable": true,
                 "Remark": "259.5秒 黄蓝炮"
               },
@@ -3606,7 +3831,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 159,
+                    "Id": 169,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -3671,7 +3896,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 162,
+                            "Id": 172,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -3693,7 +3918,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 163,
+                            "Id": 173,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -3706,7 +3931,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 161,
+                        "Id": 171,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3724,7 +3949,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 164,
+                        "Id": 174,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -3737,7 +3962,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 160,
+                    "Id": 170,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -3750,7 +3975,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 158,
+                "Id": 168,
                 "Enable": true,
                 "Remark": "365.0秒上天前 全屏AOE"
               },
@@ -3772,7 +3997,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 166,
+                    "Id": 176,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -3837,7 +4062,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 169,
+                            "Id": 179,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -3859,7 +4084,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 170,
+                            "Id": 180,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -3872,7 +4097,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 168,
+                        "Id": 178,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3890,7 +4115,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 171,
+                        "Id": 181,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -3903,7 +4128,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 167,
+                    "Id": 177,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -3916,7 +4141,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 165,
+                "Id": 175,
                 "Enable": true,
                 "Remark": "410.0秒转场TLB 全屏9连AOE"
               },
@@ -3938,7 +4163,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 173,
+                    "Id": 183,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4003,7 +4228,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 176,
+                            "Id": 186,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4025,7 +4250,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 177,
+                            "Id": 187,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4038,7 +4263,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 175,
+                        "Id": 185,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4056,7 +4281,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 178,
+                        "Id": 188,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4069,7 +4294,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 174,
+                    "Id": 184,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4082,7 +4307,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 172,
+                "Id": 182,
                 "Enable": true,
                 "Remark": "484.0全屏AOE"
               },
@@ -4104,7 +4329,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 180,
+                    "Id": 190,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4169,7 +4394,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 183,
+                            "Id": 193,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4191,7 +4416,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 184,
+                            "Id": 194,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4204,7 +4429,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 182,
+                        "Id": 192,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4222,7 +4447,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 185,
+                        "Id": 195,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4235,7 +4460,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 181,
+                    "Id": 191,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4248,7 +4473,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 179,
+                "Id": 189,
                 "Enable": true,
                 "Remark": "553.4秒全屏AOE"
               },
@@ -4270,7 +4495,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 187,
+                    "Id": 197,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4335,7 +4560,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 190,
+                            "Id": 200,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4357,7 +4582,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 191,
+                            "Id": 201,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4370,7 +4595,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 189,
+                        "Id": 199,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4388,7 +4613,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 192,
+                        "Id": 202,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4401,7 +4626,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 188,
+                    "Id": 198,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4414,7 +4639,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 186,
+                "Id": 196,
                 "Enable": true,
                 "Remark": "642.2秒芥末爆弹"
               },
@@ -4436,7 +4661,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 194,
+                    "Id": 204,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4501,7 +4726,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 197,
+                            "Id": 207,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4523,7 +4748,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 198,
+                            "Id": 208,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4536,7 +4761,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 196,
+                        "Id": 206,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4554,7 +4779,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 199,
+                        "Id": 209,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4567,7 +4792,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 195,
+                    "Id": 205,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4580,7 +4805,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 193,
+                "Id": 203,
                 "Enable": true,
                 "Remark": "661.1秒全屏AOE"
               },
@@ -4602,7 +4827,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 201,
+                    "Id": 211,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4667,7 +4892,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 204,
+                            "Id": 214,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4689,7 +4914,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 205,
+                            "Id": 215,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4702,7 +4927,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 203,
+                        "Id": 213,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4720,7 +4945,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 206,
+                        "Id": 216,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4733,7 +4958,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 202,
+                    "Id": 212,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4746,7 +4971,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 200,
+                "Id": 210,
                 "Enable": true,
                 "Remark": "745.9秒剑舞"
               },
@@ -4768,7 +4993,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 208,
+                    "Id": 218,
                     "Enable": true,
                     "Remark": ""
                   },
@@ -4833,7 +5058,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 211,
+                            "Id": 221,
                             "Enable": true,
                             "Remark": "目标没有牵制 并且 自己有牵制"
                           },
@@ -4855,7 +5080,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 212,
+                            "Id": 222,
                             "Enable": true,
                             "Remark": "安全牵制"
                           }
@@ -4868,7 +5093,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 210,
+                        "Id": 220,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4886,7 +5111,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 213,
+                        "Id": 223,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -4899,7 +5124,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 209,
+                    "Id": 219,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -4912,7 +5137,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 207,
+                "Id": 217,
                 "Enable": true,
                 "Remark": "780秒剑舞"
               }
@@ -4925,7 +5150,7 @@
               "Z": 0.92225915,
               "W": 1.0
             },
-            "Id": 135,
+            "Id": 145,
             "Enable": true,
             "Remark": "减伤轴"
           },
@@ -4943,7 +5168,7 @@
               "Z": 1.0,
               "W": 1.0
             },
-            "Id": 214,
+            "Id": 224,
             "Enable": true,
             "Remark": "加载M4S-VPR时间轴(3/4)"
           }
