@@ -7,15 +7,15 @@
     },
     {
       "Name": "M2S-MCH",
-      "Version": "05",
+      "Version": "06",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M2S-MCH.json",
-      "UpdateInfo": "自动更新初版。"
+      "UpdateInfo": "现在在吃到4层爱心控制效果后不会运行第二瓶爆发药。"
     },
     {
       "Name": "M3S-MCH",
-      "Version": "10",
+      "Version": "11",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-MCH.json",
-      "UpdateInfo": "自动更新初版。"
+      "UpdateInfo": "4分30秒小锁机器人，防止boss位移丢威力。"
     },
     {
       "Name": "M4S-MCH",
