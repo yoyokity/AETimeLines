@@ -13,9 +13,9 @@
     },
     {
       "Name": "M3S-MCH",
-      "Version": "11",
+      "Version": "12",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-MCH.json",
-      "UpdateInfo": "4分30秒小锁机器人，防止boss位移丢威力。"
+      "UpdateInfo": "尝试修复7分05秒飞锯回弹后插入超荷导致飞锯延后问题。"
     },
     {
       "Name": "M4S-MCH",
