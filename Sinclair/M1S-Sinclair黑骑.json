@@ -5825,7 +5825,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39612",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           },
@@ -6062,7 +6062,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39612",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           },
@@ -6299,7 +6299,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39613",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           },
@@ -10817,7 +10817,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39612",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           }
@@ -11046,7 +11046,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39612",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           }
@@ -11275,7 +11275,7 @@
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
                             "Strs": null,
                             "Remark": "",
-                            "RegexNameOrId": "39611",
+                            "RegexNameOrId": "39613",
                             "NeedTargetable": true,
                             "DisplayName": "General/敌人读条使用技能"
                           }
