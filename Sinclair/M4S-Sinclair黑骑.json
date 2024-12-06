@@ -7089,7 +7089,7 @@
                                     "SpellConfig": {
                                       "Remark": "",
                                       "Category": 0,
-                                      "SpellId": 7537,
+                                      "SpellId": 7535,
                                       "CoolDowncheck": true,
                                       "CoolDowncheck_time": 0.0,
                                       "TargetType": 1,
@@ -7129,7 +7129,7 @@
                                 },
                                 "Id": 281,
                                 "Enable": true,
-                                "Remark": "退避"
+                                "Remark": "雪仇"
                               }
                             ],
                             "GUID": "aeafe773-956f-4959-8f22-6949a0776c8b",
