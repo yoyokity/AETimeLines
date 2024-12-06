@@ -23,4 +23,10 @@
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/M4S-Sinclair黑骑.json",
     "UpdateInfo": ""
   }
+  {
+    "Name": "Fru-Sinclair黑骑",
+    "Version": "0.0.1",
+    "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/Fru-Sinclair黑骑.json",
+    "UpdateInfo": ""
+  }
 ]
