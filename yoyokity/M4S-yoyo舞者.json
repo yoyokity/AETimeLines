@@ -8,91 +8,6 @@
     "DisplayName": "Start",
     "Childs": [
       {
-        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
-        "DisplayName": "序列",
-        "IgnoreNodeResult": false,
-        "StopWhenDead": false,
-        "Childs": [
-          {
-            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-            "TriggerActions": [
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "大舞",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "小舞",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "探戈",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "百花",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "扇舞",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "倾泻资源",
-                "Value": false,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              },
-              {
-                "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                "Key": "延迟技能",
-                "Value": true,
-                "DisplayName": "Dancer/QT",
-                "Remark": null
-              }
-            ],
-            "DisplayName": "行为",
-            "GUID": "8a11fdb9-795e-415d-8f2b-6de33deca4ac",
-            "Important": false,
-            "Color": {
-              "X": 1.0,
-              "Y": 1.0,
-              "Z": 0.4,
-              "W": 1.0
-            },
-            "Id": 3,
-            "Enable": true,
-            "Remark": "重置QT"
-          }
-        ],
-        "GUID": "51a123af-acde-482e-bf23-7bfd0dadb126",
-        "Important": false,
-        "Color": {
-          "X": 1.0,
-          "Y": 1.0,
-          "Z": 0.4,
-          "W": 1.0
-        },
-        "Id": 2,
-        "Enable": true,
-        "Remark": ""
-      },
-      {
         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
         "DisplayName": "并行",
         "AnyReturn": false,
@@ -116,7 +31,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 6,
+                "Id": 4,
                 "Enable": true,
                 "Remark": ""
               },
@@ -166,7 +81,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 7,
+                "Id": 5,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -179,7 +94,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 5,
+            "Id": 3,
             "Enable": true,
             "Remark": "1:10"
           },
@@ -201,7 +116,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 9,
+                "Id": 7,
                 "Enable": true,
                 "Remark": ""
               },
@@ -251,7 +166,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 10,
+                "Id": 8,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -264,7 +179,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 8,
+            "Id": 6,
             "Enable": true,
             "Remark": "2:44"
           },
@@ -286,7 +201,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 12,
+                "Id": 10,
                 "Enable": true,
                 "Remark": ""
               },
@@ -336,7 +251,7 @@
                   "Z": 0.13141978,
                   "W": 1.0
                 },
-                "Id": 13,
+                "Id": 11,
                 "Enable": true,
                 "Remark": "疾跑"
               }
@@ -349,7 +264,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 11,
+            "Id": 9,
             "Enable": true,
             "Remark": "3:47"
           },
@@ -371,7 +286,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 15,
+                "Id": 13,
                 "Enable": true,
                 "Remark": ""
               },
@@ -421,7 +336,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 16,
+                "Id": 14,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -434,7 +349,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 14,
+            "Id": 12,
             "Enable": true,
             "Remark": "4:22"
           },
@@ -456,7 +371,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 18,
+                "Id": 16,
                 "Enable": true,
                 "Remark": ""
               },
@@ -506,7 +421,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 19,
+                "Id": 17,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -519,141 +434,9 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 17,
+            "Id": 15,
             "Enable": true,
             "Remark": "6:14"
-          },
-          {
-            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
-            "DisplayName": "序列",
-            "IgnoreNodeResult": false,
-            "StopWhenDead": false,
-            "Childs": [
-              {
-                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                "DisplayName": "延迟[380.00]秒",
-                "Delay": 380.0,
-                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
-                "Important": false,
-                "Color": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 0.4,
-                  "W": 1.0
-                },
-                "Id": 21,
-                "Enable": true,
-                "Remark": ""
-              },
-              {
-                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                "TriggerActions": [
-                  {
-                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                    "Key": "90伶俐",
-                    "Value": true,
-                    "DisplayName": "Dancer/QT",
-                    "Remark": null
-                  },
-                  {
-                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                    "Key": "倾泻资源",
-                    "Value": true,
-                    "DisplayName": "Dancer/QT",
-                    "Remark": null
-                  }
-                ],
-                "DisplayName": "行为",
-                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
-                "Important": true,
-                "Color": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 0.4,
-                  "W": 1.0
-                },
-                "Id": 22,
-                "Enable": true,
-                "Remark": "100伶俐+，倾泻其余资源"
-              }
-            ],
-            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
-            "Important": false,
-            "Color": {
-              "X": 1.0,
-              "Y": 1.0,
-              "Z": 0.4,
-              "W": 1.0
-            },
-            "Id": 20,
-            "Enable": true,
-            "Remark": "6:20"
-          },
-          {
-            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
-            "DisplayName": "序列",
-            "IgnoreNodeResult": false,
-            "StopWhenDead": false,
-            "Childs": [
-              {
-                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                "DisplayName": "延迟[389.00]秒",
-                "Delay": 389.0,
-                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
-                "Important": false,
-                "Color": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 0.4,
-                  "W": 1.0
-                },
-                "Id": 24,
-                "Enable": true,
-                "Remark": ""
-              },
-              {
-                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                "TriggerActions": [
-                  {
-                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                    "Key": "90伶俐",
-                    "Value": false,
-                    "DisplayName": "Dancer/QT",
-                    "Remark": null
-                  },
-                  {
-                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
-                    "Key": "倾泻资源",
-                    "Value": false,
-                    "DisplayName": "Dancer/QT",
-                    "Remark": null
-                  }
-                ],
-                "DisplayName": "行为",
-                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
-                "Important": true,
-                "Color": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 0.4,
-                  "W": 1.0
-                },
-                "Id": 25,
-                "Enable": true,
-                "Remark": "qt复原"
-              }
-            ],
-            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
-            "Important": false,
-            "Color": {
-              "X": 1.0,
-              "Y": 1.0,
-              "Z": 0.4,
-              "W": 1.0
-            },
-            "Id": 23,
-            "Enable": true,
-            "Remark": "6:29"
           },
           {
             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
@@ -673,7 +456,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 27,
+                "Id": 19,
                 "Enable": true,
                 "Remark": ""
               },
@@ -723,7 +506,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 28,
+                "Id": 20,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -736,7 +519,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 26,
+            "Id": 18,
             "Enable": true,
             "Remark": "8:15"
           },
@@ -758,7 +541,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 30,
+                "Id": 22,
                 "Enable": true,
                 "Remark": ""
               },
@@ -808,7 +591,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 31,
+                "Id": 23,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -821,7 +604,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 29,
+            "Id": 21,
             "Enable": true,
             "Remark": "11:18"
           },
@@ -843,7 +626,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 33,
+                "Id": 25,
                 "Enable": true,
                 "Remark": ""
               },
@@ -893,7 +676,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 34,
+                "Id": 26,
                 "Enable": true,
                 "Remark": "行吟"
               }
@@ -906,7 +689,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 32,
+            "Id": 24,
             "Enable": true,
             "Remark": "12:49"
           },
@@ -965,7 +748,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 37,
+                    "Id": 29,
                     "Enable": true,
                     "Remark": "3%血量 "
                   },
@@ -989,7 +772,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 38,
+                    "Id": 30,
                     "Enable": true,
                     "Remark": "倾泻资源"
                   }
@@ -1002,7 +785,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 36,
+                "Id": 28,
                 "Enable": true,
                 "Remark": ""
               }
@@ -1015,7 +798,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 35,
+            "Id": 27,
             "Enable": true,
             "Remark": "TTK"
           },
@@ -1027,8 +810,8 @@
             "Childs": [
               {
                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                "DisplayName": "延迟[285.00]秒",
-                "Delay": 285.0,
+                "DisplayName": "延迟[300.00]秒",
+                "Delay": 300.0,
                 "GUID": "da8fb3f3-08c2-4a96-a6b8-b7f149a1812d",
                 "Important": false,
                 "Color": {
@@ -1037,9 +820,33 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 40,
+                "Id": 32,
                 "Enable": true,
-                "Remark": "4:45"
+                "Remark": "5分钟"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
+                    "Key": "倾泻伶俐",
+                    "Value": true,
+                    "DisplayName": "Dancer/QT",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 33,
+                "Enable": true,
+                "Remark": "打空剑舞和落幕舞"
               },
               {
                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
@@ -1054,7 +861,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 41,
+                "Id": 34,
                 "Enable": true,
                 "Remark": "检测爆发药QT"
               },
@@ -1069,14 +876,14 @@
                 ],
                 "DisplayName": "行为",
                 "GUID": "c29e405e-603a-40cd-97c7-13860dcb7f49",
-                "Important": false,
+                "Important": true,
                 "Color": {
                   "X": 1.0,
                   "Y": 1.0,
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 42,
+                "Id": 35,
                 "Enable": true,
                 "Remark": "爆发药"
               }
@@ -1089,9 +896,232 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 39,
+            "Id": 31,
             "Enable": true,
             "Remark": "5分钟爆发药"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[360.00]秒",
+                "Delay": 360.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 37,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
+                    "Key": "倾泻伶俐",
+                    "Value": false,
+                    "DisplayName": "Dancer/QT",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 38,
+                "Enable": true,
+                "Remark": "关闭打空剑舞和落幕舞"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.提拉纳阈值设置, yoyokity",
+                    "_阈值": 45,
+                    "DisplayName": "提拉纳阈值设置",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "d6345faa-6654-487a-b4a7-0a8b0accd7da",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 39,
+                "Enable": true,
+                "Remark": "提高提拉纳阈值"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 36,
+            "Enable": true,
+            "Remark": "6:00"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[380.00]秒",
+                "Delay": 380.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 41,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
+                    "Key": "90伶俐",
+                    "Value": true,
+                    "DisplayName": "Dancer/QT",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 42,
+                "Enable": true,
+                "Remark": "保留伶俐"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 40,
+            "Enable": true,
+            "Remark": "6:20"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                "DisplayName": "延迟[389.00]秒",
+                "Delay": 389.0,
+                "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 44,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.TriggerActionQt, yoyokity",
+                    "Key": "90伶俐",
+                    "Value": false,
+                    "DisplayName": "Dancer/QT",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "5fcf15ef-4274-4be5-893c-890e9d7011d4",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 45,
+                "Enable": true,
+                "Remark": "qt复原"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.提拉纳阈值设置, yoyokity",
+                    "_阈值": 30,
+                    "DisplayName": "提拉纳阈值设置",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "d6345faa-6654-487a-b4a7-0a8b0accd7da",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 46,
+                "Enable": true,
+                "Remark": "复原提拉纳阈值"
+              }
+            ],
+            "GUID": "f49ae453-9a34-4e1e-af57-0095c8f25990",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 43,
+            "Enable": true,
+            "Remark": "6:29 复原"
           }
         ],
         "GUID": "afedc58d-f128-44c5-97ad-7318b02ab115",
@@ -1102,7 +1132,7 @@
           "Z": 0.4,
           "W": 1.0
         },
-        "Id": 4,
+        "Id": 2,
         "Enable": true,
         "Remark": ""
       }
@@ -1122,7 +1152,7 @@
   "ExposedVars": [],
   "ExposedVarDesc": "",
   "OpenerScript": "using AEAssist;\nusing AEAssist.CombatRoutine.Module;\nusing AEAssist.CombatRoutine.Module.Opener;\nusing AEAssist.Extension;\nusing AEAssist.Helper;\nusing AEAssist.JobApi;\nusing yoyokity.Common;\nusing yoyokity.DNC.QtUI;\nusing Data = yoyokity.DNC.SlotResolver.Data;\n\nnamespace ScriptTest;\n\npublic class OpenerTest : IOpener\n{\n    // 留空代表使用ACR提供的起手\n   public List<Action<Slot>> Sequence { get; } = new();\n\n    // 处理倒计时期间的行为\n    public void InitCountDown(CountDownHandler countDownHandler)\n    {\n        //qt除了爆发药以外都复原\n        Qt.Reset();\n        Qt.Instance.SetQt(\"爆发药2分\", false);\n        //\n        const int startTime = 12000;\n        countDownHandler.AddAction(startTime, Data.Spells.标准舞步);\n        countDownHandler.AddAction(startTime - 1500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        countDownHandler.AddAction(startTime - 2500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        if (Qt.Instance.GetQt(\"爆发药\") && !Qt.Instance.GetQt(\"爆发药2分\"))\n            countDownHandler.AddPotionAction(1000);\n        countDownHandler.AddAction(300, Data.Spells.双色标准舞步结束);\n    }\n}",
-  "Note": "v0.0.7 爆发药0-5-10",
+  "Note": "v0.0.8 爆发药0-5-10",
   "TerritoryTypeId": 1232,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
