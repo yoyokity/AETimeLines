@@ -1,7 +1,7 @@
 [
   {
     "Name": "M1S-Sinclair黑骑",
-    "Version": "0.0.7",
+    "Version": "0.0.8",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/M1S-Sinclair黑骑.json",
     "UpdateInfo": ""
   },
@@ -13,7 +13,7 @@
   },
   {
     "Name": "M3S-Sinclair黑骑",
-    "Version": "0.0.7",
+    "Version": "0.0.8",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/M3S-Sinclair黑骑.json",
     "UpdateInfo": ""
   },
@@ -21,6 +21,12 @@
     "Name": "M4S-Sinclair黑骑",
     "Version": "0.0.5",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/M4S-Sinclair黑骑.json",
+    "UpdateInfo": ""
+  }
+  {
+    "Name": "Fru-Sinclair黑骑",
+    "Version": "0.0.1",
+    "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/Fru-Sinclair黑骑.json",
     "UpdateInfo": ""
   }
 ]
