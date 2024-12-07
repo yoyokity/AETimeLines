@@ -1,0 +1,1437 @@
+{
+  "GUID": "2b0afd68-0268-408e-b95c-9ea5563f936d",
+  "ConfigVersion": 6,
+  "TargetJob": 41,
+  "Author": "Aki",
+  "Name": "M1S-VPR",
+  "TreeRoot": {
+    "DisplayName": "Start",
+    "Childs": [
+      {
+        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+        "DisplayName": "并行",
+        "AnyReturn": false,
+        "StopWhenDead": false,
+        "Childs": [
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+            "DisplayName": "并行",
+            "AnyReturn": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+                "DisplayName": "并行",
+                "AnyReturn": false,
+                "StopWhenDead": true,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                    "DisplayName": "序列",
+                    "IgnoreNodeResult": false,
+                    "StopWhenDead": false,
+                    "Childs": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                        "TriggerActions": [
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "AOE",
+                            "Value": false,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "飞蛇",
+                            "Value": true,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "蛇剑",
+                            "Value": true,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "附体",
+                            "Value": true,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "真北",
+                            "Value": true,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "蛇灵",
+                            "Value": true,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "倾斜资源",
+                            "Value": false,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "蛇剑优先加攻",
+                            "Value": false,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          },
+                          {
+                            "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                            "Key": "蛇剑优先加速",
+                            "Value": false,
+                            "DisplayName": "Aki-VPR/QT设置",
+                            "Remark": null
+                          }
+                        ],
+                        "DisplayName": "行为",
+                        "GUID": "2b5c7f32-6ae7-4b08-898a-386072bfd3c2",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 6,
+                        "Enable": true,
+                        "Remark": "初始化"
+                      }
+                    ],
+                    "GUID": "a888b3b4-979b-4e62-8f37-9d1cb265efe9",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 5,
+                    "Enable": true,
+                    "Remark": "初始化"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+                    "DisplayName": "并行",
+                    "AnyReturn": false,
+                    "StopWhenDead": false,
+                    "Childs": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeLoop, AEAssist",
+                            "DisplayName": "循环 [8]次",
+                            "Times": 8,
+                            "Childs": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                                "CondLogicType": 0,
+                                "CheckOnce": false,
+                                "ReverseResult": false,
+                                "TriggerConds": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondCheckLastSpell, AEAssist",
+                                    "SpellId": 34626,
+                                    "Remark": null,
+                                    "DisplayName": "General/检测自身技能使用"
+                                  }
+                                ],
+                                "DisplayName": "等待条件",
+                                "GUID": "d9ffdb10-0608-4fb8-b5aa-d0a1e799c0b6",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 10,
+                                "Enable": true,
+                                "Remark": "自身使用 附体"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[8.00]秒",
+                                "Delay": 8.0,
+                                "GUID": "d21b46ad-44d7-4eea-ac95-989a491e9fc8",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 11,
+                                "Enable": true,
+                                "Remark": ""
+                              }
+                            ],
+                            "GUID": "28a6c410-c974-44b1-932b-9a5cae61b266",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 9,
+                            "Enable": true,
+                            "Remark": "附体"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "附体",
+                                "Value": false,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "212f8524-9cd8-4fd3-88c5-156f21f53761",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 12,
+                            "Enable": true,
+                            "Remark": "关QT附体"
+                          }
+                        ],
+                        "GUID": "37003d61-7361-4773-86b6-c4731a65208d",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 8,
+                        "Enable": true,
+                        "Remark": "锁附体"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeLoop, AEAssist",
+                            "DisplayName": "循环 [9]次",
+                            "Times": 9,
+                            "Childs": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                                "CondLogicType": 0,
+                                "CheckOnce": false,
+                                "ReverseResult": false,
+                                "TriggerConds": [
+                                  {
+                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondCheckLastSpell, AEAssist",
+                                    "SpellId": 34620,
+                                    "Remark": null,
+                                    "DisplayName": "General/检测自身技能使用"
+                                  }
+                                ],
+                                "DisplayName": "等待条件",
+                                "GUID": "d9ffdb10-0608-4fb8-b5aa-d0a1e799c0b6",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 15,
+                                "Enable": true,
+                                "Remark": "自身使用 蛇剑"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[6.00]秒",
+                                "Delay": 6.0,
+                                "GUID": "d21b46ad-44d7-4eea-ac95-989a491e9fc8",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 16,
+                                "Enable": true,
+                                "Remark": ""
+                              }
+                            ],
+                            "GUID": "28a6c410-c974-44b1-932b-9a5cae61b266",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 14,
+                            "Enable": true,
+                            "Remark": "蛇剑"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "蛇剑",
+                                "Value": false,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "212f8524-9cd8-4fd3-88c5-156f21f53761",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 17,
+                            "Enable": true,
+                            "Remark": "关QT蛇剑"
+                          }
+                        ],
+                        "GUID": "51a26bd1-e0bb-4fd5-bc17-bc60d9c1ec3c",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 13,
+                        "Enable": true,
+                        "Remark": "锁蛇剑"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                        "DisplayName": "序列",
+                        "IgnoreNodeResult": false,
+                        "StopWhenDead": false,
+                        "Childs": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                                "Remark": "",
+                                "Delay": 310.0,
+                                "DisplayName": "General/战斗开始后多少秒"
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "a545633a-227f-4c32-9962-fe8032b8bdae",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 19,
+                            "Enable": true,
+                            "Remark": "开场310秒"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Condition_灵力值, Aki",
+                                "DisplayName": "Aki-VPR/检测灵力值",
+                                "灵力值": 80,
+                                "Remark": ""
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "6100743d-ed99-4436-86ae-c5456cf0dbf2",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 20,
+                            "Enable": true,
+                            "Remark": "等待80蓝"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "倾斜资源",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "df3fb2bf-58c4-400e-a637-3e52503af117",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 21,
+                            "Enable": true,
+                            "Remark": "开倾斜资源QT"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Condition_灵力值, Aki",
+                                "DisplayName": "Aki-VPR/检测灵力值",
+                                "灵力值": 90,
+                                "Remark": ""
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "6100743d-ed99-4436-86ae-c5456cf0dbf2",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 22,
+                            "Enable": true,
+                            "Remark": "等待90蓝"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "倾斜资源",
+                                "Value": false,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "df3fb2bf-58c4-400e-a637-3e52503af117",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 23,
+                            "Enable": true,
+                            "Remark": "关倾斜资源QT"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "蛇剑优先加攻",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "c17df196-659b-4936-8c68-81ff0a39027c",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 24,
+                            "Enable": true,
+                            "Remark": "开QT蛇剑优先加攻"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerAction_SendCommand, AEAssist",
+                                "DisplayName": "指令/发送指令",
+                                "Remark": "",
+                                "Command": "/e 进入三附体爆发"
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "6116fb38-448b-41ca-93e9-96febed9fcdf",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 25,
+                            "Enable": true,
+                            "Remark": "/e 进入三附体爆发"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                            "DisplayName": "延迟[0.50]秒",
+                            "Delay": 0.4999999,
+                            "GUID": "27212045-a358-4cfb-9760-6872e5050364",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 26,
+                            "Enable": true,
+                            "Remark": ""
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "蛇剑",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "212f8524-9cd8-4fd3-88c5-156f21f53761",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 27,
+                            "Enable": true,
+                            "Remark": "开QT蛇剑"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                            "DisplayName": "延迟[2.50]秒",
+                            "Delay": 2.5,
+                            "GUID": "6a0c46f6-3274-4180-9a93-95f7006cd7d4",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 28,
+                            "Enable": true,
+                            "Remark": ""
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "Aki.Viper.Triggers.VPR_Triggers_QT, Aki",
+                                "Key": "附体",
+                                "Value": true,
+                                "DisplayName": "Aki-VPR/QT设置",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "212f8524-9cd8-4fd3-88c5-156f21f53761",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 29,
+                            "Enable": true,
+                            "Remark": "开QT附体"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                            "CondLogicType": 0,
+                            "CheckOnce": false,
+                            "ReverseResult": false,
+                            "TriggerConds": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondWaitTarget, AEAssist",
+                                "TargetSelector": {
+                                  "Enable": true,
+                                  "Target": 0,
+                                  "FilterDatas": [
+                                    {
+                                      "Filter": 4,
+                                      "Remark": "",
+                                      "StrParam1": "",
+                                      "UintParam1": 3670,
+                                      "FloatParam1": 0.0,
+                                      "LeftTime": 0,
+                                      "JobsCategory": 0,
+                                      "CompareType": 5,
+                                      "BuffCompareType": 3,
+                                      "Marker": 0,
+                                      "Nearest": false
+                                    }
+                                  ],
+                                  "NeedTargetable": false,
+                                  "SndFilter": 0,
+                                  "PMIndex": 0
+                                },
+                                "Remark": null,
+                                "DisplayName": "General/目标符合条件"
+                              }
+                            ],
+                            "DisplayName": "等待条件",
+                            "GUID": "3d60e3b8-51b4-4e53-9e02-784a31c973f0",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 30,
+                            "Enable": true,
+                            "Remark": "等待进入附体"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionUsePotion, AEAssist",
+                                "DisplayName": "General/使用爆发药",
+                                "Remark": ""
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "3cb95ccf-c7d8-441a-a7d0-c8085b7ea3fb",
+                            "Important": true,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 31,
+                            "Enable": true,
+                            "Remark": "爆发药"
+                          }
+                        ],
+                        "GUID": "084033f8-9988-4b8a-bc71-0877236550e3",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 18,
+                        "Enable": true,
+                        "Remark": "90蓝进三附体爆发"
+                      }
+                    ],
+                    "GUID": "84c561a0-351d-472c-b75b-6a9e02a061f8",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 7,
+                    "Enable": true,
+                    "Remark": "6分爆发药"
+                  }
+                ],
+                "GUID": "163f3dac-95de-4e46-a69d-5bbcedb50180",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 4,
+                "Enable": true,
+                "Remark": "输出轴"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+                "DisplayName": "并行",
+                "AnyReturn": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeLoop, AEAssist",
+                    "DisplayName": "循环 [2]次",
+                    "Times": 2,
+                    "Childs": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                        "CondLogicType": 0,
+                        "CheckOnce": false,
+                        "ReverseResult": false,
+                        "TriggerConds": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                            "Strs": null,
+                            "Remark": "",
+                            "RegexNameOrId": "37963",
+                            "NeedTargetable": false,
+                            "DisplayName": "General/敌人读条使用技能"
+                          }
+                        ],
+                        "DisplayName": "等待条件",
+                        "GUID": "e44cd6c2-67d5-4156-a58f-95273e3ca50f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 34,
+                        "Enable": true,
+                        "Remark": "Shockwave"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
+                        "OnlyCheck": false,
+                        "Script": "using AEAssist;\nusing AEAssist.CombatRoutine;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing AEAssist.Extension;\nusing AEAssist.MemoryApi;\n\nnamespace Aki.timelinetriggers.Dash\n{\n    public class TriggerAction_Dash : ITriggerScript\n    {\n        public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n        {\n            if (Core.Resolve<MemApiSpell>().GetCharges(34646) >= 1)\n            { return true; }\n            \n            return false;\n        }\n    }\n}",
+                        "DisplayName": "脚本节点",
+                        "GUID": "de090166-3760-43dc-b405-a70a996bd48c",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 35,
+                        "Enable": true,
+                        "Remark": "检测蛇行cd"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[7.50]秒",
+                        "Delay": 7.5,
+                        "GUID": "baa56b25-4f31-45f6-8d75-7291dcf7ce18",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 36,
+                        "Enable": true,
+                        "Remark": "等待击退"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                        "TriggerActions": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                            "SpellConfig": {
+                              "Remark": "",
+                              "Category": 0,
+                              "SpellId": 34646,
+                              "CoolDowncheck": false,
+                              "CoolDowncheck_time": 0.0,
+                              "TargetType": 0,
+                              "IsPartyMember": true,
+                              "LimitJobType": 0,
+                              "LimitBuffIds": [],
+                              "LimitMaxHpType": 0,
+                              "LimitHpType": 0,
+                              "Location": {
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Z": 0.0
+                              },
+                              "TargetSelector": {
+                                "Enable": false,
+                                "Target": 0,
+                                "FilterDatas": [],
+                                "NeedTargetable": false,
+                                "SndFilter": 0,
+                                "PMIndex": 0
+                              },
+                              "AutoCheckActionChange": true
+                            },
+                            "Clear": false,
+                            "DisplayName": "技能使用/插入高优先级技能",
+                            "Remark": null
+                          }
+                        ],
+                        "DisplayName": "行为",
+                        "GUID": "f05e1c9f-5544-41e9-b367-aa41e7765827",
+                        "Important": true,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 37,
+                        "Enable": true,
+                        "Remark": "高优先 蛇行"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[2.00]秒",
+                        "Delay": 2.0,
+                        "GUID": "b0869261-e495-41a6-ae77-48f5059780a0",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 38,
+                        "Enable": true,
+                        "Remark": ""
+                      }
+                    ],
+                    "GUID": "48028be2-ae84-48f2-b74e-dc5b1549a708",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 33,
+                    "Enable": true,
+                    "Remark": ""
+                  }
+                ],
+                "GUID": "4c6a63e2-b34d-45b4-9663-095664221061",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 32,
+                "Enable": true,
+                "Remark": "自动突进"
+              }
+            ],
+            "GUID": "c20555a4-b33d-4c94-87be-01ef6d47e2b9",
+            "Important": true,
+            "Color": {
+              "X": 1.0,
+              "Y": 0.69803923,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 3,
+            "Enable": true,
+            "Remark": "输出轴"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+            "DisplayName": "并行",
+            "AnyReturn": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [],
+                "GUID": "e878e435-760f-4c4f-8d67-890a1fecd8bd",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 40,
+                "Enable": true,
+                "Remark": "14.1-17.0秒2次扇形"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[89.90]秒",
+                    "Delay": 89.9,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 42,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 43,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 41,
+                "Enable": true,
+                "Remark": "101.9-104.9秒2次扇形"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[107.20]秒",
+                    "Delay": 107.2,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 45,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 46,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 44,
+                "Enable": true,
+                "Remark": "115.1-122.2秒平A+AOE"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[225.50]秒",
+                    "Delay": 225.5,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 48,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 49,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 47,
+                "Enable": true,
+                "Remark": "236.7-240.5秒击退+分散"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[274.00]秒",
+                    "Delay": 274.0,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 51,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 52,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 50,
+                "Enable": true,
+                "Remark": "286.1-289.0秒2次扇形"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[348.60]秒",
+                    "Delay": 348.60004,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 54,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 6800,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 55,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 53,
+                "Enable": true,
+                "Remark": "356.4-363.6秒直线分摊+平A"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[355.60]秒",
+                    "Delay": 355.60004,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 57,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 58,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 56,
+                "Enable": true,
+                "Remark": "370.6秒AOE"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[478.60]秒",
+                    "Delay": 478.6,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 60,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 61,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 59,
+                "Enable": true,
+                "Remark": "489.9-493.6秒击退+分散"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[498.90]秒",
+                    "Delay": 498.9,
+                    "GUID": "b0165a84-acee-46fc-bf03-7b7f0efcaa4d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 63,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "Aki.Viper.Triggers.VPR_Triggers_牵制, Aki",
+                        "DisplayName": "Aki-VPR/VPR安全牵制",
+                        "time": 14000,
+                        "Remark": ""
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "aa7fd853-2e0c-4483-a5ff-ff55de300f89",
+                    "Important": true,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 64,
+                    "Enable": true,
+                    "Remark": "安全牵制"
+                  }
+                ],
+                "GUID": "b849388e-5a44-42eb-8181-5a5fd72d37f0",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 62,
+                "Enable": true,
+                "Remark": "513.9秒连线扇形+远近分摊"
+              }
+            ],
+            "GUID": "dd33449a-3e6e-4f3a-a6dc-4e9d9fc427f8",
+            "Important": true,
+            "Color": {
+              "X": 0.39999998,
+              "Y": 1.0,
+              "Z": 0.92225915,
+              "W": 1.0
+            },
+            "Id": 39,
+            "Enable": true,
+            "Remark": "减伤轴"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreePrintDebugInfoNode, AEAssist",
+            "DisplayName": "打印信息",
+            "Info": "加载M1S-VPR时间轴(3/4)",
+            "ToastType": 1,
+            "ToastDuration": 0,
+            "GUID": "42eead1f-7d61-40c2-8bac-f2ad097ad2f1",
+            "Important": true,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0,
+              "W": 1.0
+            },
+            "Id": 65,
+            "Enable": true,
+            "Remark": "加载M1S-VPR时间轴(3/4)"
+          }
+        ],
+        "GUID": "fa7f4f1e-fcd6-4a95-8ae8-d456243eea61",
+        "Important": true,
+        "Color": {
+          "X": 0.83137256,
+          "Y": 0.9254902,
+          "Z": 0.9843137,
+          "W": 1.0
+        },
+        "Id": 2,
+        "Enable": true,
+        "Remark": "M1S-VPR 时间轴 by Aki"
+      }
+    ],
+    "GUID": "2ed3a90f-410c-46b1-9a65-c27d7779b2e6",
+    "Important": false,
+    "Color": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 0.4,
+      "W": 1.0
+    },
+    "Id": 1,
+    "Enable": true,
+    "Remark": ""
+  },
+  "ExposedVars": [],
+  "ExposedVarDesc": "",
+  "OpenerScript": "",
+  "Note": "技速790，开启fuck三插。06爆发药三附体。减伤D12通用。",
+  "TerritoryTypeId": 1226,
+  "TerritoryWeatherId": 0,
+  "TargetAcrAuthor": "Aki",
+  "ClearCustomed": false,
+  "LogsAddress": "1"
+}
