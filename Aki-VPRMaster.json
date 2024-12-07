@@ -1,8 +1,14 @@
 [
     {
+      "Name": "M1S-VPR",
+      "Version": "01",
+      "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M1S-VPR.json",
+      "UpdateInfo": "M1S蝰蛇，06爆发药三附体，初版未精修。附带D12通用减伤。"
+    }
+    {
       "Name": "M4S-VPR",
-      "Version": "06",
+      "Version": "07",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-VPR.json",
-      "UpdateInfo": "第三瓶爆发药优化，现在会提前清空豆子然后打一套basecombo再进蛇剑三附体。"
+      "UpdateInfo": "随acr逻辑调整，现在会更早打出蛇灵气。"
     }
   ]
