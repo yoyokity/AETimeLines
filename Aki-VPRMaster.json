@@ -13,9 +13,9 @@
     }
     {
       "Name": "M3S-VPR",
-      "Version": "01",
+      "Version": "02",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-VPR.json",
-      "UpdateInfo": "M3S蝰蛇初版，28爆发药三附体，未精修。附带D12通用减伤。"
+      "UpdateInfo": "调整第一次防击退。"
     }
     {
       "Name": "M4S-VPR",
