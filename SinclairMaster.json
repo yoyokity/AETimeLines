@@ -25,8 +25,14 @@
   },
   {
     "Name": "Fru-Sinclair黑骑",
-    "Version": "0.0.3",
+    "Version": "0.0.4",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/Fru-Sinclair黑骑.json",
+    "UpdateInfo": ""
+  },
+  {
+    "Name": "Fru-Sinclair黑骑ST",
+    "Version": "0.0.1",
+    "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Sinclair/Fru-Sinclair黑骑ST.json",
     "UpdateInfo": ""
   }
 ]
