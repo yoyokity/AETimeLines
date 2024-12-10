@@ -1405,7 +1405,7 @@
                                 "TriggerConds": [
                                   {
                                     "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
-                                    "VariableName": "ST是否在第二次死刑开启无敌？ 0否1是",
+                                    "VariableName": "ST是否为骑士且在第二次死刑开启无敌？ 0否1是",
                                     "CompareType": 0,
                                     "VariableVaule": 0,
                                     "Remark": null,
@@ -1518,7 +1518,7 @@
                                 "TriggerConds": [
                                   {
                                     "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
-                                    "VariableName": "ST是否在第二次死刑开启无敌？ 0否1是",
+                                    "VariableName": "ST是否为骑士且在第二次死刑开启无敌？ 0否1是",
                                     "CompareType": 0,
                                     "VariableVaule": 1,
                                     "Remark": null,
@@ -3209,7 +3209,7 @@
                                     "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
                                     "DisplayName": "延迟[1.00]秒",
                                     "Delay": 1.0,
-                                    "GUID": "a37e54c9-7f7a-4a4e-afbf-f1bcfea30007",
+                                    "GUID": "2b7f4b7f-421e-43e2-96ba-123570afc944",
                                     "Important": false,
                                     "Color": {
                                       "X": 1.0,
@@ -3220,55 +3220,6 @@
                                     "Id": 122,
                                     "Enable": true,
                                     "Remark": ""
-                                  },
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                    "TriggerActions": [
-                                      {
-                                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
-                                        "Remark": null,
-                                        "SpellConfig": {
-                                          "Remark": "",
-                                          "Category": 0,
-                                          "SpellId": 7393,
-                                          "CoolDowncheck": false,
-                                          "CoolDowncheck_time": 0.0,
-                                          "TargetType": 1,
-                                          "IsPartyMember": true,
-                                          "LimitJobType": 0,
-                                          "LimitBuffIds": [],
-                                          "LimitMaxHpType": 0,
-                                          "LimitHpType": 0,
-                                          "Location": {
-                                            "X": 0.0,
-                                            "Y": 0.0,
-                                            "Z": 0.0
-                                          },
-                                          "TargetSelector": {
-                                            "Enable": false,
-                                            "Target": 0,
-                                            "FilterDatas": [],
-                                            "NeedTargetable": false,
-                                            "SndFilter": 0,
-                                            "PMIndex": 0
-                                          },
-                                          "AutoCheckActionChange": true
-                                        },
-                                        "DisplayName": "技能使用/强制使用技能"
-                                      }
-                                    ],
-                                    "DisplayName": "行为",
-                                    "GUID": "5d9364b1-d54f-428a-9a90-b1d555ecf87d",
-                                    "Important": false,
-                                    "Color": {
-                                      "X": 1.0,
-                                      "Y": 1.0,
-                                      "Z": 0.4,
-                                      "W": 1.0
-                                    },
-                                    "Id": 123,
-                                    "Enable": true,
-                                    "Remark": "黑盾自己"
                                   },
                                   {
                                     "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
@@ -3316,14 +3267,14 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 124,
+                                    "Id": 123,
                                     "Enable": true,
                                     "Remark": "退避给ST"
                                   },
                                   {
                                     "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                                    "DisplayName": "延迟[6.00]秒",
-                                    "Delay": 6.0,
+                                    "DisplayName": "延迟[7.00]秒",
+                                    "Delay": 7.0,
                                     "GUID": "7c7a2df3-b08e-4291-a3a9-decc511685dc",
                                     "Important": false,
                                     "Color": {
@@ -3332,7 +3283,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 125,
+                                    "Id": 124,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -3382,7 +3333,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 126,
+                                    "Id": 125,
                                     "Enable": true,
                                     "Remark": "挑衅回来"
                                   }
@@ -3417,73 +3368,7 @@
                             "DisplayName": "序列",
                             "IgnoreNodeResult": false,
                             "StopWhenDead": false,
-                            "Childs": [
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                                "DisplayName": "延迟[1.00]秒",
-                                "Delay": 1.0,
-                                "GUID": "d8353da9-212d-49f5-b64c-050a3ee6a268",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 128,
-                                "Enable": true,
-                                "Remark": ""
-                              },
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                                "TriggerActions": [
-                                  {
-                                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
-                                    "Remark": null,
-                                    "SpellConfig": {
-                                      "Remark": "",
-                                      "Category": 0,
-                                      "SpellId": 7393,
-                                      "CoolDowncheck": false,
-                                      "CoolDowncheck_time": 0.0,
-                                      "TargetType": 1,
-                                      "IsPartyMember": true,
-                                      "LimitJobType": 0,
-                                      "LimitBuffIds": [],
-                                      "LimitMaxHpType": 0,
-                                      "LimitHpType": 0,
-                                      "Location": {
-                                        "X": 0.0,
-                                        "Y": 0.0,
-                                        "Z": 0.0
-                                      },
-                                      "TargetSelector": {
-                                        "Enable": false,
-                                        "Target": 0,
-                                        "FilterDatas": [],
-                                        "NeedTargetable": false,
-                                        "SndFilter": 0,
-                                        "PMIndex": 0
-                                      },
-                                      "AutoCheckActionChange": true
-                                    },
-                                    "DisplayName": "技能使用/强制使用技能"
-                                  }
-                                ],
-                                "DisplayName": "行为",
-                                "GUID": "28f1f256-cc23-4ded-b4e8-cbd6260093a3",
-                                "Important": false,
-                                "Color": {
-                                  "X": 1.0,
-                                  "Y": 1.0,
-                                  "Z": 0.4,
-                                  "W": 1.0
-                                },
-                                "Id": 129,
-                                "Enable": true,
-                                "Remark": "黑盾自己"
-                              }
-                            ],
+                            "Childs": [],
                             "GUID": "66e13d6c-ca4c-404f-b69c-68e418db7ddf",
                             "Important": false,
                             "Color": {
@@ -3492,7 +3377,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 127,
+                            "Id": 126,
                             "Enable": true,
                             "Remark": "没有选择自动挑退，如常运行"
                           }
@@ -3552,7 +3437,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 131,
+                        "Id": 128,
                         "Enable": true,
                         "Remark": "读条冲击波"
                       },
@@ -3602,7 +3487,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 132,
+                        "Id": 129,
                         "Enable": true,
                         "Remark": "雪仇"
                       },
@@ -3618,7 +3503,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 133,
+                        "Id": 130,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3668,7 +3553,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 134,
+                        "Id": 131,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       },
@@ -3692,7 +3577,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 135,
+                        "Id": 132,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -3705,7 +3590,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 130,
+                    "Id": 127,
                     "Enable": true,
                     "Remark": "冲击波[3:50暗黑布道+雪仇，P2结束]"
                   },
@@ -3739,7 +3624,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 137,
+                        "Id": 134,
                         "Enable": true,
                         "Remark": "猫怪突风"
                       }
@@ -3752,7 +3637,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 136,
+                    "Id": 133,
                     "Enable": true,
                     "Remark": "猫怪突风[4:00献奉自己]"
                   },
@@ -3776,7 +3661,7 @@
                       "Z": 1.0,
                       "W": 1.0
                     },
-                    "Id": 138,
+                    "Id": 135,
                     "Enable": true,
                     "Remark": "转场变量控制,请勿修改"
                   }
@@ -3837,7 +3722,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 141,
+                        "Id": 138,
                         "Enable": true,
                         "Remark": "猫生九命"
                       }
@@ -3850,7 +3735,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 140,
+                    "Id": 137,
                     "Enable": true,
                     "Remark": "猫生九命[4:13]"
                   },
@@ -3892,7 +3777,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 143,
+                        "Id": 140,
                         "Enable": true,
                         "Remark": "灵魂之影"
                       },
@@ -3908,7 +3793,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 144,
+                        "Id": 141,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -3957,7 +3842,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 145,
+                        "Id": 142,
                         "Enable": true,
                         "Remark": "铁壁"
                       }
@@ -3970,7 +3855,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 142,
+                    "Id": 139,
                     "Enable": true,
                     "Remark": "灵魂之影[4:30铁壁吃平a]"
                   },
@@ -4012,7 +3897,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 147,
+                        "Id": 144,
                         "Enable": true,
                         "Remark": "暴风裂/剪指甲 5:24/2:25"
                       },
@@ -4061,7 +3946,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 148,
+                        "Id": 145,
                         "Enable": true,
                         "Remark": "雪仇"
                       },
@@ -4087,7 +3972,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 149,
+                        "Id": 146,
                         "Enable": true,
                         "Remark": "5:36"
                       },
@@ -4137,7 +4022,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 150,
+                        "Id": 147,
                         "Enable": true,
                         "Remark": "暗影卫"
                       },
@@ -4163,7 +4048,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 151,
+                        "Id": 148,
                         "Enable": true,
                         "Remark": "5:47暗黑布道"
                       },
@@ -4213,7 +4098,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 152,
+                        "Id": 149,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       }
@@ -4226,7 +4111,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 146,
+                    "Id": 143,
                     "Enable": true,
                     "Remark": "暴风裂/剪指甲[雪仇+暗黑布道] 读条5:24/5:25"
                   },
@@ -4260,7 +4145,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 154,
+                        "Id": 151,
                         "Enable": true,
                         "Remark": "读条血腥抓挠"
                       },
@@ -4276,7 +4161,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 155,
+                        "Id": 152,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4326,7 +4211,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 156,
+                        "Id": 153,
                         "Enable": true,
                         "Remark": "献奉自己"
                       }
@@ -4339,7 +4224,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 153,
+                    "Id": 150,
                     "Enable": true,
                     "Remark": "血腥抓挠[6:06献奉自己]"
                   },
@@ -4373,7 +4258,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 158,
+                        "Id": 155,
                         "Enable": true,
                         "Remark": "捕鼠读条"
                       },
@@ -4389,7 +4274,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 159,
+                        "Id": 156,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4439,7 +4324,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 160,
+                        "Id": 157,
                         "Enable": true,
                         "Remark": "铁壁"
                       },
@@ -4463,7 +4348,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 161,
+                        "Id": 158,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -4476,7 +4361,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 157,
+                    "Id": 154,
                     "Enable": true,
                     "Remark": "捕鼠[6:24铁壁吃平a]"
                   }
@@ -4489,7 +4374,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 139,
+                "Id": 136,
                 "Enable": true,
                 "Remark": "P3[4:13-6:06]"
               },
@@ -4537,7 +4422,7 @@
                           "Z": 0.0,
                           "W": 1.0
                         },
-                        "Id": 164,
+                        "Id": 161,
                         "Enable": true,
                         "Remark": "模仿之猫读条"
                       }
@@ -4550,7 +4435,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 163,
+                    "Id": 160,
                     "Enable": true,
                     "Remark": "模仿之猫[6:52]"
                   },
@@ -4590,7 +4475,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 167,
+                            "Id": 164,
                             "Enable": true,
                             "Remark": "7:04"
                           },
@@ -4606,7 +4491,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 168,
+                            "Id": 165,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -4656,7 +4541,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 169,
+                            "Id": 166,
                             "Enable": true,
                             "Remark": "献奉自己"
                           },
@@ -4672,7 +4557,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 170,
+                            "Id": 167,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -4685,7 +4570,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 166,
+                        "Id": 163,
                         "Enable": true,
                         "Remark": "第一次超暗影/碎裂尖甲预备[献奉自己]"
                       },
@@ -4719,7 +4604,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 172,
+                            "Id": 169,
                             "Enable": true,
                             "Remark": "7:16"
                           },
@@ -4769,7 +4654,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 173,
+                            "Id": 170,
                             "Enable": true,
                             "Remark": "雪仇"
                           },
@@ -4785,7 +4670,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 174,
+                            "Id": 171,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -4798,7 +4683,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 171,
+                        "Id": 168,
                         "Enable": true,
                         "Remark": "第二次超暗影/碎裂尖甲预备{雪仇}"
                       },
@@ -4832,7 +4717,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 176,
+                            "Id": 173,
                             "Enable": true,
                             "Remark": "7:28"
                           },
@@ -4848,7 +4733,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 177,
+                            "Id": 174,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -4898,7 +4783,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 178,
+                            "Id": 175,
                             "Enable": true,
                             "Remark": "黑盾"
                           },
@@ -4914,7 +4799,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 179,
+                            "Id": 176,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -4927,7 +4812,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 175,
+                        "Id": 172,
                         "Enable": true,
                         "Remark": "第三次超暗影/碎裂尖甲预备{黑盾自己}"
                       },
@@ -4961,7 +4846,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 181,
+                            "Id": 178,
                             "Enable": true,
                             "Remark": "7:40"
                           },
@@ -4977,7 +4862,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 182,
+                            "Id": 179,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -5027,7 +4912,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 183,
+                            "Id": 180,
                             "Enable": true,
                             "Remark": "暗影卫"
                           },
@@ -5043,7 +4928,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 184,
+                            "Id": 181,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -5056,7 +4941,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 180,
+                        "Id": 177,
                         "Enable": true,
                         "Remark": "第四次超暗影/碎裂尖甲预备[暗影卫+铁壁]"
                       }
@@ -5069,7 +4954,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 165,
+                    "Id": 162,
                     "Enable": true,
                     "Remark": "超暗影/碎裂尖甲[7:04-7:40职能分散/8人分摊]"
                   },
@@ -5103,7 +4988,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 186,
+                        "Id": 183,
                         "Enable": true,
                         "Remark": "踩奶读条"
                       },
@@ -5141,7 +5026,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 189,
+                                "Id": 186,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -5163,7 +5048,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 191,
+                                    "Id": 188,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -5213,7 +5098,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 192,
+                                    "Id": 189,
                                     "Enable": true,
                                     "Remark": "退避给ST"
                                   },
@@ -5229,7 +5114,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 193,
+                                    "Id": 190,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -5279,7 +5164,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 194,
+                                    "Id": 191,
                                     "Enable": true,
                                     "Remark": "挑衅回来"
                                   }
@@ -5292,7 +5177,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 190,
+                                "Id": 187,
                                 "Enable": true,
                                 "Remark": "变量为1，启用自动挑退"
                               }
@@ -5305,7 +5190,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 188,
+                            "Id": 185,
                             "Enable": true,
                             "Remark": "第二次死刑挑退"
                           },
@@ -5323,7 +5208,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 195,
+                            "Id": 192,
                             "Enable": true,
                             "Remark": "没有选择自动挑退，如常运行"
                           }
@@ -5336,7 +5221,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 187,
+                        "Id": 184,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -5349,7 +5234,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 185,
+                    "Id": 182,
                     "Enable": true,
                     "Remark": "踩奶[7:51死刑开暗影卫，用户输入变量决定是否自动挑退]"
                   },
@@ -5383,7 +5268,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 197,
+                        "Id": 194,
                         "Enable": true,
                         "Remark": "读条冲击波"
                       },
@@ -5399,7 +5284,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 198,
+                        "Id": 195,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -5449,7 +5334,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 199,
+                        "Id": 196,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       },
@@ -5473,7 +5358,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 200,
+                        "Id": 197,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -5486,7 +5371,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 196,
+                    "Id": 193,
                     "Enable": true,
                     "Remark": "冲击波[8:03暗黑布道，P4结束]"
                   },
@@ -5520,7 +5405,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 202,
+                        "Id": 199,
                         "Enable": true,
                         "Remark": "猫怪突风"
                       },
@@ -5536,7 +5421,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 203,
+                        "Id": 200,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -5586,7 +5471,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 204,
+                        "Id": 201,
                         "Enable": true,
                         "Remark": "献奉自己"
                       },
@@ -5602,7 +5487,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 205,
+                        "Id": 202,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -5652,7 +5537,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 206,
+                        "Id": 203,
                         "Enable": true,
                         "Remark": "铁壁"
                       }
@@ -5665,7 +5550,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 201,
+                    "Id": 198,
                     "Enable": true,
                     "Remark": "猫怪突风[8:10献奉自己+铁壁吃平a]"
                   }
@@ -5678,7 +5563,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 162,
+                "Id": 159,
                 "Enable": true,
                 "Remark": "P4[6:52-8:03]"
               },
@@ -5726,7 +5611,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 209,
+                        "Id": 206,
                         "Enable": true,
                         "Remark": "第一次倾盆大猫"
                       },
@@ -5776,7 +5661,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 210,
+                        "Id": 207,
                         "Enable": true,
                         "Remark": "雪仇"
                       },
@@ -5792,7 +5677,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 211,
+                        "Id": 208,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -5805,7 +5690,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 208,
+                    "Id": 205,
                     "Enable": true,
                     "Remark": "第一次倾盆大猫[P5开场，雪仇]读条8:27判定8:33"
                   },
@@ -5847,7 +5732,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 213,
+                        "Id": 210,
                         "Enable": true,
                         "Remark": "第二次倾盆大猫"
                       },
@@ -5885,7 +5770,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 216,
+                                "Id": 213,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -5907,7 +5792,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 218,
+                                    "Id": 215,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -5956,7 +5841,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 219,
+                                    "Id": 216,
                                     "Enable": true,
                                     "Remark": "无敌"
                                   }
@@ -5969,7 +5854,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 217,
+                                "Id": 214,
                                 "Enable": true,
                                 "Remark": "变量为2，在第二次接线无敌"
                               }
@@ -5982,7 +5867,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 215,
+                            "Id": 212,
                             "Enable": true,
                             "Remark": "第二次接线开无敌"
                           },
@@ -6000,7 +5885,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 220,
+                            "Id": 217,
                             "Enable": true,
                             "Remark": "没有选择第二次接线无敌，过"
                           }
@@ -6013,7 +5898,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 214,
+                        "Id": 211,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -6029,7 +5914,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 221,
+                        "Id": 218,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -6042,7 +5927,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 212,
+                    "Id": 209,
                     "Enable": true,
                     "Remark": "第二次倾盆大猫[？无敌]读条8:34"
                   },
@@ -6084,7 +5969,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 223,
+                        "Id": 220,
                         "Enable": true,
                         "Remark": "第三次倾盆大猫"
                       },
@@ -6122,7 +6007,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 226,
+                                "Id": 223,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -6144,7 +6029,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 228,
+                                    "Id": 225,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -6193,7 +6078,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 229,
+                                    "Id": 226,
                                     "Enable": true,
                                     "Remark": "无敌"
                                   }
@@ -6206,7 +6091,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 227,
+                                "Id": 224,
                                 "Enable": true,
                                 "Remark": "变量为3，在第三次接线无敌"
                               }
@@ -6219,7 +6104,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 225,
+                            "Id": 222,
                             "Enable": true,
                             "Remark": "第三次接线开无敌"
                           },
@@ -6237,7 +6122,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 230,
+                            "Id": 227,
                             "Enable": true,
                             "Remark": "没有选择第三次接线无敌，过"
                           }
@@ -6250,7 +6135,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 224,
+                        "Id": 221,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -6266,7 +6151,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 231,
+                        "Id": 228,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -6279,7 +6164,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 222,
+                    "Id": 219,
                     "Enable": true,
                     "Remark": "第三次倾盆大猫[？无敌]读条8:40"
                   },
@@ -6321,7 +6206,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 233,
+                        "Id": 230,
                         "Enable": true,
                         "Remark": "第四次倾盆大猫"
                       }
@@ -6334,7 +6219,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 232,
+                    "Id": 229,
                     "Enable": true,
                     "Remark": "第四次倾盆大猫读条8:45"
                   },
@@ -6376,7 +6261,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 235,
+                        "Id": 232,
                         "Enable": true,
                         "Remark": "模仿之猫读条"
                       }
@@ -6389,7 +6274,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 234,
+                    "Id": 231,
                     "Enable": true,
                     "Remark": "模仿之猫 9:01-9:04"
                   },
@@ -6407,7 +6292,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 236,
+                    "Id": 233,
                     "Enable": true,
                     "Remark": "后续就要狂暴了，加油"
                   }
@@ -6420,7 +6305,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 207,
+                "Id": 204,
                 "Enable": true,
                 "Remark": "P5[8:27-10:03狂暴]"
               }
@@ -6465,7 +6350,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 238,
+                "Id": 235,
                 "Enable": true,
                 "Remark": "检测ST位置"
               },
@@ -6488,7 +6373,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 239,
+                "Id": 236,
                 "Enable": true,
                 "Remark": "反馈消息"
               },
@@ -6528,7 +6413,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 242,
+                        "Id": 239,
                         "Enable": true,
                         "Remark": "踩奶读条"
                       },
@@ -6544,7 +6429,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 243,
+                        "Id": 240,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -6594,7 +6479,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 244,
+                        "Id": 241,
                         "Enable": true,
                         "Remark": "献奉MT"
                       }
@@ -6607,7 +6492,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 241,
+                    "Id": 238,
                     "Enable": true,
                     "Remark": "踩奶[0:28献奉MT]"
                   },
@@ -6641,7 +6526,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 246,
+                        "Id": 243,
                         "Enable": true,
                         "Remark": "灵魂之影"
                       },
@@ -6657,7 +6542,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 247,
+                        "Id": 244,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -6707,7 +6592,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 248,
+                        "Id": 245,
                         "Enable": true,
                         "Remark": "献奉MT"
                       }
@@ -6720,7 +6605,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 245,
+                    "Id": 242,
                     "Enable": true,
                     "Remark": "灵魂之影[1:02]"
                   },
@@ -6760,7 +6645,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 251,
+                            "Id": 248,
                             "Enable": true,
                             "Remark": "双/四重利爪预备"
                           }
@@ -6773,7 +6658,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 250,
+                        "Id": 247,
                         "Enable": true,
                         "Remark": "双/四重利爪预备"
                       },
@@ -6815,7 +6700,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 253,
+                            "Id": 250,
                             "Enable": true,
                             "Remark": "双/四重利爪读条"
                           }
@@ -6828,7 +6713,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 252,
+                        "Id": 249,
                         "Enable": true,
                         "Remark": "双/四重利爪"
                       }
@@ -6841,7 +6726,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 249,
+                    "Id": 246,
                     "Enable": true,
                     "Remark": "双/四重利爪[1:23  22/44分摊]"
                   },
@@ -6881,7 +6766,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 256,
+                            "Id": 253,
                             "Enable": true,
                             "Remark": "猫跳四连尖爪预备"
                           }
@@ -6894,7 +6779,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 255,
+                        "Id": 252,
                         "Enable": true,
                         "Remark": "猫跳四连尖爪预备"
                       },
@@ -6936,7 +6821,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 258,
+                            "Id": 255,
                             "Enable": true,
                             "Remark": "跳左/跳右"
                           },
@@ -6952,7 +6837,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 259,
+                            "Id": 256,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -7002,7 +6887,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 260,
+                            "Id": 257,
                             "Enable": true,
                             "Remark": "黑盾H1"
                           }
@@ -7015,7 +6900,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 257,
+                        "Id": 254,
                         "Enable": true,
                         "Remark": "猫跳四连尖爪"
                       }
@@ -7028,7 +6913,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 254,
+                    "Id": 251,
                     "Enable": true,
                     "Remark": "猫跳四连尖甲[1:35黑盾H1]"
                   },
@@ -7062,7 +6947,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 262,
+                        "Id": 259,
                         "Enable": true,
                         "Remark": "读条血腥抓挠"
                       },
@@ -7078,7 +6963,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 263,
+                        "Id": 260,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -7128,7 +7013,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 264,
+                        "Id": 261,
                         "Enable": true,
                         "Remark": "雪仇"
                       },
@@ -7144,7 +7029,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 265,
+                        "Id": 262,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -7194,7 +7079,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 266,
+                        "Id": 263,
                         "Enable": true,
                         "Remark": "献奉MT"
                       },
@@ -7218,7 +7103,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 267,
+                        "Id": 264,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -7231,7 +7116,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 261,
+                    "Id": 258,
                     "Enable": true,
                     "Remark": "血腥抓挠[1:57献奉MT+雪仇，P1结束]"
                   },
@@ -7265,7 +7150,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 269,
+                        "Id": 266,
                         "Enable": true,
                         "Remark": "捕鼠读条"
                       },
@@ -7328,7 +7213,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 273,
+                                    "Id": 270,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -7344,7 +7229,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 274,
+                                    "Id": 271,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -7394,7 +7279,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 275,
+                                    "Id": 272,
                                     "Enable": true,
                                     "Remark": "深恶痛绝"
                                   }
@@ -7407,7 +7292,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 272,
+                                "Id": 269,
                                 "Enable": true,
                                 "Remark": "检测自己不存在盾姿BUFF"
                               },
@@ -7425,7 +7310,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 276,
+                                "Id": 273,
                                 "Enable": true,
                                 "Remark": "开盾姿了，过"
                               }
@@ -7438,7 +7323,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 271,
+                            "Id": 268,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -7451,7 +7336,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 270,
+                        "Id": 267,
                         "Enable": true,
                         "Remark": "自动盾姿检测"
                       },
@@ -7475,7 +7360,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 277,
+                        "Id": 274,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -7488,7 +7373,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 268,
+                    "Id": 265,
                     "Enable": true,
                     "Remark": "捕鼠[2:15自动开启盾姿]"
                   }
@@ -7501,7 +7386,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 240,
+                "Id": 237,
                 "Enable": true,
                 "Remark": "P1[0:09-2:02]"
               },
@@ -7549,7 +7434,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 280,
+                        "Id": 277,
                         "Enable": true,
                         "Remark": "模仿之猫读条"
                       }
@@ -7562,7 +7447,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 279,
+                    "Id": 276,
                     "Enable": true,
                     "Remark": "模仿之猫[2:44]"
                   },
@@ -7608,7 +7493,7 @@
                                   "Z": 0.1393903,
                                   "W": 1.0
                                 },
-                                "Id": 284,
+                                "Id": 281,
                                 "Enable": true,
                                 "Remark": "第一次"
                               }
@@ -7621,7 +7506,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 283,
+                            "Id": 280,
                             "Enable": true,
                             "Remark": "击飞\\击倒预备"
                           },
@@ -7663,7 +7548,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 286,
+                                "Id": 283,
                                 "Enable": true,
                                 "Remark": "击飞/击倒"
                               }
@@ -7676,7 +7561,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 285,
+                            "Id": 282,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -7712,7 +7597,7 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 287,
+                            "Id": 284,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -7728,7 +7613,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 288,
+                            "Id": 285,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -7778,7 +7663,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 289,
+                            "Id": 286,
                             "Enable": true,
                             "Remark": "献奉MT"
                           }
@@ -7791,7 +7676,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 282,
+                        "Id": 279,
                         "Enable": true,
                         "Remark": "第一次"
                       },
@@ -7813,7 +7698,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 291,
+                            "Id": 288,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -7847,7 +7732,7 @@
                                   "Z": 0.24933323,
                                   "W": 1.0
                                 },
-                                "Id": 293,
+                                "Id": 290,
                                 "Enable": true,
                                 "Remark": "第二次"
                               }
@@ -7860,7 +7745,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 292,
+                            "Id": 289,
                             "Enable": true,
                             "Remark": "击飞\\击倒预备"
                           },
@@ -7902,7 +7787,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 295,
+                                "Id": 292,
                                 "Enable": true,
                                 "Remark": "击飞/击倒"
                               }
@@ -7915,7 +7800,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 294,
+                            "Id": 291,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -7951,7 +7836,7 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 296,
+                            "Id": 293,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           }
@@ -7964,7 +7849,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 290,
+                        "Id": 287,
                         "Enable": true,
                         "Remark": "第二次"
                       },
@@ -7986,7 +7871,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 298,
+                            "Id": 295,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -8020,7 +7905,7 @@
                                   "Z": 0.25277174,
                                   "W": 1.0
                                 },
-                                "Id": 300,
+                                "Id": 297,
                                 "Enable": true,
                                 "Remark": "第三次"
                               }
@@ -8033,7 +7918,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 299,
+                            "Id": 296,
                             "Enable": true,
                             "Remark": "击飞\\击倒预备"
                           },
@@ -8075,7 +7960,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 302,
+                                "Id": 299,
                                 "Enable": true,
                                 "Remark": "击飞/击倒"
                               }
@@ -8088,7 +7973,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 301,
+                            "Id": 298,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -8124,7 +8009,7 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 303,
+                            "Id": 300,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -8140,7 +8025,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 304,
+                            "Id": 301,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -8190,7 +8075,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 305,
+                            "Id": 302,
                             "Enable": true,
                             "Remark": "献奉MT"
                           }
@@ -8203,7 +8088,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 297,
+                        "Id": 294,
                         "Enable": true,
                         "Remark": "第三次[献奉MT]"
                       },
@@ -8225,7 +8110,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 307,
+                            "Id": 304,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -8259,7 +8144,7 @@
                                   "Z": 0.0,
                                   "W": 1.0
                                 },
-                                "Id": 309,
+                                "Id": 306,
                                 "Enable": true,
                                 "Remark": "第四次"
                               },
@@ -8297,7 +8182,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 312,
+                                        "Id": 309,
                                         "Enable": true,
                                         "Remark": ""
                                       },
@@ -8347,7 +8232,7 @@
                                           "Z": 0.4,
                                           "W": 1.0
                                         },
-                                        "Id": 313,
+                                        "Id": 310,
                                         "Enable": true,
                                         "Remark": "挑衅"
                                       }
@@ -8360,7 +8245,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 311,
+                                    "Id": 308,
                                     "Enable": true,
                                     "Remark": "第二次死刑挑退"
                                   },
@@ -8378,7 +8263,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 314,
+                                    "Id": 311,
                                     "Enable": true,
                                     "Remark": "没有选择自动挑退，照常运行"
                                   }
@@ -8391,7 +8276,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 310,
+                                "Id": 307,
                                 "Enable": true,
                                 "Remark": ""
                               }
@@ -8404,7 +8289,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 308,
+                            "Id": 305,
                             "Enable": true,
                             "Remark": "击飞\\击倒预备"
                           },
@@ -8446,7 +8331,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 316,
+                                "Id": 313,
                                 "Enable": true,
                                 "Remark": "击飞/击倒"
                               }
@@ -8459,7 +8344,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 315,
+                            "Id": 312,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -8495,7 +8380,7 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 317,
+                            "Id": 314,
                             "Enable": true,
                             "Remark": "击飞/击倒"
                           },
@@ -8521,7 +8406,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 318,
+                            "Id": 315,
                             "Enable": true,
                             "Remark": "3:36"
                           },
@@ -8570,7 +8455,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 319,
+                            "Id": 316,
                             "Enable": true,
                             "Remark": "无敌"
                           }
@@ -8583,7 +8468,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 306,
+                        "Id": 303,
                         "Enable": true,
                         "Remark": "第四次[挑衅]"
                       }
@@ -8596,7 +8481,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 281,
+                    "Id": 278,
                     "Enable": true,
                     "Remark": "击飞开膛*4[第一次和第三次献奉MT，第四次暗影卫]"
                   },
@@ -8630,74 +8515,9 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 321,
+                        "Id": 318,
                         "Enable": true,
                         "Remark": "踩奶读条"
-                      },
-                      {
-                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                        "DisplayName": "延迟[4.50]秒",
-                        "Delay": 4.5,
-                        "GUID": "ea80efdc-21ce-4681-b086-a1587093a45f",
-                        "Important": false,
-                        "Color": {
-                          "X": 1.0,
-                          "Y": 1.0,
-                          "Z": 0.4,
-                          "W": 1.0
-                        },
-                        "Id": 322,
-                        "Enable": true,
-                        "Remark": ""
-                      },
-                      {
-                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                        "TriggerActions": [
-                          {
-                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionCastSpell, AEAssist",
-                            "Remark": null,
-                            "SpellConfig": {
-                              "Remark": "",
-                              "Category": 0,
-                              "SpellId": 7393,
-                              "CoolDowncheck": true,
-                              "CoolDowncheck_time": 0.0,
-                              "TargetType": 1,
-                              "IsPartyMember": true,
-                              "LimitJobType": 0,
-                              "LimitBuffIds": [],
-                              "LimitMaxHpType": 0,
-                              "LimitHpType": 0,
-                              "Location": {
-                                "X": 0.0,
-                                "Y": 0.0,
-                                "Z": 0.0
-                              },
-                              "TargetSelector": {
-                                "Enable": false,
-                                "Target": 0,
-                                "FilterDatas": [],
-                                "NeedTargetable": false,
-                                "SndFilter": 0,
-                                "PMIndex": 0
-                              },
-                              "AutoCheckActionChange": true
-                            },
-                            "DisplayName": "技能使用/强制使用技能"
-                          }
-                        ],
-                        "DisplayName": "行为",
-                        "GUID": "6d45e16c-0b3c-4e31-9483-112632cec71a",
-                        "Important": false,
-                        "Color": {
-                          "X": 1.0,
-                          "Y": 1.0,
-                          "Z": 0.4,
-                          "W": 1.0
-                        },
-                        "Id": 323,
-                        "Enable": true,
-                        "Remark": "黑盾自己"
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSelect, AEAssist",
@@ -8733,7 +8553,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 326,
+                                "Id": 321,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -8745,8 +8565,8 @@
                                 "Childs": [
                                   {
                                     "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                                    "DisplayName": "延迟[2.00]秒",
-                                    "Delay": 2.0,
+                                    "DisplayName": "延迟[8.00]秒",
+                                    "Delay": 8.0,
                                     "GUID": "eace7ff8-0040-4f2f-b0c1-ff51cf60d9d5",
                                     "Important": false,
                                     "Color": {
@@ -8755,7 +8575,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 328,
+                                    "Id": 323,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -8805,7 +8625,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 329,
+                                    "Id": 324,
                                     "Enable": true,
                                     "Remark": "退避给MT"
                                   }
@@ -8818,7 +8638,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 327,
+                                "Id": 322,
                                 "Enable": true,
                                 "Remark": "变量为1，启用自动挑退"
                               }
@@ -8831,7 +8651,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 325,
+                            "Id": 320,
                             "Enable": true,
                             "Remark": "第二次死刑挑退"
                           },
@@ -8849,7 +8669,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 330,
+                            "Id": 325,
                             "Enable": true,
                             "Remark": "没有选择自动挑退，照常运行"
                           }
@@ -8862,7 +8682,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 324,
+                        "Id": 319,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -8875,7 +8695,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 320,
+                    "Id": 317,
                     "Enable": true,
                     "Remark": "踩奶[3:36死刑开无敌，用户输入变量决定是否自动挑退]"
                   },
@@ -8909,7 +8729,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 332,
+                        "Id": 327,
                         "Enable": true,
                         "Remark": "读条冲击波"
                       },
@@ -8925,7 +8745,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 333,
+                        "Id": 328,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -8975,7 +8795,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 334,
+                        "Id": 329,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       },
@@ -8999,7 +8819,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 335,
+                        "Id": 330,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -9012,7 +8832,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 331,
+                    "Id": 326,
                     "Enable": true,
                     "Remark": "冲击波[3:50暗黑布道，P2结束]"
                   },
@@ -9046,7 +8866,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 337,
+                        "Id": 332,
                         "Enable": true,
                         "Remark": "猫怪突风"
                       }
@@ -9059,7 +8879,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 336,
+                    "Id": 331,
                     "Enable": true,
                     "Remark": "猫怪突风[4:00]"
                   },
@@ -9083,7 +8903,7 @@
                       "Z": 1.0,
                       "W": 1.0
                     },
-                    "Id": 338,
+                    "Id": 333,
                     "Enable": true,
                     "Remark": "转场变量控制,请勿修改"
                   }
@@ -9096,7 +8916,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 278,
+                "Id": 275,
                 "Enable": true,
                 "Remark": "P2[2:44-3:50]"
               },
@@ -9144,7 +8964,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 341,
+                        "Id": 336,
                         "Enable": true,
                         "Remark": "猫生九命"
                       }
@@ -9157,7 +8977,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 340,
+                    "Id": 335,
                     "Enable": true,
                     "Remark": "猫生九命[4:13]"
                   },
@@ -9191,7 +9011,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 343,
+                        "Id": 338,
                         "Enable": true,
                         "Remark": "灵魂之影"
                       },
@@ -9207,7 +9027,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 344,
+                        "Id": 339,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -9257,7 +9077,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 345,
+                        "Id": 340,
                         "Enable": true,
                         "Remark": "雪仇"
                       }
@@ -9270,7 +9090,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 342,
+                    "Id": 337,
                     "Enable": true,
                     "Remark": "灵魂之影[4:39雪仇 5:32黑盾MT]"
                   },
@@ -9312,7 +9132,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 347,
+                        "Id": 342,
                         "Enable": true,
                         "Remark": "暴风裂/剪指甲 5:24/2:25"
                       },
@@ -9338,7 +9158,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 348,
+                        "Id": 343,
                         "Enable": true,
                         "Remark": "5:47暗黑布道"
                       },
@@ -9388,7 +9208,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 349,
+                        "Id": 344,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       }
@@ -9401,7 +9221,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 346,
+                    "Id": 341,
                     "Enable": true,
                     "Remark": "暴风裂/剪指甲[5:24/5:25暗黑布道] "
                   },
@@ -9435,7 +9255,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 351,
+                        "Id": 346,
                         "Enable": true,
                         "Remark": "读条血腥抓挠"
                       },
@@ -9485,7 +9305,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 352,
+                        "Id": 347,
                         "Enable": true,
                         "Remark": "雪仇"
                       },
@@ -9501,7 +9321,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 353,
+                        "Id": 348,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -9551,7 +9371,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 354,
+                        "Id": 349,
                         "Enable": true,
                         "Remark": "献奉MT"
                       },
@@ -9575,7 +9395,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 355,
+                        "Id": 350,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -9588,7 +9408,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 350,
+                    "Id": 345,
                     "Enable": true,
                     "Remark": "血腥抓挠[6:06献奉MT+雪仇,P4结束]"
                   },
@@ -9622,7 +9442,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 357,
+                        "Id": 352,
                         "Enable": true,
                         "Remark": "捕鼠读条"
                       }
@@ -9635,7 +9455,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 356,
+                    "Id": 351,
                     "Enable": true,
                     "Remark": "捕鼠[6:24"
                   }
@@ -9648,7 +9468,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 339,
+                "Id": 334,
                 "Enable": true,
                 "Remark": "P3[4:13-6:06]"
               },
@@ -9696,7 +9516,7 @@
                           "Z": 0.0,
                           "W": 1.0
                         },
-                        "Id": 360,
+                        "Id": 355,
                         "Enable": true,
                         "Remark": "模仿之猫读条"
                       }
@@ -9709,7 +9529,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 359,
+                    "Id": 354,
                     "Enable": true,
                     "Remark": "模仿之猫[6:52]"
                   },
@@ -9749,7 +9569,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 363,
+                            "Id": 358,
                             "Enable": true,
                             "Remark": "7:04"
                           },
@@ -9765,7 +9585,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 364,
+                            "Id": 359,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -9815,7 +9635,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 365,
+                            "Id": 360,
                             "Enable": true,
                             "Remark": "献奉MT"
                           },
@@ -9831,7 +9651,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 366,
+                            "Id": 361,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -9844,7 +9664,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 362,
+                        "Id": 357,
                         "Enable": true,
                         "Remark": "第一次超暗影/碎裂尖甲预备[献奉MT]"
                       },
@@ -9878,7 +9698,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 368,
+                            "Id": 363,
                             "Enable": true,
                             "Remark": "7:16"
                           },
@@ -9894,7 +9714,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 369,
+                            "Id": 364,
                             "Enable": true,
                             "Remark": ""
                           }
@@ -9907,7 +9727,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 367,
+                        "Id": 362,
                         "Enable": true,
                         "Remark": "第二次超暗影/碎裂尖甲预备"
                       },
@@ -9941,7 +9761,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 371,
+                            "Id": 366,
                             "Enable": true,
                             "Remark": "7:28"
                           },
@@ -9957,7 +9777,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 372,
+                            "Id": 367,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -10007,7 +9827,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 373,
+                            "Id": 368,
                             "Enable": true,
                             "Remark": "黑盾MT"
                           }
@@ -10020,7 +9840,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 370,
+                        "Id": 365,
                         "Enable": true,
                         "Remark": "第三次超暗影/碎裂尖甲预备{黑盾MT}"
                       },
@@ -10054,7 +9874,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 375,
+                            "Id": 370,
                             "Enable": true,
                             "Remark": "7:40"
                           },
@@ -10070,7 +9890,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 376,
+                            "Id": 371,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -10120,7 +9940,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 377,
+                            "Id": 372,
                             "Enable": true,
                             "Remark": "铁壁"
                           }
@@ -10133,7 +9953,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 374,
+                        "Id": 369,
                         "Enable": true,
                         "Remark": "第四次超暗影/碎裂尖甲预备[暗影卫+铁壁]"
                       }
@@ -10146,7 +9966,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 361,
+                    "Id": 356,
                     "Enable": true,
                     "Remark": "超暗影/碎裂尖甲[7:04-7:40职能分散/8人分摊]"
                   },
@@ -10180,7 +10000,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 379,
+                        "Id": 374,
                         "Enable": true,
                         "Remark": "踩奶读条"
                       },
@@ -10229,7 +10049,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 380,
+                        "Id": 375,
                         "Enable": true,
                         "Remark": "暗影卫"
                       },
@@ -10267,7 +10087,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 383,
+                                "Id": 378,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -10289,7 +10109,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 385,
+                                    "Id": 380,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -10338,7 +10158,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 386,
+                                    "Id": 381,
                                     "Enable": true,
                                     "Remark": "挑衅成为一仇"
                                   },
@@ -10354,7 +10174,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 387,
+                                    "Id": 382,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -10403,7 +10223,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 388,
+                                    "Id": 383,
                                     "Enable": true,
                                     "Remark": "退避给MT"
                                   }
@@ -10416,7 +10236,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 384,
+                                "Id": 379,
                                 "Enable": true,
                                 "Remark": "变量为1，启用自动挑退"
                               }
@@ -10429,7 +10249,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 382,
+                            "Id": 377,
                             "Enable": true,
                             "Remark": "第二次死刑挑退"
                           },
@@ -10447,7 +10267,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 389,
+                            "Id": 384,
                             "Enable": true,
                             "Remark": "没有选择自动挑退，如常运行"
                           }
@@ -10460,7 +10280,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 381,
+                        "Id": 376,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -10473,7 +10293,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 378,
+                    "Id": 373,
                     "Enable": true,
                     "Remark": "踩奶[7:51死刑开暗影卫+铁壁，用户输入变量决定是否自动挑退]"
                   },
@@ -10507,7 +10327,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 391,
+                        "Id": 386,
                         "Enable": true,
                         "Remark": "读条冲击波"
                       },
@@ -10557,7 +10377,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 392,
+                        "Id": 387,
                         "Enable": true,
                         "Remark": "暗黑布道"
                       },
@@ -10581,7 +10401,7 @@
                           "Z": 1.0,
                           "W": 1.0
                         },
-                        "Id": 393,
+                        "Id": 388,
                         "Enable": true,
                         "Remark": "转场变量控制,请勿修改"
                       }
@@ -10594,7 +10414,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 390,
+                    "Id": 385,
                     "Enable": true,
                     "Remark": "冲击波[8:03暗黑布道，P4结束]"
                   },
@@ -10628,7 +10448,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 395,
+                        "Id": 390,
                         "Enable": true,
                         "Remark": "猫怪突风"
                       },
@@ -10644,7 +10464,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 396,
+                        "Id": 391,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -10694,7 +10514,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 397,
+                        "Id": 392,
                         "Enable": true,
                         "Remark": "献奉MT"
                       }
@@ -10707,7 +10527,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 394,
+                    "Id": 389,
                     "Enable": true,
                     "Remark": "猫怪突风[8:10献奉MT]"
                   }
@@ -10720,7 +10540,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 358,
+                "Id": 353,
                 "Enable": true,
                 "Remark": "P4[6:52-8:03]"
               },
@@ -10768,7 +10588,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 400,
+                        "Id": 395,
                         "Enable": true,
                         "Remark": "第一次倾盆大猫"
                       },
@@ -10784,7 +10604,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 401,
+                        "Id": 396,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -10797,7 +10617,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 399,
+                    "Id": 394,
                     "Enable": true,
                     "Remark": "第一次倾盆大猫[P5开场]读条8:27判定8:33"
                   },
@@ -10831,7 +10651,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 403,
+                        "Id": 398,
                         "Enable": true,
                         "Remark": "第二次倾盆大猫"
                       },
@@ -10869,7 +10689,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 406,
+                                "Id": 401,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -10891,7 +10711,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 408,
+                                    "Id": 403,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -10940,7 +10760,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 409,
+                                    "Id": 404,
                                     "Enable": true,
                                     "Remark": "无敌"
                                   }
@@ -10953,7 +10773,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 407,
+                                "Id": 402,
                                 "Enable": true,
                                 "Remark": "变量为2，在第二次接线无敌"
                               }
@@ -10966,7 +10786,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 405,
+                            "Id": 400,
                             "Enable": true,
                             "Remark": "第二次接线开无敌"
                           },
@@ -10984,7 +10804,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 410,
+                            "Id": 405,
                             "Enable": true,
                             "Remark": "没有选择第二次接线无敌，过"
                           }
@@ -10997,7 +10817,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 404,
+                        "Id": 399,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -11013,7 +10833,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 411,
+                        "Id": 406,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -11026,7 +10846,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 402,
+                    "Id": 397,
                     "Enable": true,
                     "Remark": "第二次倾盆大猫[？无敌]读条8:34"
                   },
@@ -11060,7 +10880,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 413,
+                        "Id": 408,
                         "Enable": true,
                         "Remark": "第三次倾盆大猫"
                       },
@@ -11098,7 +10918,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 416,
+                                "Id": 411,
                                 "Enable": true,
                                 "Remark": ""
                               },
@@ -11120,7 +10940,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 418,
+                                    "Id": 413,
                                     "Enable": true,
                                     "Remark": ""
                                   },
@@ -11169,7 +10989,7 @@
                                       "Z": 0.4,
                                       "W": 1.0
                                     },
-                                    "Id": 419,
+                                    "Id": 414,
                                     "Enable": true,
                                     "Remark": "无敌"
                                   }
@@ -11182,7 +11002,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 417,
+                                "Id": 412,
                                 "Enable": true,
                                 "Remark": "变量为3，在第三次接线无敌"
                               }
@@ -11195,7 +11015,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 415,
+                            "Id": 410,
                             "Enable": true,
                             "Remark": "第三次接线开无敌"
                           },
@@ -11213,7 +11033,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 420,
+                            "Id": 415,
                             "Enable": true,
                             "Remark": "没有选择第三次接线无敌，过"
                           }
@@ -11226,7 +11046,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 414,
+                        "Id": 409,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -11242,7 +11062,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 421,
+                        "Id": 416,
                         "Enable": true,
                         "Remark": ""
                       }
@@ -11255,7 +11075,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 412,
+                    "Id": 407,
                     "Enable": true,
                     "Remark": "第三次倾盆大猫[？无敌]读条8:40"
                   },
@@ -11289,7 +11109,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 423,
+                        "Id": 418,
                         "Enable": true,
                         "Remark": "第四次倾盆大猫"
                       },
@@ -11305,7 +11125,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 424,
+                        "Id": 419,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -11355,7 +11175,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 425,
+                        "Id": 420,
                         "Enable": true,
                         "Remark": "雪仇"
                       }
@@ -11368,7 +11188,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 422,
+                    "Id": 417,
                     "Enable": true,
                     "Remark": "第四次倾盆大猫[雪仇]读条8:45"
                   },
@@ -11410,7 +11230,7 @@
                           "Z": 0.05633807,
                           "W": 1.0
                         },
-                        "Id": 427,
+                        "Id": 422,
                         "Enable": true,
                         "Remark": "模仿之猫"
                       }
@@ -11423,7 +11243,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 426,
+                    "Id": 421,
                     "Enable": true,
                     "Remark": "模仿之猫 9:01-9:04"
                   },
@@ -11441,7 +11261,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 428,
+                    "Id": 423,
                     "Enable": true,
                     "Remark": "后续就要狂暴了，加油"
                   }
@@ -11454,7 +11274,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 398,
+                "Id": 393,
                 "Enable": true,
                 "Remark": "P5[8:27-10:03狂暴]"
               }
@@ -11467,7 +11287,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 237,
+            "Id": 234,
             "Enable": true,
             "Remark": "ST版减伤"
           },
@@ -11511,7 +11331,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 432,
+                        "Id": 427,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -11545,7 +11365,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 434,
+                            "Id": 429,
                             "Enable": true,
                             "Remark": "开启爆发药"
                           },
@@ -11571,7 +11391,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 435,
+                            "Id": 430,
                             "Enable": true,
                             "Remark": "6:00"
                           },
@@ -11597,7 +11417,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 436,
+                            "Id": 431,
                             "Enable": true,
                             "Remark": "6分钟弗雷"
                           },
@@ -11646,7 +11466,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 437,
+                            "Id": 432,
                             "Enable": true,
                             "Remark": "6分钟爆发药"
                           }
@@ -11659,7 +11479,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 433,
+                        "Id": 428,
                         "Enable": true,
                         "Remark": "变量为6，开启06爆发药"
                       }
@@ -11672,7 +11492,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 431,
+                    "Id": 426,
                     "Enable": true,
                     "Remark": "06爆发药"
                   },
@@ -11706,7 +11526,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 439,
+                        "Id": 434,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -11740,7 +11560,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 441,
+                            "Id": 436,
                             "Enable": true,
                             "Remark": "关闭爆发药QT"
                           },
@@ -11766,7 +11586,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 442,
+                            "Id": 437,
                             "Enable": true,
                             "Remark": "0:30"
                           },
@@ -11794,7 +11614,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 443,
+                            "Id": 438,
                             "Enable": true,
                             "Remark": "关闭腐秽大地"
                           },
@@ -11820,7 +11640,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 444,
+                            "Id": 439,
                             "Enable": true,
                             "Remark": "2:00"
                           },
@@ -11846,7 +11666,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 445,
+                            "Id": 440,
                             "Enable": true,
                             "Remark": "2分钟弗雷弗雷"
                           },
@@ -11874,7 +11694,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 446,
+                            "Id": 441,
                             "Enable": true,
                             "Remark": "开启腐秽大地"
                           },
@@ -11923,7 +11743,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 447,
+                            "Id": 442,
                             "Enable": true,
                             "Remark": "2分钟爆发药"
                           },
@@ -11949,7 +11769,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 448,
+                            "Id": 443,
                             "Enable": true,
                             "Remark": "8:00"
                           },
@@ -11975,7 +11795,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 449,
+                            "Id": 444,
                             "Enable": true,
                             "Remark": "8分钟弗雷"
                           },
@@ -12024,7 +11844,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 450,
+                            "Id": 445,
                             "Enable": true,
                             "Remark": "8分钟爆发药"
                           }
@@ -12037,7 +11857,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 440,
+                        "Id": 435,
                         "Enable": true,
                         "Remark": "变量为8，开启28爆发药"
                       }
@@ -12050,7 +11870,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 438,
+                    "Id": 433,
                     "Enable": true,
                     "Remark": "28爆发药，0:30关闭腐秽大地QT，2:05开启"
                   }
@@ -12063,7 +11883,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 430,
+                "Id": 425,
                 "Enable": true,
                 "Remark": ""
               }
@@ -12076,7 +11896,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 429,
+            "Id": 424,
             "Enable": true,
             "Remark": "爆发药控制"
           },
@@ -12086,6 +11906,259 @@
             "IgnoreNodeResult": false,
             "StopWhenDead": false,
             "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSelect, AEAssist",
+                "DisplayName": "选择",
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                    "DisplayName": "序列",
+                    "IgnoreNodeResult": false,
+                    "StopWhenDead": false,
+                    "Childs": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                        "CondLogicType": 0,
+                        "CheckOnce": true,
+                        "ReverseResult": false,
+                        "TriggerConds": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
+                            "VariableName": "ST是否为骑士且在第二次死刑开启无敌？ 0否1是",
+                            "CompareType": 0,
+                            "VariableVaule": 1,
+                            "Remark": null,
+                            "DisplayName": "General/变量值"
+                          }
+                        ],
+                        "DisplayName": "立即检测",
+                        "GUID": "d157f868-24d3-4c56-9cf8-f7b9b8dbe270",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 449,
+                        "Enable": true,
+                        "Remark": ""
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                        "CondLogicType": 0,
+                        "CheckOnce": false,
+                        "ReverseResult": false,
+                        "TriggerConds": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                            "Remark": "",
+                            "Delay": 205.0,
+                            "DisplayName": "General/战斗开始后多少秒"
+                          }
+                        ],
+                        "DisplayName": "等待条件",
+                        "GUID": "e7326419-3b06-41a9-8965-13c26b44880f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 450,
+                        "Enable": true,
+                        "Remark": "3:25"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                        "TriggerActions": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                            "SpellConfig": {
+                              "Remark": "",
+                              "Category": 0,
+                              "SpellId": 7393,
+                              "CoolDowncheck": false,
+                              "CoolDowncheck_time": 0.0,
+                              "TargetType": 2,
+                              "IsPartyMember": true,
+                              "LimitJobType": 0,
+                              "LimitBuffIds": [],
+                              "LimitMaxHpType": 0,
+                              "LimitHpType": 0,
+                              "Location": {
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Z": 0.0
+                              },
+                              "TargetSelector": {
+                                "Enable": false,
+                                "Target": 0,
+                                "FilterDatas": [],
+                                "NeedTargetable": false,
+                                "SndFilter": 0,
+                                "PMIndex": 0
+                              },
+                              "AutoCheckActionChange": true
+                            },
+                            "Clear": false,
+                            "DisplayName": "技能使用/插入高优先级技能",
+                            "Remark": null
+                          }
+                        ],
+                        "DisplayName": "行为",
+                        "GUID": "ed55f087-a425-4fa6-a0e7-72f7ff70806f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 451,
+                        "Enable": true,
+                        "Remark": "黑盾"
+                      }
+                    ],
+                    "GUID": "281f3c4f-a9c4-436c-8347-42239f6a9af2",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 448,
+                    "Enable": true,
+                    "Remark": "ST骑士在第二次开无敌"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                    "DisplayName": "序列",
+                    "IgnoreNodeResult": false,
+                    "StopWhenDead": false,
+                    "Childs": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                        "CondLogicType": 0,
+                        "CheckOnce": false,
+                        "ReverseResult": false,
+                        "TriggerConds": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                            "Strs": null,
+                            "Remark": "",
+                            "RegexNameOrId": "38037",
+                            "NeedTargetable": false,
+                            "DisplayName": "General/敌人读条使用技能"
+                          }
+                        ],
+                        "DisplayName": "等待条件",
+                        "GUID": "759e40a7-d277-4a97-9638-296c2e49ff9f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 453,
+                        "Enable": true,
+                        "Remark": "踩奶读条"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[1.00]秒",
+                        "Delay": 1.0,
+                        "GUID": "bd7341dd-f93a-47dc-a5ed-cf39aff0ae77",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 454,
+                        "Enable": true,
+                        "Remark": ""
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                        "TriggerActions": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionHighPrioritySlot, AEAssist",
+                            "SpellConfig": {
+                              "Remark": "",
+                              "Category": 0,
+                              "SpellId": 7393,
+                              "CoolDowncheck": false,
+                              "CoolDowncheck_time": 0.0,
+                              "TargetType": 2,
+                              "IsPartyMember": true,
+                              "LimitJobType": 0,
+                              "LimitBuffIds": [],
+                              "LimitMaxHpType": 0,
+                              "LimitHpType": 0,
+                              "Location": {
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Z": 0.0
+                              },
+                              "TargetSelector": {
+                                "Enable": false,
+                                "Target": 0,
+                                "FilterDatas": [],
+                                "NeedTargetable": false,
+                                "SndFilter": 0,
+                                "PMIndex": 0
+                              },
+                              "AutoCheckActionChange": true
+                            },
+                            "Clear": false,
+                            "DisplayName": "技能使用/插入高优先级技能",
+                            "Remark": null
+                          }
+                        ],
+                        "DisplayName": "行为",
+                        "GUID": "ed55f087-a425-4fa6-a0e7-72f7ff70806f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 455,
+                        "Enable": true,
+                        "Remark": "黑盾"
+                      }
+                    ],
+                    "GUID": "9efd8010-51e5-4f14-914e-870589d9b95b",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 452,
+                    "Enable": true,
+                    "Remark": "ST不是骑士"
+                  }
+                ],
+                "GUID": "6df53c97-2ed1-4a17-b90d-8d38a7fe2bca",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 447,
+                "Enable": true,
+                "Remark": "3分钟黑盾选择"
+              },
               {
                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
                 "CondLogicType": 0,
@@ -12108,7 +12181,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 452,
+                "Id": 456,
                 "Enable": true,
                 "Remark": "5:31"
               },
@@ -12158,7 +12231,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 453,
+                "Id": 457,
                 "Enable": true,
                 "Remark": "黑盾"
               }
@@ -12171,7 +12244,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 451,
+            "Id": 446,
             "Enable": true,
             "Remark": "黑盾"
           }
@@ -12206,9 +12279,9 @@
     "是否启动自动挑退 0否 1是",
     "P5无敌开启位置 2在第二次接线无敌 3在第三次接线无敌",
     "06爆发药或28爆发药 6吃06爆发药 8吃28爆发药，同时延后第二个腐秽大地到2分钟",
-    "ST是否在第二次死刑开启无敌？ 0否1是"
+    "ST是否为骑士且在第二次死刑开启无敌？ 0否1是"
   ],
-  "ExposedVarDesc": "是否启用2.45特化循环 0否 1是\n是否启动自动挑退 0否 1是\nP5无敌开启位置 2在第二次接线无敌 3在第三次接线无敌\n06爆发药或28爆发药 6吃06爆发药 8吃28爆发药，同时延后第二个腐秽大地到2分钟\nST是否在第二次死刑开启无敌？ 0否1是\n",
+  "ExposedVarDesc": "是否启用2.45特化循环 0否 1是\n是否启动自动挑退 0否 1是\nP5无敌开启位置 2在第二次接线无敌 3在第三次接线无敌\n06爆发药或28爆发药 6吃06爆发药 8吃28爆发药，同时延后第二个腐秽大地到2分钟\nST是否ST是否为骑士且在第二次死刑开启无敌？ 0否1是\n",
   "OpenerScript": "",
   "Note": "MT1无敌后续两次减伤 ST2无敌后续一次减伤，ST位置有自动开盾和自动控仇。如果遇到了卡手或者其他问题可以DC@Sinclair,开荒不建议使用2.45特化。",
   "TerritoryTypeId": 1226,
