@@ -4,19 +4,19 @@
       "Version": "02",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M1S-VPR.json",
       "UpdateInfo": "M1S蝰蛇，06爆发药三附体，初版未精修。附带D12通用减伤。"
-    }
+    },
     {
       "Name": "M2S-VPR",
       "Version": "01",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M2S-VPR.json",
       "UpdateInfo": "M2S蝰蛇初版，06爆发药三附体，未精修。附带D12通用减伤。"
-    }
+    },
     {
       "Name": "M3S-VPR",
       "Version": "02",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-VPR.json",
       "UpdateInfo": "调整第一次防击退。"
-    }
+    },
     {
       "Name": "M4S-VPR",
       "Version": "07",
