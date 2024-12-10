@@ -1148,35 +1148,9 @@
                             "Remark": "关 超荷QT"
                           },
                           {
-                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
-                            "CondLogicType": 0,
-                            "CheckOnce": false,
-                            "ReverseResult": false,
-                            "TriggerConds": [
-                              {
-                                "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondCheckLastSpell, AEAssist",
-                                "SpellId": 25788,
-                                "Remark": null,
-                                "DisplayName": "General/检测自身技能使用"
-                              }
-                            ],
-                            "DisplayName": "等待条件",
-                            "GUID": "c866d45e-096a-46ca-aac3-153243cf607f",
-                            "Important": false,
-                            "Color": {
-                              "X": 1.0,
-                              "Y": 1.0,
-                              "Z": 0.4,
-                              "W": 1.0
-                            },
-                            "Id": 48,
-                            "Enable": true,
-                            "Remark": "等待自身使用飞锯"
-                          },
-                          {
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                            "DisplayName": "延迟[1.50]秒",
-                            "Delay": 1.5000001,
+                            "DisplayName": "延迟[10.00]秒",
+                            "Delay": 10.0,
                             "GUID": "07626295-d171-411e-bc86-6609fb35464f",
                             "Important": false,
                             "Color": {
@@ -1185,7 +1159,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 49,
+                            "Id": 48,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -1209,7 +1183,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 50,
+                            "Id": 49,
                             "Enable": true,
                             "Remark": "开 超荷QT"
                           }
@@ -1223,7 +1197,7 @@
                           "W": 1.0
                         },
                         "Id": 45,
-                        "Enable": true,
+                        "Enable": false,
                         "Remark": "7分05小锁超荷"
                       },
                       {
@@ -1260,7 +1234,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 53,
+                                "Id": 52,
                                 "Enable": true,
                                 "Remark": "开场390s"
                               },
@@ -1284,7 +1258,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 54,
+                                "Id": 53,
                                 "Enable": true,
                                 "Remark": "关超荷QT"
                               },
@@ -1307,7 +1281,7 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 55,
+                                "Id": 54,
                                 "Enable": true,
                                 "Remark": "电量设置60"
                               },
@@ -1333,9 +1307,25 @@
                                   "Z": 0.4,
                                   "W": 1.0
                                 },
-                                "Id": 56,
+                                "Id": 55,
                                 "Enable": true,
                                 "Remark": "等待自身使用 飞锯"
+                              },
+                              {
+                                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                                "DisplayName": "延迟[1.50]秒",
+                                "Delay": 1.5000001,
+                                "GUID": "615ebf46-b3aa-4a11-9e95-849ce278faba",
+                                "Important": false,
+                                "Color": {
+                                  "X": 1.0,
+                                  "Y": 1.0,
+                                  "Z": 0.4,
+                                  "W": 1.0
+                                },
+                                "Id": 56,
+                                "Enable": true,
+                                "Remark": ""
                               },
                               {
                                 "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
@@ -1484,7 +1474,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 52,
+                            "Id": 51,
                             "Enable": true,
                             "Remark": "6分半"
                           },
@@ -1753,7 +1743,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 51,
+                        "Id": 50,
                         "Enable": true,
                         "Remark": "爆发药2"
                       }
