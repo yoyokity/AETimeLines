@@ -13,9 +13,9 @@
     },
     {
       "Name": "M3S-MCH",
-      "Version": "13",
+      "Version": "14",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-MCH.json",
-      "UpdateInfo": "修复7分05秒飞锯回弹后插入超荷导致飞锯延后问题。"
+      "UpdateInfo": "是的孩子们M3S轴我又进行了调整。"
     },
     {
       "Name": "M4S-MCH",
