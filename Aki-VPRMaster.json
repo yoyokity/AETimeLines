@@ -19,8 +19,8 @@
     },
     {
       "Name": "M4S-VPR",
-      "Version": "07",
+      "Version": "08",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-VPR.json",
-      "UpdateInfo": "随acr逻辑调整，现在会更早打出蛇灵气。"
+      "UpdateInfo": "开场40秒boss回中锁飞蛇"
     }
   ]
