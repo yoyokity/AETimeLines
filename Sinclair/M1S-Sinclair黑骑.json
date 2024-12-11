@@ -12069,6 +12069,50 @@
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[20.00]秒",
+                        "Delay": 20.0,
+                        "GUID": "abb38ca2-22d7-4fa1-b562-d553bfb658ce",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 454,
+                        "Enable": true,
+                        "Remark": ""
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                        "CondLogicType": 0,
+                        "CheckOnce": false,
+                        "ReverseResult": false,
+                        "TriggerConds": [
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                            "Strs": null,
+                            "Remark": "",
+                            "RegexNameOrId": "38037",
+                            "NeedTargetable": false,
+                            "DisplayName": "General/敌人读条使用技能"
+                          }
+                        ],
+                        "DisplayName": "等待条件",
+                        "GUID": "759e40a7-d277-4a97-9638-296c2e49ff9f",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 455,
+                        "Enable": true,
+                        "Remark": "踩奶读条"
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
                         "DisplayName": "延迟[1.00]秒",
                         "Delay": 1.0,
                         "GUID": "bd7341dd-f93a-47dc-a5ed-cf39aff0ae77",
@@ -12079,7 +12123,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 454,
+                        "Id": 456,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -12129,7 +12173,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 455,
+                        "Id": 457,
                         "Enable": true,
                         "Remark": "黑盾"
                       }
@@ -12181,7 +12225,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 456,
+                "Id": 458,
                 "Enable": true,
                 "Remark": "5:31"
               },
@@ -12231,7 +12275,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 457,
+                "Id": 459,
                 "Enable": true,
                 "Remark": "黑盾"
               }
