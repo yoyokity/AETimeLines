@@ -825,11 +825,21 @@
                 "Remark": "5分钟"
               },
               {
-                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeScriptNode, AEAssist",
-                "OnlyCheck": true,
-                "Script": "using AEAssist;\nusing System.Numerics;\nusing AEAssist.CombatRoutine.Trigger;\nusing AEAssist.CombatRoutine.Trigger.Node;\nusing yoyokity.DNC.QtUI;\n\nnamespace ScriptTest;\n\npublic class TestScript : ITriggerScript\n{\n    // Check返回True代表此节点执行完毕， 非检测模式下，返回false时一直重复执行（每帧）\n    // 检测模式下， condParams必定为空\n    public bool Check(ScriptEnv scriptEnv, ITriggerCondParams condParams)\n    {\n        return  Qt.Instance.GetQt(\"爆发药\");\n    }\n}",
-                "DisplayName": "脚本节点",
-                "GUID": "aba8b177-fd9d-4c89-86cd-b437eee7afa9",
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": false,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
+                    "$type": "yoyokity.DNC.Triggers.TriggerCondQt, yoyokity",
+                    "Key": "爆发药",
+                    "Value": true,
+                    "DisplayName": "Dancer/QT检测",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "等待条件",
+                "GUID": "eb03035e-d738-49dc-b065-40801d31bb1c",
                 "Important": false,
                 "Color": {
                   "X": 1.0,
@@ -987,7 +997,7 @@
                   {
                     "$type": "yoyokity.DNC.Triggers.提拉纳阈值设置, yoyokity",
                     "_阈值": 45,
-                    "DisplayName": "提拉纳阈值设置",
+                    "DisplayName": "Dancer/提拉纳阈值设置",
                     "Remark": null
                   }
                 ],
@@ -1128,7 +1138,7 @@
                   {
                     "$type": "yoyokity.DNC.Triggers.提拉纳阈值设置, yoyokity",
                     "_阈值": 30,
-                    "DisplayName": "提拉纳阈值设置",
+                    "DisplayName": "Dancer/提拉纳阈值设置",
                     "Remark": null
                   }
                 ],
@@ -1279,7 +1289,7 @@
   "ExposedVars": [],
   "ExposedVarDesc": "",
   "OpenerScript": "using AEAssist;\nusing AEAssist.CombatRoutine.Module;\nusing AEAssist.CombatRoutine.Module.Opener;\nusing AEAssist.Extension;\nusing AEAssist.Helper;\nusing AEAssist.JobApi;\nusing yoyokity.Common;\nusing yoyokity.DNC.QtUI;\nusing Data = yoyokity.DNC.SlotResolver.Data;\n\nnamespace ScriptTest;\n\npublic class OpenerTest : IOpener\n{\n    // 留空代表使用ACR提供的起手\n   public List<Action<Slot>> Sequence { get; } = new();\n\n    // 处理倒计时期间的行为\n    public void InitCountDown(CountDownHandler countDownHandler)\n    {\n        //qt除了爆发药以外都复原\n        Qt.Reset();\n        Qt.Instance.SetQt(\"爆发药2分\", false);\n        //\n        const int startTime = 12000;\n        countDownHandler.AddAction(startTime, Data.Spells.标准舞步);\n        countDownHandler.AddAction(startTime - 1500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        countDownHandler.AddAction(startTime - 2500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        if (Qt.Instance.GetQt(\"爆发药\") && !Qt.Instance.GetQt(\"爆发药2分\"))\n            countDownHandler.AddPotionAction(1000);\n        countDownHandler.AddAction(300, Data.Spells.双色标准舞步结束);\n    }\n}",
-  "Note": "v0.1.1 爆发药0-5-10",
+  "Note": "v0.1.2 爆发药0-5-10",
   "TerritoryTypeId": 1232,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
