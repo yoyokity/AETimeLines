@@ -492,6 +492,101 @@
                 "ReverseResult": false,
                 "TriggerConds": [
                   {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
+                    "VariableName": "击杀时间",
+                    "CompareType": 0,
+                    "VariableVaule": 1,
+                    "Remark": null,
+                    "DisplayName": "General/变量值"
+                  }
+                ],
+                "DisplayName": "等待条件",
+                "GUID": "87c80476-98f4-4048-9c49-1718beaab3a6",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 19,
+                "Enable": true,
+                "Remark": ""
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": false,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                    "Remark": "",
+                    "Delay": 478.0,
+                    "DisplayName": "General/战斗开始后多少秒"
+                  }
+                ],
+                "DisplayName": "等待条件",
+                "GUID": "d172c604-6180-4e2d-ad66-64df5808888e",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 20,
+                "Enable": true,
+                "Remark": "7：58"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerAction.TriggerActionUsePotion, AEAssist",
+                    "DisplayName": "General/使用爆发药",
+                    "Remark": ""
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "d58c054d-2c31-4a0b-8bae-414356b72a37",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 21,
+                "Enable": true,
+                "Remark": "爆发药"
+              }
+            ],
+            "GUID": "394c459c-a260-4384-95e9-5dc4fd6a6403",
+            "Important": false,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 18,
+            "Enable": true,
+            "Remark": "8分钟爆发药"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": false,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
                     "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondWaitTarget, AEAssist",
                     "TargetSelector": {
                       "Enable": true,
@@ -528,7 +623,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 19,
+                "Id": 23,
                 "Enable": true,
                 "Remark": "3血rush"
               },
@@ -552,7 +647,7 @@
                   "Z": 0.4,
                   "W": 1.0
                 },
-                "Id": 20,
+                "Id": 24,
                 "Enable": true,
                 "Remark": "rush"
               }
@@ -565,7 +660,7 @@
               "Z": 0.4,
               "W": 1.0
             },
-            "Id": 18,
+            "Id": 22,
             "Enable": true,
             "Remark": "rush"
           }
@@ -595,10 +690,12 @@
     "Enable": true,
     "Remark": ""
   },
-  "ExposedVars": [],
-  "ExposedVarDesc": "",
-  "OpenerScript": "using AEAssist;\nusing AEAssist.CombatRoutine.Module;\nusing AEAssist.CombatRoutine.Module.Opener;\nusing AEAssist.Extension;\nusing AEAssist.Helper;\nusing AEAssist.JobApi;\nusing yoyokity.Common;\nusing yoyokity.DNC.QtUI;\nusing Data = yoyokity.DNC.SlotResolver.Data;\n\nnamespace ScriptTest;\n\npublic class OpenerTest : IOpener\n{\n    // 留空代表使用ACR提供的起手\n   public List<Action<Slot>> Sequence { get; } = new();\n\n    // 处理倒计时期间的行为\n    public void InitCountDown(CountDownHandler countDownHandler)\n    {\n        //qt除了爆发药以外都复原\n        Qt.Reset();\n        Qt.Instance.SetQt(\"爆发药2分\", false);\n        //\n        const int startTime = 15000;\n        countDownHandler.AddAction(startTime, Data.Spells.标准舞步);\n        countDownHandler.AddAction(startTime - 1500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        countDownHandler.AddAction(startTime - 2500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        if (Qt.Instance.GetQt(\"爆发药\") && !Qt.Instance.GetQt(\"爆发药2分\"))\n            countDownHandler.AddPotionAction(1000);\n        countDownHandler.AddAction(300, Data.Spells.双色标准舞步结束);\n    }\n}",
-  "Note": "v0.0.4 爆发药0-6",
+  "ExposedVars": [
+    "击杀时间"
+  ],
+  "ExposedVarDesc": "设置击杀时间，爆发药时间会根据击杀时间自动调整。\n0【8分 20以内击杀】  1【8分30准时击杀】\n",
+  "OpenerScript": "using AEAssist;\nusing AEAssist.CombatRoutine.Module;\nusing AEAssist.CombatRoutine.Module.Opener;\nusing AEAssist.Extension;\nusing AEAssist.Helper;\nusing AEAssist.JobApi;\nusing yoyokity.Common;\nusing yoyokity.DNC.QtUI;\nusing Data = yoyokity.DNC.SlotResolver.Data;\n\nnamespace ScriptTest;\n\npublic class OpenerTest : IOpener\n{\n    // 留空代表使用ACR提供的起手\n   public List<Action<Slot>> Sequence { get; } = new();\n\n    // 处理倒计时期间的行为\n    public void InitCountDown(CountDownHandler countDownHandler)\n    {\n        //qt除了爆发药以外都复原\n        Qt.Reset();\n        if(AI.Instance.ExposeVarsGetValueOrDefault(\"击杀时间\") == 0)\n            Qt.Instance.SetQt(\"爆发药2分\", false);\n        else\n            Qt.Instance.SetQt(\"爆发药2分\", true);\n        //\n        const int startTime = 15000;\n        countDownHandler.AddAction(startTime, Data.Spells.标准舞步);\n        countDownHandler.AddAction(startTime - 1500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        countDownHandler.AddAction(startTime - 2500, () => Core.Resolve<JobApi_Dancer>().NextStep.GetSpell());\n        if (Qt.Instance.GetQt(\"爆发药\") && !Qt.Instance.GetQt(\"爆发药2分\"))\n            countDownHandler.AddPotionAction(1000);\n        countDownHandler.AddAction(300, Data.Spells.双色标准舞步结束);\n    }\n}",
+  "Note": "v0.0.5 爆发药时间自选",
   "TerritoryTypeId": 1228,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",

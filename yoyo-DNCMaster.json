@@ -7,9 +7,9 @@
   },
   {
     "Name": "M2S-yoyo舞者",
-    "Version": "0.0.4",
+    "Version": "0.0.5",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/yoyokity/M2S-yoyo舞者.json",
-    "UpdateInfo": ""
+    "UpdateInfo": "添加了06或28的爆发药时间可选项，在变量中设置"
   },
   {
     "Name": "M3S-yoyo舞者",
