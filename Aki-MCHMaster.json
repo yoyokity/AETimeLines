@@ -9,7 +9,7 @@
       "Name": "M2S-MCH",
       "Version": "06",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M2S-MCH.json",
-      "UpdateInfo": "现在在吃到4层爱心控制效果后不会运行第二瓶爆发药。"
+      "UpdateInfo": "现在吃到4层爱心控制效果后不会运行第二瓶爆发药。"
     },
     {
       "Name": "M3S-MCH",
@@ -19,8 +19,8 @@
     },
     {
       "Name": "M4S-MCH",
-      "Version": "12",
+      "Version": "13",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-MCH.json",
-      "UpdateInfo": "自动更新初版。"
+      "UpdateInfo": "团灭后不再会走向死前的路径点，以后可以放心挂机了同学们。。"
     }
   ]
