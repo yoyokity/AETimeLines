@@ -13,9 +13,9 @@
     },
     {
       "Name": "M3S-MCH",
-      "Version": "15",
+      "Version": "16",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M3S-MCH.json",
-      "UpdateInfo": "增加第二瓶药的机器人提醒你靠近。"
+      "UpdateInfo": "稳定性增强。"
     },
     {
       "Name": "M4S-MCH",
