@@ -2391,8 +2391,8 @@
                         "Childs": [
                           {
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                            "DisplayName": "延迟[164.00]秒",
-                            "Delay": 164.0,
+                            "DisplayName": "延迟[163.00]秒",
+                            "Delay": 163.0,
                             "GUID": "0a4d1c9a-6ad7-4153-b7b8-1168aff08f19",
                             "Important": false,
                             "Color": {
