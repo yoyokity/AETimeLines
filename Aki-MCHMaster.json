@@ -19,8 +19,8 @@
     },
     {
       "Name": "M4S-MCH",
-      "Version": "13",
+      "Version": "14",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M4S-MCH.json",
-      "UpdateInfo": "团灭后不再会走向死前的路径点，以后可以放心挂机了同学们。。"
+      "UpdateInfo": "增强稳定性"
     }
   ]
