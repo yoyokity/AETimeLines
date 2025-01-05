@@ -78,6 +78,7 @@ public static class TimeLineUpdater
         }
         catch (Exception ex)
         {
+            jsonData = null;
             LogHelper.Print("时间轴", $"时间轴更新失败！请检查github网络连接！");
         }
     }
