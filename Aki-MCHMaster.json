@@ -1,9 +1,9 @@
 [
     {
       "Name": "M1S-MCH",
-      "Version": "05",
+      "Version": "06",
       "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/Aki/M1S-MCH.json",
-      "UpdateInfo": "自动更新初版。"
+      "UpdateInfo": "0107增强了稳定性。"
     },
     {
       "Name": "M2S-MCH",
