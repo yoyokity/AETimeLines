@@ -1,8 +1,8 @@
 [
   {
     "Name": "M1S-yoyo贤者",
-    "Version": "0.0.1",
+    "Version": "0.0.2",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/yoyokity/M1S-yoyo贤者.json",
-    "UpdateInfo": ""
+    "UpdateInfo": "修复个别小问题"
   }
 ]
