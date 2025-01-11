@@ -7634,7 +7634,7 @@
                         "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondCheckTargetIcon, AEAssist",
                         "DisplayName": "副本流程/检测自身最近是否被技能点名TargetIcon",
                         "Remark": "",
-                        "Args0": -237,
+                        "Args0": -25,
                         "CheckTime": 0.1
                       }
                     ],
@@ -8031,7 +8031,7 @@
   ],
   "ExposedVarDesc": "1、gcd无损精修轴\n2、可以全程滑步插件锁死，轴会自动在需要的地方打瞬发\n2、第二下软狂暴开始炒股轴也会给群盾了，都打到这里了这把也别炒了，本分点",
   "OpenerScript": "",
-  "Note": "v0.0.1 H2轴",
+  "Note": "v0.0.2 H2轴",
   "TerritoryTypeId": 1228,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
