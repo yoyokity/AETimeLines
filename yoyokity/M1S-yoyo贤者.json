@@ -5151,7 +5151,7 @@
                         "TriggerConds": [
                           {
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
-                            "VariableName": "0=日常推荐轴 1=开荒推荐轴",
+                            "VariableName": "0=炒股轴 1=开荒推荐轴",
                             "CompareType": 0,
                             "VariableVaule": 0,
                             "Remark": null,
@@ -5544,7 +5544,7 @@
                         "TriggerConds": [
                           {
                             "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondVariable, AEAssist",
-                            "VariableName": "0=日常推荐轴 1=开荒推荐轴",
+                            "VariableName": "0=炒股轴 1=开荒推荐轴",
                             "CompareType": 0,
                             "VariableVaule": 1,
                             "Remark": null,
