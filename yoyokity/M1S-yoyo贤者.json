@@ -8374,6 +8374,22 @@
                     "Remark": ""
                   },
                   {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[5.00]秒",
+                    "Delay": 5.0,
+                    "GUID": "9d51cfed-e0fb-4ac1-8485-d4097bbd682a",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 370,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
                     "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
                     "TriggerActions": [
                       {
@@ -8393,7 +8409,7 @@
                       "Z": 0.4,
                       "W": 1.0
                     },
-                    "Id": 370,
+                    "Id": 371,
                     "Enable": true,
                     "Remark": ""
                   }
@@ -8454,7 +8470,7 @@
   ],
   "ExposedVarDesc": "P1   22或44分摊：罩子 自生 不屈 智慧之爱\n        跳+引导+分摊：智慧之爱 泛输血 整体论\n        大AOE：整体论 罩子 检测贤炮\nP3   分身第一次：自生 不屈\n        分身引导：罩子 智慧之爱 泛输血\n        分身44：罩子\n        大AOE：贤炮 整体论\nP4   猫猫雨：  (第二次) 泛输血 整体论 罩子\n                      （第四次) 智慧之爱",
   "OpenerScript": "",
-  "Note": "v0.0.5 h1h2都能用",
+  "Note": "v0.0.6 h1h2都能用",
   "TerritoryTypeId": 1226,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
