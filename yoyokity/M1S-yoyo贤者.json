@@ -8339,6 +8339,76 @@
                 "Id": 365,
                 "Enable": true,
                 "Remark": "13秒"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondCheckTargetIcon, AEAssist",
+                        "DisplayName": "副本流程/检测自身最近是否被技能点名TargetIcon",
+                        "Remark": "",
+                        "Args0": 320,
+                        "CheckTime": 5.0
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "6db1bb83-b573-4bca-bff7-c8a45c234be7",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 369,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "即刻",
+                        "Value": false,
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "b0a06e0a-9b08-4fac-a083-b2856216cd80",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 370,
+                    "Enable": true,
+                    "Remark": ""
+                  }
+                ],
+                "GUID": "e7ce82ae-6629-4326-9a45-e56672600282",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 368,
+                "Enable": true,
+                "Remark": "点名打个即刻"
               }
             ],
             "GUID": "c866a58f-2552-4465-80f1-27f258119cf9",
@@ -8384,7 +8454,7 @@
   ],
   "ExposedVarDesc": "P1   22或44分摊：罩子 自生 不屈 智慧之爱\n        跳+引导+分摊：智慧之爱 泛输血 整体论\n        大AOE：整体论 罩子 检测贤炮\nP3   分身第一次：自生 不屈\n        分身引导：罩子 智慧之爱 泛输血\n        分身44：罩子\n        大AOE：贤炮 整体论\nP4   猫猫雨：  (第二次) 泛输血 整体论 罩子\n                      （第四次) 智慧之爱",
   "OpenerScript": "",
-  "Note": "v0.0.4 h1h2都能用",
+  "Note": "v0.0.5 h1h2都能用",
   "TerritoryTypeId": 1226,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
