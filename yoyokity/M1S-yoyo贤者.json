@@ -1829,8 +1829,8 @@
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                        "DisplayName": "延迟[3.30]秒",
-                        "Delay": 3.3,
+                        "DisplayName": "延迟[5.50]秒",
+                        "Delay": 5.5,
                         "GUID": "a373272e-b54a-4c45-ab35-9c6a7eb56220",
                         "Important": false,
                         "Color": {
@@ -1848,7 +1848,7 @@
                         "TriggerActions": [
                           {
                             "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
-                            "Key": "箭毒",
+                            "Key": "即刻",
                             "Value": false,
                             "DisplayName": "Sage/Hotkey",
                             "Remark": null
@@ -1865,7 +1865,7 @@
                         },
                         "Id": 85,
                         "Enable": true,
-                        "Remark": ""
+                        "Remark": "即刻"
                       }
                     ],
                     "GUID": "142c35ec-d997-44ce-876f-4fbadedb44f7",
@@ -8470,7 +8470,7 @@
   ],
   "ExposedVarDesc": "P1   22或44分摊：罩子 自生 不屈 智慧之爱\n        跳+引导+分摊：智慧之爱 泛输血 整体论\n        大AOE：整体论 罩子 检测贤炮\nP3   分身第一次：自生 不屈\n        分身引导：罩子 智慧之爱 泛输血\n        分身44：罩子\n        大AOE：贤炮 整体论\nP4   猫猫雨：  (第二次) 泛输血 整体论 罩子\n                      （第四次) 智慧之爱",
   "OpenerScript": "",
-  "Note": "v0.0.6 h1h2都能用",
+  "Note": "v0.0.8 h1h2都能用",
   "TerritoryTypeId": 1226,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
