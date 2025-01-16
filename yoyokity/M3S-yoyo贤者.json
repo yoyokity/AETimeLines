@@ -4791,6 +4791,46 @@
                         "Id": 214,
                         "Enable": true,
                         "Remark": ""
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[25.00]秒",
+                        "Delay": 25.0,
+                        "GUID": "876347a1-00d9-4878-9554-6fda4dbfd4eb",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 219,
+                        "Enable": true,
+                        "Remark": ""
+                      },
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                        "TriggerActions": [
+                          {
+                            "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                            "Key": "自生",
+                            "Value": false,
+                            "DisplayName": "Sage/Hotkey",
+                            "Remark": null
+                          }
+                        ],
+                        "DisplayName": "行为",
+                        "GUID": "67333348-d47e-45da-9bd1-9c7b13979042",
+                        "Important": false,
+                        "Color": {
+                          "X": 1.0,
+                          "Y": 1.0,
+                          "Z": 0.4,
+                          "W": 1.0
+                        },
+                        "Id": 220,
+                        "Enable": true,
+                        "Remark": "自生"
                       }
                     ],
                     "GUID": "396a1c43-25f5-4e89-842c-2ec20dcf3562",
@@ -4835,33 +4875,9 @@
                           "Z": 0.0,
                           "W": 1.0
                         },
-                        "Id": 220,
+                        "Id": 222,
                         "Enable": true,
                         "Remark": ""
-                      },
-                      {
-                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                        "TriggerActions": [
-                          {
-                            "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
-                            "Key": "自生",
-                            "Value": false,
-                            "DisplayName": "Sage/Hotkey",
-                            "Remark": null
-                          }
-                        ],
-                        "DisplayName": "行为",
-                        "GUID": "67333348-d47e-45da-9bd1-9c7b13979042",
-                        "Important": false,
-                        "Color": {
-                          "X": 1.0,
-                          "Y": 1.0,
-                          "Z": 0.4,
-                          "W": 1.0
-                        },
-                        "Id": 221,
-                        "Enable": true,
-                        "Remark": "自生"
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
@@ -4875,7 +4891,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 222,
+                        "Id": 223,
                         "Enable": true,
                         "Remark": ""
                       },
@@ -4899,7 +4915,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 223,
+                        "Id": 224,
                         "Enable": true,
                         "Remark": "箭毒"
                       },
@@ -4923,25 +4939,9 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 224,
-                        "Enable": true,
-                        "Remark": "智慧之爱"
-                      },
-                      {
-                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                        "DisplayName": "延迟[2.40]秒",
-                        "Delay": 2.4,
-                        "GUID": "bf908dfc-f7d2-4b03-8efb-a8940c259f05",
-                        "Important": false,
-                        "Color": {
-                          "X": 1.0,
-                          "Y": 1.0,
-                          "Z": 0.4,
-                          "W": 1.0
-                        },
                         "Id": 225,
                         "Enable": true,
-                        "Remark": ""
+                        "Remark": "智慧之爱"
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
@@ -4976,7 +4976,7 @@
                       "Z": 0.0,
                       "W": 1.0
                     },
-                    "Id": 219,
+                    "Id": 221,
                     "Enable": true,
                     "Remark": "Quadruple/Octuple Lariat[2222分摊/分散+钢月] 09:01-09:08"
                   },
@@ -14478,7 +14478,7 @@
   ],
   "ExposedVarDesc": "1.4XAOE  范输血\n2.2次6XAOE 整体论 罩子 活化贤炮\n                      罩子 范输血 \n3.导火线 1-4 罩子 低语 不屈 整体论 \n               5-8 智慧之爱  活化贤炮血量判定\n4.体操 范输血 自生 不屈 后半罩子\n5.2次8XAOE 整体论 罩子 活化贤炮 不屈\n                      低语 智慧之爱 罩子 范输血\n6.软狂暴 罩子 自生 整体论 活化贤炮\n                      ",
   "OpenerScript": "",
-  "Note": "v0.0.2 h2轴，自动防击退",
+  "Note": "v0.0.3 h2轴，自动防击退",
   "TerritoryTypeId": 1230,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
