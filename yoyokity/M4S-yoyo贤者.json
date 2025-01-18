@@ -2298,9 +2298,9 @@
                           },
                           {
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                            "DisplayName": "延迟[6.00]秒",
-                            "Delay": 6.0,
-                            "GUID": "3c305af4-6872-4686-ad83-b8672c247ae5",
+                            "DisplayName": "延迟[4.00]秒",
+                            "Delay": 4.0,
+                            "GUID": "2fc0892a-0b18-44a2-97c4-5f7d18459c7d",
                             "Important": false,
                             "Color": {
                               "X": 1.0,
@@ -2309,6 +2309,46 @@
                               "W": 1.0
                             },
                             "Id": 88,
+                            "Enable": true,
+                            "Remark": ""
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                            "TriggerActions": [
+                              {
+                                "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                                "Key": "疾跑",
+                                "Value": false,
+                                "DisplayName": "Sage/Hotkey",
+                                "Remark": null
+                              }
+                            ],
+                            "DisplayName": "行为",
+                            "GUID": "4d8ac38a-d0e6-43c1-879c-523797b84c29",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 89,
+                            "Enable": true,
+                            "Remark": "疾跑"
+                          },
+                          {
+                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                            "DisplayName": "延迟[2.00]秒",
+                            "Delay": 2.0,
+                            "GUID": "3c305af4-6872-4686-ad83-b8672c247ae5",
+                            "Important": false,
+                            "Color": {
+                              "X": 1.0,
+                              "Y": 1.0,
+                              "Z": 0.4,
+                              "W": 1.0
+                            },
+                            "Id": 90,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -2332,7 +2372,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 89,
+                            "Id": 91,
                             "Enable": true,
                             "Remark": "用 贤不屈"
                           },
@@ -2348,7 +2388,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 90,
+                            "Id": 92,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -2372,7 +2412,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 91,
+                            "Id": 93,
                             "Enable": true,
                             "Remark": "发炎"
                           },
@@ -2388,7 +2428,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 92,
+                            "Id": 94,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -2412,7 +2452,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 93,
+                            "Id": 95,
                             "Enable": true,
                             "Remark": "突进"
                           }
@@ -2459,7 +2499,7 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 95,
+                            "Id": 97,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -2483,7 +2523,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 96,
+                            "Id": 98,
                             "Enable": true,
                             "Remark": "贤炮"
                           },
@@ -2499,7 +2539,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 97,
+                            "Id": 99,
                             "Enable": true,
                             "Remark": ""
                           },
@@ -2523,7 +2563,7 @@
                               "Z": 0.4,
                               "W": 1.0
                             },
-                            "Id": 98,
+                            "Id": 100,
                             "Enable": true,
                             "Remark": "罩子"
                           }
@@ -2536,7 +2576,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 94,
+                        "Id": 96,
                         "Enable": true,
                         "Remark": "Wicked Bolt[5x分摊] 03:24-03:28"
                       }
@@ -2589,55 +2629,15 @@
                               "Z": 0.0,
                               "W": 1.0
                             },
-                            "Id": 101,
-                            "Enable": true,
-                            "Remark": ""
-                          },
-                          {
-                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                            "DisplayName": "延迟[10.00]秒",
-                            "Delay": 10.0,
-                            "GUID": "3358a27d-9a50-4965-a000-4917992bc950",
-                            "Important": false,
-                            "Color": {
-                              "X": 1.0,
-                              "Y": 1.0,
-                              "Z": 0.4,
-                              "W": 1.0
-                            },
-                            "Id": 102,
-                            "Enable": true,
-                            "Remark": ""
-                          },
-                          {
-                            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
-                            "TriggerActions": [
-                              {
-                                "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
-                                "Key": "疾跑",
-                                "Value": false,
-                                "DisplayName": "Sage/Hotkey",
-                                "Remark": null
-                              }
-                            ],
-                            "DisplayName": "行为",
-                            "GUID": "7cd2a6eb-31e2-4229-9c71-34aa0d0e76f3",
-                            "Important": false,
-                            "Color": {
-                              "X": 1.0,
-                              "Y": 1.0,
-                              "Z": 0.4,
-                              "W": 1.0
-                            },
                             "Id": 103,
                             "Enable": true,
-                            "Remark": "疾跑"
+                            "Remark": ""
                           },
                           {
                             "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
-                            "DisplayName": "延迟[4.00]秒",
-                            "Delay": 4.0,
-                            "GUID": "95ebbf2d-4245-45a8-91be-8c0f7b646d7d",
+                            "DisplayName": "延迟[14.00]秒",
+                            "Delay": 14.0,
+                            "GUID": "3358a27d-9a50-4965-a000-4917992bc950",
                             "Important": false,
                             "Color": {
                               "X": 1.0,
@@ -2762,7 +2762,7 @@
                           "Z": 0.4,
                           "W": 1.0
                         },
-                        "Id": 100,
+                        "Id": 102,
                         "Enable": true,
                         "Remark": "Ion Cluster[BOSS移动到场边准备拆地板] 03:37-03:40"
                       },
@@ -3203,7 +3203,7 @@
                       "Z": 0.8862745,
                       "W": 1.0
                     },
-                    "Id": 99,
+                    "Id": 101,
                     "Enable": true,
                     "Remark": "P3 离子簇 03:37-04:52"
                   },
@@ -9509,9 +9509,9 @@
   "ExposedVars": [
     "0=炒股轴 1=开荒轴"
   ],
-  "ExposedVarDesc": "1魔女狩猎 前两轮 整体论 罩子 \n                 钢铁月环点名 泛输血\n2二雷蓄雷 低语+智慧 分散分摊 罩子 贤不屈\n35X分摊 罩子 活化贤炮\n4黄蓝炮 2次罩子 泛输血 整体论\n5转场AOE 罩子 泛输血 整体论 活化群盾\n6本体AOE 罩子+整体论或者罩子+泛输血",
+  "ExposedVarDesc": "全程可以滑步锁死\n10分钟运动会那里遇到1-4或4-1的时候自己手打个瞬发或者解锁滑步。",
   "OpenerScript": "",
-  "Note": "v0.0.2 h2轴，爆发药0-5-10",
+  "Note": "v0.0.3 h2轴，爆发药0-5-10",
   "TerritoryTypeId": 1232,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
