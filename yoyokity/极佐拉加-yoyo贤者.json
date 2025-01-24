@@ -1,0 +1,1922 @@
+{
+  "GUID": "10c46bfd-e415-43c2-9b1d-b9c42940dbea",
+  "ConfigVersion": 6,
+  "TargetJob": 40,
+  "Author": "yoyokity",
+  "Name": "极佐拉加-yoyo贤者",
+  "TreeRoot": {
+    "DisplayName": "Start",
+    "Childs": [
+      {
+        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeParallel, AEAssist",
+        "DisplayName": "并行",
+        "AnyReturn": false,
+        "StopWhenDead": false,
+        "Childs": [
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionQt, yoyokity",
+                        "Key": "AOE",
+                        "Value": false,
+                        "DisplayName": "Sage/QT",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionQt, yoyokity",
+                        "Key": "单奶",
+                        "Value": false,
+                        "DisplayName": "Sage/QT",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionQt, yoyokity",
+                        "Key": "群奶",
+                        "Value": false,
+                        "DisplayName": "Sage/QT",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionQt, yoyokity",
+                        "Key": "保留1蓝豆",
+                        "Value": false,
+                        "DisplayName": "Sage/QT",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "e05ae139-ea5a-4556-9218-2222f1db7e3a",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 5,
+                    "Enable": true,
+                    "Remark": "更改QT设置 yoyo"
+                  }
+                ],
+                "GUID": "b1d81c9f-bb20-4006-a330-2319d040555c",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 4,
+                "Enable": true,
+                "Remark": "开场qt设置"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37784",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "941ba46f-9b54-4924-af6f-ce1a6e7e763a",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 7,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "3f0def40-f479-4292-838d-b06ffef13a4c",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 8,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  }
+                ],
+                "GUID": "eb181935-490a-4809-a2ab-80a4aa01d86e",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 6,
+                "Enable": true,
+                "Remark": "开场AOE"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "39227",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "4bb8089b-ff47-42b3-ac7a-a1641d2e8293",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 10,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "输血(目标的目标)",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "拯救",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "a34ee198-47ee-4661-a3f6-68515def1a95",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 11,
+                    "Enable": true,
+                    "Remark": "输血+拯救"
+                  }
+                ],
+                "GUID": "e879cafd-81ac-49d0-84aa-08847f8c1f90",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 9,
+                "Enable": true,
+                "Remark": "双T接线"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37783",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "ac24c0b1-da36-4ea1-b9e8-1cd3fbcd9d45",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 13,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "f2eb95c9-8ef7-431d-a015-654bdc65a594",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 14,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[8.00]秒",
+                    "Delay": 8.0,
+                    "GUID": "809061b1-68ca-47f1-87a0-e8a248ae90f6",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 15,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "c451c8e9-4277-412b-b3e1-3988d228f496",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 16,
+                    "Enable": true,
+                    "Remark": "不屈"
+                  }
+                ],
+                "GUID": "fc201248-7b78-4c26-9a93-5cb7d05528a8",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 12,
+                "Enable": true,
+                "Remark": "转阶段"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37727",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "4f1326c8-8c98-4b9e-b312-80d88d9986dd",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 18,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[6.00]秒",
+                    "Delay": 6.0,
+                    "GUID": "dcd42ef9-3899-42a5-b13b-2b4ef2029cb2",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 19,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "自生",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "ce703863-bc18-4740-8e28-8bca694c4f95",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 20,
+                    "Enable": true,
+                    "Remark": "罩子+自生"
+                  }
+                ],
+                "GUID": "323b9a33-aad9-4df8-8eed-d6ec10470fe8",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 17,
+                "Enable": true,
+                "Remark": "第二次连线（利刃冲）"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37784",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "f339902c-2bf6-4ad4-9c8e-fdc461a508b3",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 22,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[1.50]秒",
+                    "Delay": 1.5,
+                    "GUID": "98f0c820-2402-4f6b-8a57-1fafc65b1e70",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 23,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "7a2b63bf-0ae4-458b-86bf-6bead26c5c27",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 24,
+                    "Enable": true,
+                    "Remark": "不屈"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[3.50]秒",
+                    "Delay": 3.5,
+                    "GUID": "8c842139-5e55-4f48-a821-2cde138495d6",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 25,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "贤炮(有活化就加上)",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "06514304-bcb4-4d96-bb17-9e4490d0c9a0",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 26,
+                    "Enable": true,
+                    "Remark": "贤炮"
+                  }
+                ],
+                "GUID": "c34bf99a-1b82-4d4b-93b2-7967015de4ad",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 21,
+                "Enable": true,
+                "Remark": "转阶段"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37784",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "b1a12df9-a630-4668-a5c0-7c11a8e2b93e",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 28,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "df5a05e2-3e19-4a9b-ab63-ea7a10ebc2fe",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 29,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[5.00]秒",
+                    "Delay": 5.0,
+                    "GUID": "f8ff46f4-5017-4681-99ea-c72e1737146d",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 30,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "自生",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "eb4cf9f0-4ae1-4868-a565-d6f9cf0082ad",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 31,
+                    "Enable": true,
+                    "Remark": "自生+不屈"
+                  }
+                ],
+                "GUID": "0b20765f-5fb8-43fa-be39-9eb5520ac231",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 27,
+                "Enable": true,
+                "Remark": "Aoe"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "39560",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "333b49ca-2bcd-4a65-8cc1-e32ab3960ebb",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 33,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[5.00]秒",
+                    "Delay": 5.0,
+                    "GUID": "980cba48-0367-4ff8-bd20-ae471ccab696",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 34,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "智慧之爱",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "整体论",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "泛输血",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "128ba80a-2cca-43f7-9bb5-497421c4be6c",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 35,
+                    "Enable": true,
+                    "Remark": "智慧+整体论+泛输血"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[15.00]秒",
+                    "Delay": 15.0,
+                    "GUID": "c9279ab1-c57b-4719-9e7d-ad9e95fa3df2",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 36,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "689d873a-36c3-4f45-a205-2b51039c04ee",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 37,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[10.00]秒",
+                    "Delay": 10.0,
+                    "GUID": "67915847-f131-44ad-af83-f29d9efc73a0",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 38,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "输血(目标的目标)",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "944d7bb3-1698-4adf-9cd0-de096ba98377",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 39,
+                    "Enable": true,
+                    "Remark": "输血"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[30.00]秒",
+                    "Delay": 30.0,
+                    "GUID": "b8e1f3f9-9bc6-430d-b214-169f81757422",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 40,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "1fafce55-ee1f-4c9c-988b-56b8b08b9cad",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 41,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  }
+                ],
+                "GUID": "d28f9c24-7205-4bf8-9ed6-7bc514b0ea8c",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 32,
+                "Enable": true,
+                "Remark": "撞线"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37783",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "18a9c897-6feb-4893-be0f-f18f8fbf1962",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 43,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[7.00]秒",
+                    "Delay": 7.0,
+                    "GUID": "a117d09d-69b5-4fa6-a872-c8bd5c3fc0ae",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 44,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "af8d6857-4b28-4eea-840d-acbe9c4a8017",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 45,
+                    "Enable": true,
+                    "Remark": "不屈"
+                  }
+                ],
+                "GUID": "6fdc1247-1fd2-4b91-9f96-398efe3fc3ff",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 42,
+                "Enable": true,
+                "Remark": "转阶段"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37774",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "b406183e-61d2-4a2c-8f31-3d5e473ed3e3",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 47,
+                    "Enable": true,
+                    "Remark": ""
+                  }
+                ],
+                "GUID": "c8119320-51f6-4831-b300-b821dd0a4f67",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 46,
+                "Enable": true,
+                "Remark": "击飞"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37778",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "043a2bf0-8baf-4db3-bcee-0f5c8cbcb5e1",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 49,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "贤炮(有活化就加上)",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "自生",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "d154fa1e-4d7b-47ba-b450-5930665e340e",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 50,
+                    "Enable": true,
+                    "Remark": "贤炮+自生"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[10.00]秒",
+                    "Delay": 10.0,
+                    "GUID": "5c5380f1-5a09-45da-89ab-00f0e6dab71a",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 51,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "3c4ae142-6dae-4cd7-aea8-4834ba941eb0",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 52,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  }
+                ],
+                "GUID": "847e2e43-fad5-4658-ad28-d9e8b22a0751",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 48,
+                "Enable": true,
+                "Remark": "无敌刃"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "半身残",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "4982b63c-050a-4c0a-9e32-c23b064c0b10",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 54,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreePrintDebugInfoNode, AEAssist",
+                    "DisplayName": "打印信息",
+                    "Info": "看情况打 即刻 再击飞",
+                    "ToastType": 2,
+                    "ToastDuration": 5000,
+                    "GUID": "8bf1c4a4-48cf-45a6-9f78-7367bdd09ef3",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 55,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[6.00]秒",
+                    "Delay": 6.0,
+                    "GUID": "7e6591f1-5e8a-4b1e-9555-bdb30d7959c9",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 56,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "整体论",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "b163910e-4e44-4717-915d-f4870c6d65df",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 57,
+                    "Enable": true,
+                    "Remark": "不屈+整体论"
+                  }
+                ],
+                "GUID": "52777744-e791-4845-8d79-b1cd98b01832",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 53,
+                "Enable": true,
+                "Remark": "换平台"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37748",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "4c56b91e-c98e-4f6a-b2fa-f3d9d319def5",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 59,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "1313d8ec-44d9-48f4-b6bb-f4bd0105d888",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 60,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  }
+                ],
+                "GUID": "06d3a931-2089-42a2-a0cb-44e11a45af61",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 58,
+                "Enable": true,
+                "Remark": "多次AOE分摊"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "37784",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "a06bf1fe-40c8-469b-902b-c8d8c824d1bb",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 62,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[1.00]秒",
+                    "Delay": 1.0,
+                    "GUID": "c2ef0602-f43d-49a1-a302-bbac1b95f750",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 63,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "自生",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "c63572ac-d544-47fc-80b4-d4bef45d49ad",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 64,
+                    "Enable": true,
+                    "Remark": "罩子+自生"
+                  }
+                ],
+                "GUID": "0017211e-8a44-4881-b53a-c5f44b13a3ad",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 61,
+                "Enable": true,
+                "Remark": "转阶段"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "39227",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "5e301650-5e85-4bce-9ab7-921cf6d771f3",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 66,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "输血(目标的目标)",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "14ebc374-95e5-474d-bcf3-f108d16e837b",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 67,
+                    "Enable": true,
+                    "Remark": "输血"
+                  }
+                ],
+                "GUID": "b4fdc0fa-98ba-4cd6-9cb1-2163cfbef1c3",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 65,
+                "Enable": true,
+                "Remark": "双T接线"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+                "DisplayName": "序列",
+                "IgnoreNodeResult": false,
+                "StopWhenDead": false,
+                "Childs": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                    "CondLogicType": 0,
+                    "CheckOnce": false,
+                    "ReverseResult": false,
+                    "TriggerConds": [
+                      {
+                        "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondEnemyCastSpell, AEAssist",
+                        "Strs": null,
+                        "Remark": "",
+                        "RegexNameOrId": "39560",
+                        "NeedTargetable": true,
+                        "DisplayName": "General/敌人读条使用技能"
+                      }
+                    ],
+                    "DisplayName": "等待条件",
+                    "GUID": "333b49ca-2bcd-4a65-8cc1-e32ab3960ebb",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 69,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[5.00]秒",
+                    "Delay": 5.0,
+                    "GUID": "980cba48-0367-4ff8-bd20-ae471ccab696",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 70,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "智慧之爱",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "泛输血",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      },
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "自生",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "128ba80a-2cca-43f7-9bb5-497421c4be6c",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 71,
+                    "Enable": true,
+                    "Remark": "智慧+泛输血+罩子+自生"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[15.00]秒",
+                    "Delay": 15.0,
+                    "GUID": "c9279ab1-c57b-4719-9e7d-ad9e95fa3df2",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 72,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "寄生清汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "966e2875-b7ba-4ba7-ae65-f7f0f2e11d65",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 73,
+                    "Enable": true,
+                    "Remark": "不屈"
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[10.00]秒",
+                    "Delay": 10.0,
+                    "GUID": "67915847-f131-44ad-af83-f29d9efc73a0",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 74,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                    "DisplayName": "延迟[30.00]秒",
+                    "Delay": 30.0,
+                    "GUID": "b8e1f3f9-9bc6-430d-b214-169f81757422",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 75,
+                    "Enable": true,
+                    "Remark": ""
+                  },
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                    "TriggerActions": [
+                      {
+                        "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                        "Key": "坚角青汁",
+                        "DisplayName": "Sage/Hotkey",
+                        "Remark": null
+                      }
+                    ],
+                    "DisplayName": "行为",
+                    "GUID": "1fafce55-ee1f-4c9c-988b-56b8b08b9cad",
+                    "Important": false,
+                    "Color": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 0.4,
+                      "W": 1.0
+                    },
+                    "Id": 76,
+                    "Enable": true,
+                    "Remark": "罩子"
+                  }
+                ],
+                "GUID": "d28f9c24-7205-4bf8-9ed6-7bc514b0ea8c",
+                "Important": true,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 68,
+                "Enable": true,
+                "Remark": "撞线2"
+              }
+            ],
+            "GUID": "afee1eb2-ffac-48c9-b7f8-004a75efe1a4",
+            "Important": true,
+            "Color": {
+              "X": 0.9414632,
+              "Y": 0.39999998,
+              "Z": 1.0,
+              "W": 1.0
+            },
+            "Id": 3,
+            "Enable": true,
+            "Remark": "基础奶轴"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": true,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
+                    "$type": "yoyokity.SGE.Triggers.TriggerCondQt, yoyokity",
+                    "Key": "爆发药",
+                    "Value": true,
+                    "DisplayName": "Sage/QT检测",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "立即检测",
+                "GUID": "0bb90161-1507-42b1-b495-c80d0dc8f76f",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 78,
+                "Enable": true,
+                "Remark": "爆发药QT 开启"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": false,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
+                    "Remark": "",
+                    "Delay": 345.0,
+                    "DisplayName": "General/战斗开始后多少秒"
+                  }
+                ],
+                "DisplayName": "等待条件",
+                "GUID": "e5a0e13a-b054-4faf-9b90-3102d85ceca4",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 79,
+                "Enable": true,
+                "Remark": "5：45"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.SGE.Triggers.TriggerActionHotkey, yoyokity",
+                    "Key": "爆发药",
+                    "DisplayName": "Sage/Hotkey",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "a04fca64-5e3c-4bb3-a28f-7a62f573e0f1",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 80,
+                "Enable": true,
+                "Remark": ""
+              }
+            ],
+            "GUID": "46debf2a-f51f-4c41-b089-03249eff8757",
+            "Important": true,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 77,
+            "Enable": true,
+            "Remark": "自动爆发药"
+          },
+          {
+            "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeSequence, AEAssist",
+            "DisplayName": "序列",
+            "IgnoreNodeResult": false,
+            "StopWhenDead": false,
+            "Childs": [
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
+                "CondLogicType": 0,
+                "CheckOnce": false,
+                "ReverseResult": false,
+                "TriggerConds": [
+                  {
+                    "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondWaitTarget, AEAssist",
+                    "TargetSelector": {
+                      "Enable": true,
+                      "Target": 1,
+                      "FilterDatas": [
+                        {
+                          "Filter": 1,
+                          "Remark": "",
+                          "StrParam1": "",
+                          "UintParam1": 17077,
+                          "FloatParam1": 0.0,
+                          "LeftTime": 0,
+                          "JobsCategory": 0,
+                          "CompareType": 5,
+                          "BuffCompareType": 3,
+                          "Marker": 0,
+                          "Nearest": false
+                        },
+                        {
+                          "Filter": 3,
+                          "Remark": "",
+                          "StrParam1": "",
+                          "UintParam1": 0,
+                          "FloatParam1": 3.0,
+                          "LeftTime": 0,
+                          "JobsCategory": 0,
+                          "CompareType": 5,
+                          "BuffCompareType": 3,
+                          "Marker": 0,
+                          "Nearest": false
+                        }
+                      ],
+                      "NeedTargetable": true,
+                      "SndFilter": 0,
+                      "PMIndex": 0
+                    },
+                    "Remark": null,
+                    "DisplayName": "General/目标符合条件"
+                  }
+                ],
+                "DisplayName": "等待条件",
+                "GUID": "494f166d-b825-4054-af63-a291401b192a",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 82,
+                "Enable": true,
+                "Remark": "3血rush"
+              },
+              {
+                "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
+                "TriggerActions": [
+                  {
+                    "$type": "yoyokity.SGE.Triggers.TriggerActionQt, yoyokity",
+                    "Key": "倾泻资源",
+                    "Value": true,
+                    "DisplayName": "Sage/QT",
+                    "Remark": null
+                  }
+                ],
+                "DisplayName": "行为",
+                "GUID": "7e8636d3-ab09-4b60-b1d9-df836152823a",
+                "Important": false,
+                "Color": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.4,
+                  "W": 1.0
+                },
+                "Id": 83,
+                "Enable": true,
+                "Remark": "rush"
+              }
+            ],
+            "GUID": "7cdc5516-5be0-479f-9e4b-8a4fe9f8a884",
+            "Important": true,
+            "Color": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 0.4,
+              "W": 1.0
+            },
+            "Id": 81,
+            "Enable": true,
+            "Remark": "rush"
+          }
+        ],
+        "GUID": "70182d43-d9c4-4138-8e41-9b88896a2da9",
+        "Important": false,
+        "Color": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.4,
+          "W": 1.0
+        },
+        "Id": 2,
+        "Enable": true,
+        "Remark": ""
+      }
+    ],
+    "GUID": "7e7a1590-f3be-45cd-ad94-cef02836788a",
+    "Important": false,
+    "Color": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 0.4,
+      "W": 1.0
+    },
+    "Id": 1,
+    "Enable": true,
+    "Remark": ""
+  },
+  "ExposedVars": [],
+  "ExposedVarDesc": "",
+  "OpenerScript": "",
+  "Note": "v0.0.1",
+  "TerritoryTypeId": 1201,
+  "TerritoryWeatherId": 0,
+  "TargetAcrAuthor": "yoyokity",
+  "ClearCustomed": false,
+  "LogsAddress": ""
+}
