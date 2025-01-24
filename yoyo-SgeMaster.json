@@ -1,9 +1,9 @@
 [
   {
     "Name": "M1S-yoyo贤者",
-    "Version": "0.0.8",
+    "Version": "0.0.9",
     "DownloadUrl": "https://raw.githubusercontent.com/yoyokity/AETimeLines/refs/heads/master/yoyokity/M1S-yoyo贤者.json",
-    "UpdateInfo": ""
+    "UpdateInfo": "起手添加自嗨模式的支持"
   },
   {
     "Name": "M2S-yoyo贤者",
