@@ -8152,20 +8152,10 @@
                         "Remark": ""
                       },
                       {
-                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeCondNode, AEAssist",
-                        "CondLogicType": 0,
-                        "CheckOnce": false,
-                        "ReverseResult": false,
-                        "TriggerConds": [
-                          {
-                            "$type": "AEAssist.CombatRoutine.Trigger.TriggerCond.TriggerCondAfterBattleStart, AEAssist",
-                            "Remark": "",
-                            "Delay": 1.0,
-                            "DisplayName": "General/战斗开始后多少秒"
-                          }
-                        ],
-                        "DisplayName": "等待条件",
-                        "GUID": "74b16f16-832a-4026-84b7-606b3a243e8e",
+                        "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeDelayNode, AEAssist",
+                        "DisplayName": "延迟[2.00]秒",
+                        "Delay": 2.0,
+                        "GUID": "0a8a9438-a1fc-4f04-bd3c-138e762eeaa7",
                         "Important": false,
                         "Color": {
                           "X": 1.0,
@@ -8175,7 +8165,7 @@
                         },
                         "Id": 365,
                         "Enable": true,
-                        "Remark": "1秒"
+                        "Remark": ""
                       },
                       {
                         "$type": "AEAssist.CombatRoutine.Trigger.Node.TreeActionNode, AEAssist",
@@ -8498,7 +8488,7 @@
   ],
   "ExposedVarDesc": "P1   22或44分摊：罩子 自生 不屈 智慧之爱\n        跳+引导+分摊：智慧之爱 泛输血 整体论\n        大AOE：整体论 罩子 检测贤炮\nP3   分身第一次：自生 不屈\n        分身引导：罩子 智慧之爱 泛输血\n        分身44：罩子\n        大AOE：贤炮 整体论\nP4   猫猫雨：  (第二次) 泛输血 整体论 罩子\n                      （第四次) 智慧之爱",
   "OpenerScript": "",
-  "Note": "v0.0.9 h1h2都能用",
+  "Note": "v0.0.10 h1h2都能用",
   "TerritoryTypeId": 1226,
   "TerritoryWeatherId": 0,
   "TargetAcrAuthor": "yoyokity",
